@@ -1,8 +1,3 @@
-"""
-Step 1-2: Load IBM-Debater-ArgKP from HuggingFace and extract the 41 unique
-topics into a CSV file.
-"""
-
 from datasets import load_dataset
 import csv
 
