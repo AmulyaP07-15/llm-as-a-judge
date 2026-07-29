@@ -1,0 +1,83 @@
+judge_model,topic,model_a,model_b,swapped,first_model,second_model,first_arg_length_words,second_arg_length_words,raw_verdict,winner_model
+llama3.1,We should ban human cloning,gemma,llama3.1,False,gemma,llama3.1,25,51,Argument 1,gemma
+gemma,We should ban human cloning,gemma,llama3.1,True,llama3.1,gemma,51,25,Argument 1,llama3.1
+llama3.1,We should abolish the right to keep and bear arms,gemma,llama3.1,False,gemma,llama3.1,31,103,Argument 2,llama3.1
+gemma,We should abolish the right to keep and bear arms,gemma,llama3.1,False,gemma,llama3.1,31,103,Argument 2,llama3.1
+llama3.1,We should subsidize student loans,gemma,llama3.1,True,llama3.1,gemma,72,34,Argument 1,llama3.1
+gemma,We should subsidize student loans,gemma,llama3.1,True,llama3.1,gemma,72,34,Argument 1,llama3.1
+llama3.1,We should legalize prostitution,gemma,llama3.1,False,gemma,llama3.1,41,71,Argument 1,gemma
+gemma,We should legalize prostitution,gemma,llama3.1,True,llama3.1,gemma,71,41,Argument 1,llama3.1
+llama3.1,Social media platforms should be regulated by the government,gemma,llama3.1,False,gemma,llama3.1,41,91,Argument 2,llama3.1
+gemma,Social media platforms should be regulated by the government,gemma,llama3.1,True,llama3.1,gemma,91,41,Argument 1,llama3.1
+llama3.1,We should introduce compulsory voting,gemma,llama3.1,False,gemma,llama3.1,41,84,Argument 1,gemma
+gemma,We should introduce compulsory voting,gemma,llama3.1,False,gemma,llama3.1,41,84,Argument 1,gemma
+llama3.1,We should ban the use of child actors,gemma,llama3.1,True,llama3.1,gemma,81,47,Argument 2,gemma
+gemma,We should ban the use of child actors,gemma,llama3.1,False,gemma,llama3.1,47,81,Argument 1,gemma
+llama3.1,We should abolish the three-strikes laws,gemma,llama3.1,True,llama3.1,gemma,78,31,Argument 1,llama3.1
+gemma,We should abolish the three-strikes laws,gemma,llama3.1,False,gemma,llama3.1,31,78,Argument 2,llama3.1
+llama3.1,We should subsidize space exploration,gemma,llama3.1,False,gemma,llama3.1,47,78,Argument 1,gemma
+gemma,We should subsidize space exploration,gemma,llama3.1,False,gemma,llama3.1,47,78,Argument 2,llama3.1
+llama3.1,We should ban algorithmic trading,gemma,llama3.1,False,gemma,llama3.1,45,68,Argument 1,gemma
+gemma,We should ban algorithmic trading,gemma,llama3.1,True,llama3.1,gemma,68,45,Argument 1,llama3.1
+llama3.1,We should adopt atheism,gemma,llama3.1,True,llama3.1,gemma,75,37,Argument 1,llama3.1
+gemma,We should adopt atheism,gemma,llama3.1,False,gemma,llama3.1,37,75,Argument 1,gemma
+llama3.1,We should adopt a zero-tolerance policy in schools,gemma,llama3.1,False,gemma,llama3.1,26,88,Argument 2,llama3.1
+gemma,We should adopt a zero-tolerance policy in schools,gemma,llama3.1,True,llama3.1,gemma,88,26,Argument 1,llama3.1
+llama3.1,We should subsidize vocational education,gemma,llama3.1,True,llama3.1,gemma,77,38,Argument 1,llama3.1
+gemma,We should subsidize vocational education,gemma,llama3.1,False,gemma,llama3.1,38,77,Argument 2,llama3.1
+llama3.1,We should legalize sex selection,gemma,llama3.1,True,llama3.1,gemma,19,40,Argument 2,gemma
+gemma,We should legalize sex selection,gemma,llama3.1,True,llama3.1,gemma,19,40,Argument 2,gemma
+llama3.1,Routine child vaccinations should be mandatory,gemma,llama3.1,False,gemma,llama3.1,33,71,Argument 2,llama3.1
+gemma,Routine child vaccinations should be mandatory,gemma,llama3.1,False,gemma,llama3.1,33,71,Argument 2,llama3.1
+llama3.1,We should abandon the use of school uniform,gemma,llama3.1,False,gemma,llama3.1,30,69,Argument 2,llama3.1
+gemma,We should abandon the use of school uniform,gemma,llama3.1,False,gemma,llama3.1,30,69,Argument 2,llama3.1
+llama3.1,The vow of celibacy should be abandoned,gemma,llama3.1,True,llama3.1,gemma,77,47,Argument 1,llama3.1
+gemma,The vow of celibacy should be abandoned,gemma,llama3.1,True,llama3.1,gemma,77,47,Argument 1,llama3.1
+llama3.1,Assisted suicide should be a criminal offence,gemma,llama3.1,False,gemma,llama3.1,36,90,Argument 1,gemma
+gemma,Assisted suicide should be a criminal offence,gemma,llama3.1,True,llama3.1,gemma,90,36,Argument 1,llama3.1
+llama3.1,We should end affirmative action,gemma,llama3.1,True,llama3.1,gemma,72,38,Argument 1,llama3.1
+gemma,We should end affirmative action,gemma,llama3.1,True,llama3.1,gemma,72,38,Argument 1,llama3.1
+llama3.1,We should ban cosmetic surgery,gemma,llama3.1,True,llama3.1,gemma,74,36,Argument 1,llama3.1
+gemma,We should ban cosmetic surgery,gemma,llama3.1,False,gemma,llama3.1,36,74,Argument 2,llama3.1
+llama3.1,We should close Guantanamo Bay detention camp,gemma,llama3.1,True,llama3.1,gemma,73,25,Argument 2,gemma
+gemma,We should close Guantanamo Bay detention camp,gemma,llama3.1,True,llama3.1,gemma,73,25,Argument 1,llama3.1
+llama3.1,The use of public defenders should be mandatory,gemma,llama3.1,True,llama3.1,gemma,71,52,Argument 1,llama3.1
+gemma,The use of public defenders should be mandatory,gemma,llama3.1,False,gemma,llama3.1,52,71,Argument 2,llama3.1
+llama3.1,We should subsidize journalism,gemma,llama3.1,False,gemma,llama3.1,31,78,Argument 2,llama3.1
+gemma,We should subsidize journalism,gemma,llama3.1,True,llama3.1,gemma,78,31,Argument 1,llama3.1
+llama3.1,We should abandon marriage,gemma,llama3.1,False,gemma,llama3.1,43,93,Argument 1,gemma
+gemma,We should abandon marriage,gemma,llama3.1,True,llama3.1,gemma,93,43,Argument 1,llama3.1
+llama3.1,The USA is a good country to live in,gemma,llama3.1,False,gemma,llama3.1,35,75,Argument 2,llama3.1
+gemma,The USA is a good country to live in,gemma,llama3.1,False,gemma,llama3.1,35,75,Argument 1,gemma
+llama3.1,We should end the use of economic sanctions,gemma,llama3.1,True,llama3.1,gemma,82,44,Argument 1,llama3.1
+gemma,We should end the use of economic sanctions,gemma,llama3.1,False,gemma,llama3.1,44,82,Argument 2,llama3.1
+llama3.1,We should adopt libertarianism,gemma,llama3.1,True,llama3.1,gemma,76,23,Argument 1,llama3.1
+gemma,We should adopt libertarianism,gemma,llama3.1,False,gemma,llama3.1,23,76,Argument 1,gemma
+llama3.1,We should abolish capital punishment,gemma,llama3.1,False,gemma,llama3.1,39,80,Argument 2,llama3.1
+gemma,We should abolish capital punishment,gemma,llama3.1,True,llama3.1,gemma,80,39,Argument 2,gemma
+llama3.1,We should prohibit women in combat,gemma,llama3.1,False,gemma,llama3.1,39,80,Argument 2,llama3.1
+gemma,We should prohibit women in combat,gemma,llama3.1,False,gemma,llama3.1,39,80,Argument 1,gemma
+llama3.1,We should prohibit flag burning,gemma,llama3.1,True,llama3.1,gemma,60,56,Argument 1,llama3.1
+gemma,We should prohibit flag burning,gemma,llama3.1,True,llama3.1,gemma,60,56,Argument 1,llama3.1
+llama3.1,We should fight urbanization,gemma,llama3.1,False,gemma,llama3.1,39,77,Argument 1,gemma
+gemma,We should fight urbanization,gemma,llama3.1,False,gemma,llama3.1,39,77,Argument 1,gemma
+llama3.1,We should end mandatory retirement,gemma,llama3.1,False,gemma,llama3.1,49,72,Argument 2,llama3.1
+gemma,We should end mandatory retirement,gemma,llama3.1,True,llama3.1,gemma,72,49,Argument 1,llama3.1
+llama3.1,We should legalize cannabis,gemma,llama3.1,False,gemma,llama3.1,28,92,Argument 1,gemma
+gemma,We should legalize cannabis,gemma,llama3.1,False,gemma,llama3.1,28,92,Argument 2,llama3.1
+llama3.1,We should abolish intellectual property rights,gemma,llama3.1,True,llama3.1,gemma,72,46,Argument 1,llama3.1
+gemma,We should abolish intellectual property rights,gemma,llama3.1,True,llama3.1,gemma,72,46,Argument 2,gemma
+llama3.1,Entrapment should be legalized,gemma,llama3.1,False,gemma,llama3.1,43,86,Argument 1,gemma
+gemma,Entrapment should be legalized,gemma,llama3.1,False,gemma,llama3.1,43,86,Argument 2,llama3.1
+llama3.1,Homeschooling should be banned,gemma,llama3.1,True,llama3.1,gemma,5,45,Argument 2,gemma
+gemma,Homeschooling should be banned,gemma,llama3.1,False,gemma,llama3.1,45,5,Argument 1,gemma
+llama3.1,We should adopt an austerity regime,gemma,llama3.1,True,llama3.1,gemma,56,21,Argument 1,llama3.1
+gemma,We should adopt an austerity regime,gemma,llama3.1,False,gemma,llama3.1,21,56,Argument 1,gemma
+llama3.1,We should ban private military companies,gemma,llama3.1,True,llama3.1,gemma,78,55,Argument 1,llama3.1
+gemma,We should ban private military companies,gemma,llama3.1,True,llama3.1,gemma,78,55,Argument 1,llama3.1
+llama3.1,We should end racial profiling,gemma,llama3.1,True,llama3.1,gemma,66,17,Argument 1,llama3.1
+gemma,We should end racial profiling,gemma,llama3.1,True,llama3.1,gemma,66,17,Argument 1,llama3.1
+llama3.1,Foster care brings more harm than good,gemma,llama3.1,True,llama3.1,gemma,84,31,Argument 1,llama3.1
+gemma,Foster care brings more harm than good,gemma,llama3.1,True,llama3.1,gemma,84,31,Argument 1,llama3.1
+llama3.1,We should fight for the abolition of nuclear weapons,gemma,llama3.1,True,llama3.1,gemma,75,48,Argument 1,llama3.1
+gemma,We should fight for the abolition of nuclear weapons,gemma,llama3.1,False,gemma,llama3.1,48,75,Argument 2,llama3.1
