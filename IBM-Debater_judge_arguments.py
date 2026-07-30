@@ -1,5 +1,7 @@
 import csv
 import random
+import re
+import time
 import itertools
 from collections import defaultdict
 
@@ -33,31 +35,50 @@ def build_judge_prompt(topic, first_argument, second_argument):
         f'You are judging two arguments that both support the claim: "{topic}"\n\n'
         f"Argument 1: {first_argument}\n\n"
         f"Argument 2: {second_argument}\n\n"
-        "Which argument is more convincing? Respond with only "
-        '"Argument 1" or "Argument 2", nothing else.'
+        "Which argument is more convincing? If neither is clearly better, say Neither.\n\n"
+        "Respond in exactly this format and nothing else:\n"
+        "Winner: <Argument 1, Argument 2, or Neither>\n"
+        "Confidence: <a number from 1 to 5, where 5 is extremely confident>"
     )
+
+
+def parse_verdict(raw_text):
+    """
+    Returns (choice, confidence).
+    choice is 1, 2, "NEITHER", or None (couldn't be parsed).
+
+    Matches on the phrases "argument 1" / "argument 2" rather than bare
+    digits, so a response like "Argument 2 is stronger than Argument 1"
+    doesn't trip both checks and collapse to None.
+    """
+    winner_match = re.search(r"winner:\s*(.+)", raw_text, re.IGNORECASE)
+    confidence_match = re.search(r"confidence:\s*(\d+)", raw_text, re.IGNORECASE)
+
+    confidence = int(confidence_match.group(1)) if confidence_match else None
+
+    if not winner_match:
+        return None, confidence
+
+    winner_text = winner_match.group(1).strip().lower()
+    if "neither" in winner_text:
+        return "NEITHER", confidence
+    if "argument 1" in winner_text:
+        return 1, confidence
+    if "argument 2" in winner_text:
+        return 2, confidence
+    return None, confidence
 
 
 def get_verdict(judge_model, topic, first_argument, second_argument):
     """Ask judge_model to pick between the two arguments as presented (in order)."""
     prompt = build_judge_prompt(topic, first_argument, second_argument)
+    start = time.time()
     response = ollama.chat(
         model=judge_model,
         messages=[{"role": "user", "content": prompt}],
     )
-    return response["message"]["content"].strip()
-
-
-def parse_verdict(raw_verdict):
-    """Return 1, 2, or None (unclear) from the judge's raw response."""
-    text = raw_verdict.lower()
-    mentions_1 = "1" in text or "argument 1" in text
-    mentions_2 = "2" in text or "argument 2" in text
-    if mentions_1 and not mentions_2:
-        return 1
-    if mentions_2 and not mentions_1:
-        return 2
-    return None
+    elapsed = time.time() - start
+    return response["message"]["content"].strip(), elapsed
 
 
 def main():
@@ -96,7 +117,9 @@ def main():
             "second_model",
             "first_arg_length_words",
             "second_arg_length_words",
-            "raw_verdict",
+            "response_time_sec",
+            "confidence",
+            "raw_response",
             "winner_model",
         ])
 
@@ -119,18 +142,24 @@ def main():
             )
 
             try:
-                raw_verdict = get_verdict(judge, topic, first_argument, second_argument)
+                raw_response, elapsed = get_verdict(
+                    judge, topic, first_argument, second_argument
+                )
+                choice, confidence = parse_verdict(raw_response)
+                if choice == 1:
+                    winner_model = first_model
+                elif choice == 2:
+                    winner_model = second_model
+                elif choice == "NEITHER":
+                    winner_model = "NEITHER"
+                else:
+                    winner_model = "UNCLEAR"
             except Exception as e:
                 print(f"  ! judge {judge} failed: {e}")
-                raw_verdict = f"ERROR: {e}"
-
-            choice = parse_verdict(raw_verdict) if not raw_verdict.startswith("ERROR:") else None
-            if choice == 1:
-                winner_model = first_model
-            elif choice == 2:
-                winner_model = second_model
-            else:
-                winner_model = "UNCLEAR"
+                raw_response = f"ERROR: {e}"
+                elapsed = None
+                confidence = None
+                winner_model = "API_ERROR"
 
             writer.writerow([
                 judge,
@@ -142,7 +171,9 @@ def main():
                 second_model,
                 len(first_argument.split()),
                 len(second_argument.split()),
-                raw_verdict,
+                elapsed,
+                confidence,
+                raw_response,
                 winner_model,
             ])
 
