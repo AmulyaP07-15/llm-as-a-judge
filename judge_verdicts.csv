@@ -1,729 +1,93 @@
 judge_model,topic,model_a,model_b,swapped,first_model,second_model,first_arg_length_words,second_arg_length_words,response_time_sec,confidence,raw_response,winner_model
-llama,We should ban human cloning,allam,llama,False,allam,llama,72,82,0.3134169578552246,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should ban human cloning,allam,llama,False,allam,llama,72,82,0.12207794189453125,4,"Winner: Argument 2
-Confidence: 4",llama
-allam,We should ban human cloning,allam,llama,True,llama,allam,82,72,0.3733229637145996,3,"Winner: Argument 1, Neither
-Confidence: 3",NEITHER
-llama,We should ban human cloning,allam,qwen,False,allam,qwen,72,49,0.10813283920288086,4,"Winner: Argument 2
-Confidence: 4",qwen
-qwen,We should ban human cloning,allam,qwen,True,qwen,allam,49,72,0.2201249599456787,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should ban human cloning,allam,qwen,False,allam,qwen,72,49,0.2806391716003418,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should ban human cloning,llama,qwen,False,llama,qwen,82,49,0.31232619285583496,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should ban human cloning,llama,qwen,False,llama,qwen,82,49,0.22278118133544922,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should ban human cloning,llama,qwen,False,llama,qwen,82,49,0.28524208068847656,,Winner: Argument 1 (5),llama
-llama,We should abolish the right to keep and bear arms,allam,llama,False,allam,llama,59,82,0.14030003547668457,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should abolish the right to keep and bear arms,allam,llama,True,llama,allam,82,59,0.20315909385681152,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should abolish the right to keep and bear arms,allam,llama,True,llama,allam,82,59,0.3184082508087158,5,"Winner: Argument 1
+llama,We should ban human cloning,allam,llama,False,allam,llama,54,72,0.3539309501647949,5.0,"Winner: Argument 2
 Confidence: 5",llama
-llama,We should abolish the right to keep and bear arms,allam,qwen,False,allam,qwen,59,48,0.09926080703735352,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should abolish the right to keep and bear arms,allam,qwen,True,qwen,allam,48,59,0.135606050491333,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should abolish the right to keep and bear arms,allam,qwen,False,allam,qwen,59,48,0.289139986038208,4,"Winner: Argument 2
-Confidence: 4",qwen
-llama,We should abolish the right to keep and bear arms,llama,qwen,False,llama,qwen,82,48,0.12291693687438965,4,"Winner: Argument 1
+qwen,We should ban human cloning,allam,llama,False,allam,llama,54,72,0.1508479118347168,4.0,"Winner: Argument 2
 Confidence: 4",llama
-qwen,We should abolish the right to keep and bear arms,llama,qwen,True,qwen,llama,48,82,0.12081384658813477,3,"Winner: Argument 2
-Confidence: 3",llama
-allam,We should abolish the right to keep and bear arms,llama,qwen,True,qwen,llama,48,82,0.28740501403808594,4,"Winner: Argument 2
-Confidence: 4",llama
-llama,We should subsidize student loans,allam,llama,True,llama,allam,92,64,0.13463401794433594,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should subsidize student loans,allam,llama,True,llama,allam,92,64,0.19947600364685059,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,We should subsidize student loans,allam,llama,False,allam,llama,64,92,0.2901432514190674,5,"Winner: Argument 2
+allam,We should ban human cloning,allam,llama,False,allam,llama,54,72,0.2854158878326416,5.0,"Winner: Argument 2 (5)
 Confidence: 5",llama
-llama,We should subsidize student loans,allam,qwen,False,allam,qwen,64,51,0.1282820701599121,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should subsidize student loans,allam,qwen,False,allam,qwen,64,51,0.1247560977935791,2,"Winner: Argument 1
-Confidence: 2",allam
-allam,We should subsidize student loans,allam,qwen,False,allam,qwen,64,51,0.2786850929260254,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should subsidize student loans,llama,qwen,False,llama,qwen,92,51,0.11042308807373047,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should subsidize student loans,llama,qwen,True,qwen,llama,51,92,0.2080531120300293,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should subsidize student loans,llama,qwen,True,qwen,llama,51,92,0.39427709579467773,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,We should legalize prostitution,allam,llama,False,allam,llama,49,75,0.218001127243042,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should legalize prostitution,allam,llama,True,llama,allam,75,49,0.1258680820465088,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should legalize prostitution,allam,llama,True,llama,allam,75,49,0.47504425048828125,5,"Winner: Argument 1 (5)
-Confidence: 5",llama
-llama,We should legalize prostitution,allam,qwen,True,qwen,allam,51,49,2.295865774154663,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should legalize prostitution,allam,qwen,True,qwen,allam,51,49,0.11186885833740234,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should legalize prostitution,allam,qwen,True,qwen,allam,51,49,0.3551020622253418,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,We should legalize prostitution,llama,qwen,False,llama,qwen,75,51,2.2112770080566406,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,We should legalize prostitution,llama,qwen,True,qwen,llama,51,75,0.18814301490783691,3,"Winner: Argument 1
-Confidence: 3",qwen
-allam,We should legalize prostitution,llama,qwen,False,llama,qwen,75,51,0.3613619804382324,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,Social media platforms should be regulated by the government,allam,llama,False,allam,llama,75,63,2.2775869369506836,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,Social media platforms should be regulated by the government,allam,llama,False,allam,llama,75,63,0.13046598434448242,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,Social media platforms should be regulated by the government,allam,llama,True,llama,allam,63,75,0.4643368721008301,5,"Winner: Argument 1
-Confidence: 5",llama
-llama,Social media platforms should be regulated by the government,allam,qwen,True,qwen,allam,42,75,2.348439931869507,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,Social media platforms should be regulated by the government,allam,qwen,True,qwen,allam,42,75,0.17854785919189453,4,"Winner: Argument 2
-Confidence: 4",allam
-allam,Social media platforms should be regulated by the government,allam,qwen,False,allam,qwen,75,42,0.3368210792541504,4,"Winner: Argument 2
-Confidence: 4",qwen
-llama,Social media platforms should be regulated by the government,llama,qwen,True,qwen,llama,42,63,2.322877883911133,5,"Winner: Argument 2
-Confidence: 5",llama
-qwen,Social media platforms should be regulated by the government,llama,qwen,False,llama,qwen,63,42,0.1214451789855957,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,Social media platforms should be regulated by the government,llama,qwen,False,llama,qwen,63,42,0.4222140312194824,5,"Winner: Argument 1
-Confidence: 5",llama
-llama,We should introduce compulsory voting,allam,llama,False,allam,llama,66,76,2.2293760776519775,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should introduce compulsory voting,allam,llama,True,llama,allam,76,66,0.14054012298583984,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should introduce compulsory voting,allam,llama,False,allam,llama,66,76,0.3041532039642334,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should introduce compulsory voting,allam,qwen,True,qwen,allam,47,66,2.2041726112365723,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should introduce compulsory voting,allam,qwen,True,qwen,allam,47,66,0.3267672061920166,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should introduce compulsory voting,allam,qwen,True,qwen,allam,47,66,0.2899301052093506,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,We should introduce compulsory voting,llama,qwen,True,qwen,llama,47,76,2.206902027130127,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should introduce compulsory voting,llama,qwen,True,qwen,llama,47,76,0.7957091331481934,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should introduce compulsory voting,llama,qwen,False,llama,qwen,76,47,0.35989904403686523,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should ban the use of child actors,allam,llama,True,llama,allam,88,68,2.2317559719085693,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,We should ban the use of child actors,allam,llama,True,llama,allam,88,68,0.2182178497314453,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should ban the use of child actors,allam,llama,False,allam,llama,68,88,0.3089280128479004,,Winner: Argument 1 Neither 2,NEITHER
-llama,We should ban the use of child actors,allam,qwen,False,allam,qwen,68,48,2.226810932159424,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should ban the use of child actors,allam,qwen,False,allam,qwen,68,48,0.5835802555084229,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should ban the use of child actors,allam,qwen,True,qwen,allam,48,68,0.30249810218811035,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,We should ban the use of child actors,llama,qwen,True,qwen,llama,48,88,2.2249462604522705,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should ban the use of child actors,llama,qwen,False,llama,qwen,88,48,0.4209940433502197,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should ban the use of child actors,llama,qwen,False,llama,qwen,88,48,0.27922511100769043,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should abolish the three-strikes laws,allam,llama,False,allam,llama,63,76,2.5112760066986084,3,"Winner: Argument 1
+llama,We should ban human cloning,allam,qwen,False,allam,qwen,54,54,0.3841831684112549,3.0,"Winner: Argument 1
 Confidence: 3",allam
-qwen,We should abolish the three-strikes laws,allam,llama,False,allam,llama,63,76,0.8201479911804199,3,"Winner: Argument 2
-Confidence: 3",llama
-allam,We should abolish the three-strikes laws,allam,llama,True,llama,allam,76,63,0.3044118881225586,4,"Winner: Argument 1 
-Confidence: 4",llama
-llama,We should abolish the three-strikes laws,allam,qwen,False,allam,qwen,63,52,2.363579034805298,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should abolish the three-strikes laws,allam,qwen,False,allam,qwen,63,52,0.5060641765594482,3,"Winner: Argument 1
-Confidence: 3",allam
-allam,We should abolish the three-strikes laws,allam,qwen,True,qwen,allam,52,63,0.285383939743042,5,"Winner: Argument 2
-Confidence: 5",allam
-llama,We should abolish the three-strikes laws,llama,qwen,True,qwen,llama,52,76,2.4422976970672607,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should abolish the three-strikes laws,llama,qwen,True,qwen,llama,52,76,0.36972594261169434,4,"Winner: Argument 2
-Confidence: 4",llama
-allam,We should abolish the three-strikes laws,llama,qwen,True,qwen,llama,52,76,0.48435401916503906,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,We should subsidize space exploration,allam,llama,True,llama,allam,82,53,2.222921848297119,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should subsidize space exploration,allam,llama,True,llama,allam,82,53,0.4365997314453125,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,We should subsidize space exploration,allam,llama,True,llama,allam,82,53,0.5140728950500488,,"Winner: Argument 1 (10, extremely confident)",llama
-llama,We should subsidize space exploration,allam,qwen,False,allam,qwen,53,46,2.212165117263794,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should subsidize space exploration,allam,qwen,True,qwen,allam,46,53,0.14628100395202637,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should subsidize space exploration,allam,qwen,False,allam,qwen,53,46,0.2879452705383301,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should subsidize space exploration,llama,qwen,True,qwen,llama,46,82,2.1998190879821777,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should subsidize space exploration,llama,qwen,True,qwen,llama,46,82,0.2089090347290039,3,"Winner: Argument 1
-Confidence: 3",qwen
-allam,We should subsidize space exploration,llama,qwen,False,llama,qwen,82,46,0.2905910015106201,5,"Winner: Argument 2 (5)
-Confidence: 5",qwen
-llama,We should ban algorithmic trading,allam,llama,False,allam,llama,98,71,2.216036796569824,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should ban algorithmic trading,allam,llama,True,llama,allam,71,98,0.8312199115753174,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,We should ban algorithmic trading,allam,llama,False,allam,llama,98,71,0.5111680030822754,4,"Winner: Argument 2
-Confidence: 4",llama
-llama,We should ban algorithmic trading,allam,qwen,True,qwen,allam,41,98,2.2244620323181152,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should ban algorithmic trading,allam,qwen,False,allam,qwen,98,41,0.12672996520996094,3,"Winner: Argument 1
-Confidence: 3",allam
-allam,We should ban algorithmic trading,allam,qwen,False,allam,qwen,98,41,0.3052542209625244,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should ban algorithmic trading,llama,qwen,False,llama,qwen,71,41,2.222493886947632,4,"Winner: Argument 2
-Confidence: 4",qwen
-qwen,We should ban algorithmic trading,llama,qwen,False,llama,qwen,71,41,0.3315749168395996,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should ban algorithmic trading,llama,qwen,False,llama,qwen,71,41,0.3166079521179199,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should adopt atheism,allam,llama,False,allam,llama,59,63,2.2915360927581787,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should adopt atheism,allam,llama,False,allam,llama,59,63,0.21648788452148438,3,"Winner: Argument 1
-Confidence: 3",allam
-allam,We should adopt atheism,allam,llama,True,llama,allam,63,59,0.3007490634918213,,Winner: Argument 2 (5),allam
-llama,We should adopt atheism,allam,qwen,False,allam,qwen,59,46,2.2274281978607178,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should adopt atheism,allam,qwen,True,qwen,allam,46,59,0.49630188941955566,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should adopt atheism,allam,qwen,False,allam,qwen,59,46,0.30272984504699707,5,"Winner: Argument 1 (5)
-Confidence: 5",allam
-llama,We should adopt atheism,llama,qwen,True,qwen,llama,46,63,2.3382320404052734,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should adopt atheism,llama,qwen,False,llama,qwen,63,46,0.42697906494140625,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should adopt atheism,llama,qwen,False,llama,qwen,63,46,0.3075683116912842,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should adopt a zero-tolerance policy in schools,allam,llama,False,allam,llama,60,77,2.286957025527954,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should adopt a zero-tolerance policy in schools,allam,llama,True,llama,allam,77,60,0.37263011932373047,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should adopt a zero-tolerance policy in schools,allam,llama,False,allam,llama,60,77,0.30741357803344727,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should adopt a zero-tolerance policy in schools,allam,qwen,False,allam,qwen,60,57,2.1944050788879395,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should adopt a zero-tolerance policy in schools,allam,qwen,False,allam,qwen,60,57,0.2752530574798584,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should adopt a zero-tolerance policy in schools,allam,qwen,False,allam,qwen,60,57,0.3963031768798828,4,"Winner: Argument 2 
-Confidence: 4",qwen
-llama,We should adopt a zero-tolerance policy in schools,llama,qwen,True,qwen,llama,57,77,2.3245372772216797,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should adopt a zero-tolerance policy in schools,llama,qwen,False,llama,qwen,77,57,0.18621492385864258,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,We should adopt a zero-tolerance policy in schools,llama,qwen,False,llama,qwen,77,57,0.2925541400909424,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should subsidize vocational education,allam,llama,False,allam,llama,71,71,2.217883825302124,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should subsidize vocational education,allam,llama,True,llama,allam,71,71,0.13909196853637695,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should subsidize vocational education,allam,llama,True,llama,allam,71,71,0.2833888530731201,5,"Winner: Argument 1
-Confidence: 5",llama
-llama,We should subsidize vocational education,allam,qwen,True,qwen,allam,41,71,2.1978650093078613,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should subsidize vocational education,allam,qwen,False,allam,qwen,71,41,0.13222074508666992,3,"Winner: Argument 2
-Confidence: 3",qwen
-allam,We should subsidize vocational education,allam,qwen,False,allam,qwen,71,41,0.29757189750671387,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should subsidize vocational education,llama,qwen,True,qwen,llama,41,71,2.355541944503784,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should subsidize vocational education,llama,qwen,True,qwen,llama,41,71,0.18039321899414062,3,"Winner: Argument 2
-Confidence: 3",llama
-allam,We should subsidize vocational education,llama,qwen,True,qwen,llama,41,71,0.34378504753112793,5,"Winner: Argument 2 
-Confidence: 5",llama
-llama,We should legalize sex selection,allam,llama,True,llama,allam,22,67,2.3680150508880615,4,"Winner: Argument 2
-Confidence: 4",allam
-qwen,We should legalize sex selection,allam,llama,True,llama,allam,22,67,0.17146897315979004,5,"Winner: Argument 2
-Confidence: 5",allam
-allam,We should legalize sex selection,allam,llama,False,allam,llama,67,22,0.28906798362731934,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should legalize sex selection,allam,qwen,False,allam,qwen,67,34,2.2658791542053223,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should legalize sex selection,allam,qwen,False,allam,qwen,67,34,0.19101214408874512,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should legalize sex selection,allam,qwen,True,qwen,allam,34,67,0.28557801246643066,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,We should legalize sex selection,llama,qwen,True,qwen,llama,34,22,2.23432993888855,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should legalize sex selection,llama,qwen,True,qwen,llama,34,22,0.3180418014526367,5,"Winner: Argument 1
-Confidence: 5",qwen
-allam,We should legalize sex selection,llama,qwen,True,qwen,llama,34,22,0.4820399284362793,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,Routine child vaccinations should be mandatory,allam,llama,True,llama,allam,69,61,2.3067331314086914,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,Routine child vaccinations should be mandatory,allam,llama,True,llama,allam,69,61,0.2794678211212158,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,Routine child vaccinations should be mandatory,allam,llama,False,allam,llama,61,69,0.2993340492248535,5,"Winner: Argument 2 
-Confidence: 5",llama
-llama,Routine child vaccinations should be mandatory,allam,qwen,True,qwen,allam,39,61,2.224419116973877,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,Routine child vaccinations should be mandatory,allam,qwen,False,allam,qwen,61,39,0.1961078643798828,4,"Winner: Argument 1
-Confidence: 4",allam
-allam,Routine child vaccinations should be mandatory,allam,qwen,True,qwen,allam,39,61,0.3172900676727295,5,"Winner: Argument 1 (5)
-Confidence: 5",qwen
-llama,Routine child vaccinations should be mandatory,llama,qwen,False,llama,qwen,69,39,2.309401273727417,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,Routine child vaccinations should be mandatory,llama,qwen,True,qwen,llama,39,69,0.135239839553833,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,Routine child vaccinations should be mandatory,llama,qwen,True,qwen,llama,39,69,0.3016390800476074,5,"Winner: Argument 2
-Confidence: 5",llama
-llama,We should abandon the use of school uniform,allam,llama,False,allam,llama,72,68,2.241117238998413,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should abandon the use of school uniform,allam,llama,True,llama,allam,68,72,0.35817408561706543,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,We should abandon the use of school uniform,allam,llama,True,llama,allam,68,72,0.32297801971435547,5,"Winner: Argument 2 (More convincing)
-Confidence: 5",allam
-llama,We should abandon the use of school uniform,allam,qwen,False,allam,qwen,72,48,2.3498470783233643,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should abandon the use of school uniform,allam,qwen,False,allam,qwen,72,48,0.23720884323120117,4,"Winner: Argument 1
-Confidence: 4",allam
-allam,We should abandon the use of school uniform,allam,qwen,True,qwen,allam,48,72,0.299299955368042,5,"Winner: Argument 2
-Confidence: 5",allam
-llama,We should abandon the use of school uniform,llama,qwen,False,llama,qwen,68,48,2.397049903869629,3,"Winner: Argument 2
-Confidence: 3",qwen
-qwen,We should abandon the use of school uniform,llama,qwen,False,llama,qwen,68,48,0.23583674430847168,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should abandon the use of school uniform,llama,qwen,True,qwen,llama,48,68,0.2984800338745117,5,"Winner: Argument 1, Neither (5)
-Confidence: 5",NEITHER
-llama,The vow of celibacy should be abandoned,allam,llama,True,llama,allam,84,76,2.469748020172119,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,The vow of celibacy should be abandoned,allam,llama,True,llama,allam,84,76,0.4735300540924072,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,The vow of celibacy should be abandoned,allam,llama,True,llama,allam,84,76,0.4126770496368408,4,"Winner: Argument 2
-Confidence: 4",allam
-llama,The vow of celibacy should be abandoned,allam,qwen,True,qwen,allam,52,76,2.2200279235839844,4,"Winner: Argument 2
-Confidence: 4",allam
-qwen,The vow of celibacy should be abandoned,allam,qwen,False,allam,qwen,76,52,0.19124579429626465,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,The vow of celibacy should be abandoned,allam,qwen,True,qwen,allam,52,76,0.29459095001220703,5,"Winner: Argument 2
-Confidence: 5",allam
-llama,The vow of celibacy should be abandoned,llama,qwen,False,llama,qwen,84,52,2.5175750255584717,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,The vow of celibacy should be abandoned,llama,qwen,True,qwen,llama,52,84,0.2155439853668213,3,"Winner: Argument 1
-Confidence: 3",qwen
-allam,The vow of celibacy should be abandoned,llama,qwen,True,qwen,llama,52,84,0.29083895683288574,5,"Winner: Argument 2 (5)
-Confidence: 5",llama
-llama,Assisted suicide should be a criminal offence,allam,llama,False,allam,llama,98,78,2.356110095977783,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,Assisted suicide should be a criminal offence,allam,llama,True,llama,allam,78,98,0.12451887130737305,3,"Winner: Argument 2
-Confidence: 3",allam
-allam,Assisted suicide should be a criminal offence,allam,llama,True,llama,allam,78,98,0.28877997398376465,4,"Winner: Argument 2
-Confidence: 4",allam
-llama,Assisted suicide should be a criminal offence,allam,qwen,False,allam,qwen,98,54,2.2279202938079834,4,"Winner: Argument 2
-Confidence: 4",qwen
-qwen,Assisted suicide should be a criminal offence,allam,qwen,False,allam,qwen,98,54,0.12034988403320312,4,"Winner: Argument 1
-Confidence: 4",allam
-allam,Assisted suicide should be a criminal offence,allam,qwen,True,qwen,allam,54,98,0.4121878147125244,5,"Winner: Argument 2
-Confidence: 5",allam
-llama,Assisted suicide should be a criminal offence,llama,qwen,True,qwen,llama,54,78,2.301476001739502,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,Assisted suicide should be a criminal offence,llama,qwen,False,llama,qwen,78,54,0.2012500762939453,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,Assisted suicide should be a criminal offence,llama,qwen,False,llama,qwen,78,54,0.31675076484680176,,"Winner: Argument 1, Neither (5)
-
-Explanation: Both arguments present valid concerns regarding the potential negative implications of legalizing assisted suicide. Argument 1 focuses on preventing exploitation of vulnerable individuals and preserving the value of",NEITHER
-llama,We should end affirmative action,allam,llama,False,allam,llama,80,89,2.4036190509796143,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should end affirmative action,allam,llama,True,llama,allam,89,80,0.2236652374267578,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should end affirmative action,allam,llama,True,llama,allam,89,80,0.3910551071166992,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should end affirmative action,allam,qwen,True,qwen,allam,42,80,2.257416009902954,4,"Winner: Argument 2
-Confidence: 4",allam
-qwen,We should end affirmative action,allam,qwen,False,allam,qwen,80,42,0.7091422080993652,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should end affirmative action,allam,qwen,False,allam,qwen,80,42,0.3031339645385742,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should end affirmative action,llama,qwen,False,llama,qwen,89,42,2.2417490482330322,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,We should end affirmative action,llama,qwen,True,qwen,llama,42,89,0.11780214309692383,3,"Winner: Argument 1
-Confidence: 3",qwen
-allam,We should end affirmative action,llama,qwen,False,llama,qwen,89,42,0.2794318199157715,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should ban cosmetic surgery,allam,llama,False,allam,llama,64,75,2.3791589736938477,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should ban cosmetic surgery,allam,llama,False,allam,llama,64,75,0.2226848602294922,3,"Winner: Argument 1
-Confidence: 3",allam
-allam,We should ban cosmetic surgery,allam,llama,True,llama,allam,75,64,0.5965580940246582,5,"Winner: Argument 2
-Confidence: 5",allam
-llama,We should ban cosmetic surgery,allam,qwen,False,allam,qwen,64,49,2.2701029777526855,4,"Winner: Argument 2
-Confidence: 4",qwen
-qwen,We should ban cosmetic surgery,allam,qwen,False,allam,qwen,64,49,0.1796410083770752,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should ban cosmetic surgery,allam,qwen,False,allam,qwen,64,49,0.4665520191192627,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should ban cosmetic surgery,llama,qwen,False,llama,qwen,75,49,2.257061243057251,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should ban cosmetic surgery,llama,qwen,True,qwen,llama,49,75,0.17800021171569824,3,"Winner: Argument 1
-Confidence: 3",qwen
-allam,We should ban cosmetic surgery,llama,qwen,False,llama,qwen,75,49,0.34012603759765625,4,"Winner: Argument 2 
-Confidence: 4",qwen
-llama,We should close Guantanamo Bay detention camp,allam,llama,True,llama,allam,82,70,2.4564690589904785,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should close Guantanamo Bay detention camp,allam,llama,True,llama,allam,82,70,0.17319488525390625,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should close Guantanamo Bay detention camp,allam,llama,False,allam,llama,70,82,0.5854318141937256,5,"Winner: Argument 2 (5)
-Confidence: 5",llama
-llama,We should close Guantanamo Bay detention camp,allam,qwen,True,qwen,allam,61,70,2.2084758281707764,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should close Guantanamo Bay detention camp,allam,qwen,False,allam,qwen,70,61,0.13690495491027832,3,"Winner: Argument 2
-Confidence: 3",qwen
-allam,We should close Guantanamo Bay detention camp,allam,qwen,True,qwen,allam,61,70,0.4709198474884033,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,We should close Guantanamo Bay detention camp,llama,qwen,True,qwen,llama,61,82,2.2305290699005127,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should close Guantanamo Bay detention camp,llama,qwen,False,llama,qwen,82,61,0.1736619472503662,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should close Guantanamo Bay detention camp,llama,qwen,True,qwen,llama,61,82,0.5125880241394043,5,"Winner: Argument 1 (5)
-Confidence: 5",qwen
-llama,The use of public defenders should be mandatory,allam,llama,True,llama,allam,75,70,2.2174079418182373,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,The use of public defenders should be mandatory,allam,llama,True,llama,allam,75,70,0.1337590217590332,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,The use of public defenders should be mandatory,allam,llama,False,allam,llama,70,75,0.2792818546295166,5,"Winner: Argument 2
-Confidence: 5",llama
-llama,The use of public defenders should be mandatory,allam,qwen,True,qwen,allam,44,70,2.4867351055145264,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,The use of public defenders should be mandatory,allam,qwen,True,qwen,allam,44,70,0.21169114112854004,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,The use of public defenders should be mandatory,allam,qwen,False,allam,qwen,70,44,0.29927492141723633,5,"Winner: Argument 1 (5)
-Confidence: 5",allam
-llama,The use of public defenders should be mandatory,llama,qwen,True,qwen,llama,44,75,2.3681511878967285,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,The use of public defenders should be mandatory,llama,qwen,False,llama,qwen,75,44,0.15582013130187988,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,The use of public defenders should be mandatory,llama,qwen,True,qwen,llama,44,75,0.27281999588012695,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,We should subsidize journalism,allam,llama,False,allam,llama,56,79,2.214860200881958,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should subsidize journalism,allam,llama,True,llama,allam,79,56,0.17354393005371094,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should subsidize journalism,allam,llama,True,llama,allam,79,56,0.5476348400115967,5,"Winner: Argument 1
-Confidence: 5",llama
-llama,We should subsidize journalism,allam,qwen,False,allam,qwen,56,45,2.382615089416504,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should subsidize journalism,allam,qwen,False,allam,qwen,56,45,0.18137502670288086,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should subsidize journalism,allam,qwen,False,allam,qwen,56,45,0.2831900119781494,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should subsidize journalism,llama,qwen,False,llama,qwen,79,45,2.2146711349487305,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,We should subsidize journalism,llama,qwen,True,qwen,llama,45,79,0.12639904022216797,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should subsidize journalism,llama,qwen,False,llama,qwen,79,45,0.5455198287963867,4,"Winner: Argument 1 
-Confidence: 4",llama
-llama,We should abandon marriage,allam,llama,True,llama,allam,74,79,2.2592976093292236,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,We should abandon marriage,allam,llama,True,llama,allam,74,79,0.18056225776672363,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,We should abandon marriage,allam,llama,True,llama,allam,74,79,0.36456298828125,4,"Winner: Argument 2
-Confidence: 4",allam
-llama,We should abandon marriage,allam,qwen,True,qwen,allam,56,79,2.2031829357147217,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should abandon marriage,allam,qwen,False,allam,qwen,79,56,0.4178030490875244,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should abandon marriage,allam,qwen,True,qwen,allam,56,79,0.30657505989074707,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,We should abandon marriage,llama,qwen,True,qwen,llama,56,74,2.2987072467803955,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should abandon marriage,llama,qwen,True,qwen,llama,56,74,0.2438051700592041,3,"Winner: Argument 1
-Confidence: 3",qwen
-allam,We should abandon marriage,llama,qwen,True,qwen,llama,56,74,0.5292651653289795,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,The USA is a good country to live in,allam,llama,True,llama,allam,79,39,2.250812292098999,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,The USA is a good country to live in,allam,llama,True,llama,allam,79,39,0.4602367877960205,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,The USA is a good country to live in,allam,llama,False,allam,llama,39,79,0.5665879249572754,5,"Winner: Argument 2 
-Confidence: 5",llama
-llama,The USA is a good country to live in,allam,qwen,True,qwen,allam,44,39,2.4072470664978027,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,The USA is a good country to live in,allam,qwen,True,qwen,allam,44,39,0.16515302658081055,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,The USA is a good country to live in,allam,qwen,False,allam,qwen,39,44,0.4968109130859375,,"Winner: Argument 1 (with a confidence of 4)
-
-Explanation: Although both arguments present strong points in favor of living in the USA, Argument 1 focuses specifically on economically and socially important aspects like prosperity",allam
-llama,The USA is a good country to live in,llama,qwen,False,llama,qwen,79,44,2.3111231327056885,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,The USA is a good country to live in,llama,qwen,True,qwen,llama,44,79,0.13603591918945312,3,"Winner: Argument 1
-Confidence: 3",qwen
-allam,The USA is a good country to live in,llama,qwen,False,llama,qwen,79,44,0.5241930484771729,5,"Winner: Argument 2 (5)
-Confidence: 5",qwen
-llama,We should end the use of economic sanctions,allam,llama,False,allam,llama,65,72,2.2149839401245117,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should end the use of economic sanctions,allam,llama,False,allam,llama,65,72,0.1798551082611084,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should end the use of economic sanctions,allam,llama,True,llama,allam,72,65,0.6203799247741699,,"Winner: Argument 1, with a confidence rating of 4.
-
-Explanation: Both Argument 1 and Argument 2 make compelling cases for reconsidering the use of economic sanctions, aligning more closely with my",llama
-llama,We should end the use of economic sanctions,allam,qwen,False,allam,qwen,65,42,2.2534759044647217,5,"Winner: Argument 2
-Confidence: 5",qwen
-qwen,We should end the use of economic sanctions,allam,qwen,False,allam,qwen,65,42,0.1495523452758789,4,"Winner: Argument 1
-Confidence: 4",allam
-allam,We should end the use of economic sanctions,allam,qwen,True,qwen,allam,42,65,0.277285099029541,5,"Winner: Argument 2
-Confidence: 5",allam
-llama,We should end the use of economic sanctions,llama,qwen,False,llama,qwen,72,42,2.218348741531372,5,"Winner: Argument 2
-Confidence: 5",qwen
-qwen,We should end the use of economic sanctions,llama,qwen,True,qwen,llama,42,72,0.17748117446899414,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should end the use of economic sanctions,llama,qwen,False,llama,qwen,72,42,0.29590296745300293,,Winner: Argument 1 (5/5),llama
-llama,We should adopt libertarianism,allam,llama,False,allam,llama,60,69,2.280755043029785,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should adopt libertarianism,allam,llama,False,allam,llama,60,69,0.20590710639953613,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should adopt libertarianism,allam,llama,False,allam,llama,60,69,0.5893008708953857,5,"Winner: Argument 2
-Confidence: 5",llama
-llama,We should adopt libertarianism,allam,qwen,True,qwen,allam,42,60,2.214150905609131,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should adopt libertarianism,allam,qwen,False,allam,qwen,60,42,0.12684988975524902,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should adopt libertarianism,allam,qwen,False,allam,qwen,60,42,0.278533935546875,,Winner: Argument 1 (5),allam
-llama,We should adopt libertarianism,llama,qwen,True,qwen,llama,42,69,2.3936638832092285,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,We should adopt libertarianism,llama,qwen,False,llama,qwen,69,42,0.15512299537658691,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should adopt libertarianism,llama,qwen,False,llama,qwen,69,42,0.36323976516723633,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should abolish capital punishment,allam,llama,True,llama,allam,86,61,2.3974690437316895,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should abolish capital punishment,allam,llama,True,llama,allam,86,61,0.25726795196533203,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should abolish capital punishment,allam,llama,False,allam,llama,61,86,0.2793147563934326,4,"Winner: Argument 2 
-Confidence: 4",llama
-llama,We should abolish capital punishment,allam,qwen,False,allam,qwen,61,49,2.226300001144409,4,"Winner: Argument 2
-Confidence: 4",qwen
-qwen,We should abolish capital punishment,allam,qwen,False,allam,qwen,61,49,0.15477919578552246,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should abolish capital punishment,allam,qwen,True,qwen,allam,49,61,0.41241002082824707,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,We should abolish capital punishment,llama,qwen,False,llama,qwen,86,49,2.2940380573272705,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should abolish capital punishment,llama,qwen,False,llama,qwen,86,49,0.1692650318145752,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should abolish capital punishment,llama,qwen,True,qwen,llama,49,86,0.5045239925384521,4,"Winner: Argument 2 (Convincing towards abolishing capital punishment due to unjust application and incompatibility with values of compassion, rehabilitation, and restorative justice)
-Confidence: 4",llama
-llama,We should prohibit women in combat,allam,llama,False,allam,llama,82,93,2.211822032928467,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should prohibit women in combat,allam,llama,False,allam,llama,82,93,0.26015496253967285,4,"Winner: Argument 1
-Confidence: 4",allam
-allam,We should prohibit women in combat,allam,llama,False,allam,llama,82,93,0.6005918979644775,5,"Winner: Argument 1
-Confidence: 5",allam
-llama,We should prohibit women in combat,allam,qwen,False,allam,qwen,82,56,2.2038471698760986,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should prohibit women in combat,allam,qwen,True,qwen,allam,56,82,0.5582928657531738,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should prohibit women in combat,allam,qwen,True,qwen,allam,56,82,0.5157439708709717,4,"Winner: Argument 2 
-Confidence: 4",allam
-llama,We should prohibit women in combat,llama,qwen,True,qwen,llama,56,93,2.2109150886535645,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should prohibit women in combat,llama,qwen,True,qwen,llama,56,93,0.20354390144348145,5,"Winner: Argument 1
-Confidence: 5",qwen
-allam,We should prohibit women in combat,llama,qwen,False,llama,qwen,93,56,0.5534121990203857,4,"Winner: Argument 2
-Confidence: 4",qwen
-llama,We should prohibit flag burning,allam,llama,False,allam,llama,55,73,2.281355142593384,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should prohibit flag burning,allam,llama,True,llama,allam,73,55,0.16934490203857422,3,"Winner: Argument 1
-Confidence: 3",llama
-allam,We should prohibit flag burning,allam,llama,False,allam,llama,55,73,0.5163552761077881,,"Winner: Argument 2, 5 (extremely confident)",llama
-llama,We should prohibit flag burning,allam,qwen,False,allam,qwen,55,75,2.246381998062134,5,"Winner: Argument 2
-Confidence: 5",qwen
-qwen,We should prohibit flag burning,allam,qwen,False,allam,qwen,55,75,0.41486692428588867,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should prohibit flag burning,allam,qwen,False,allam,qwen,55,75,0.28828907012939453,,"Winner: Argument 2, 4 (I am quite confident in my choice)",qwen
-llama,We should prohibit flag burning,llama,qwen,True,qwen,llama,75,73,2.228963851928711,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should prohibit flag burning,llama,qwen,True,qwen,llama,75,73,0.20708107948303223,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should prohibit flag burning,llama,qwen,False,llama,qwen,73,75,0.2770378589630127,,"Winner: Argument 1, Neither, 3",NEITHER
-llama,We should fight urbanization,allam,llama,False,allam,llama,63,70,2.195704936981201,3,"Winner: Argument 1
-Confidence: 3",allam
-qwen,We should fight urbanization,allam,llama,True,llama,allam,70,63,0.17110395431518555,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should fight urbanization,allam,llama,False,allam,llama,63,70,0.28132009506225586,5,"Winner: Argument 2 (5)
-Confidence: 5",llama
-llama,We should fight urbanization,allam,qwen,False,allam,qwen,63,48,2.317351818084717,5,"Winner: Argument 2
-Confidence: 5",qwen
-qwen,We should fight urbanization,allam,qwen,False,allam,qwen,63,48,0.18285632133483887,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should fight urbanization,allam,qwen,False,allam,qwen,63,48,0.3469529151916504,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should fight urbanization,llama,qwen,False,llama,qwen,70,48,2.2146639823913574,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,We should fight urbanization,llama,qwen,True,qwen,llama,48,70,0.13232898712158203,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should fight urbanization,llama,qwen,True,qwen,llama,48,70,0.2746469974517822,4,"Winner: Argument 1
-Confidence: 4",qwen
-llama,We should end mandatory retirement,allam,llama,True,llama,allam,63,73,2.2364418506622314,4,"Winner: Argument 2
-Confidence: 4",allam
-qwen,We should end mandatory retirement,allam,llama,False,allam,llama,73,63,0.13622617721557617,4,"Winner: Argument 1
-Confidence: 4",allam
-allam,We should end mandatory retirement,allam,llama,True,llama,allam,63,73,0.4735867977142334,5,Winner: Argument 2; Confidence: 5,allam
-llama,We should end mandatory retirement,allam,qwen,False,allam,qwen,73,48,2.4071128368377686,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should end mandatory retirement,allam,qwen,True,qwen,allam,48,73,0.17423319816589355,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should end mandatory retirement,allam,qwen,True,qwen,allam,48,73,0.3252878189086914,4,"Winner: Argument 2 (Neither)
+qwen,We should ban human cloning,allam,qwen,False,allam,qwen,54,54,0.1503448486328125,4.0,"Winner: Neither
 Confidence: 4",NEITHER
-llama,We should end mandatory retirement,llama,qwen,True,qwen,llama,48,63,2.2300631999969482,5,"Winner: Argument 1
+allam,We should ban human cloning,allam,qwen,False,allam,qwen,54,54,0.33382701873779297,5.0,"Winner: Argument 2
 Confidence: 5",qwen
-qwen,We should end mandatory retirement,llama,qwen,False,llama,qwen,63,48,0.15405988693237305,4,"Winner: Argument 2
-Confidence: 4",qwen
-allam,We should end mandatory retirement,llama,qwen,False,llama,qwen,63,48,0.28423380851745605,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should legalize cannabis,allam,llama,True,llama,allam,77,69,2.7745230197906494,4,"Winner: Argument 1
+llama,We should ban human cloning,llama,qwen,False,llama,qwen,72,54,0.15620994567871094,4.0,"Winner: Argument 1
 Confidence: 4",llama
-qwen,We should legalize cannabis,allam,llama,False,allam,llama,69,77,0.18063688278198242,4,"Winner: Argument 2
+qwen,We should ban human cloning,llama,qwen,False,llama,qwen,72,54,0.1600041389465332,4.0,"Winner: Argument 1
 Confidence: 4",llama
-allam,We should legalize cannabis,allam,llama,False,allam,llama,69,77,0.5366997718811035,4,"Winner: Argument 2
-Confidence: 4",llama
-llama,We should legalize cannabis,allam,qwen,False,allam,qwen,69,35,2.2713069915771484,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should legalize cannabis,allam,qwen,False,allam,qwen,69,35,0.16414928436279297,4,"Winner: Neither
-Confidence: 4",NEITHER
-allam,We should legalize cannabis,allam,qwen,False,allam,qwen,69,35,0.3191800117492676,4,"Winner: Argument 2
-Confidence: 4",qwen
-llama,We should legalize cannabis,llama,qwen,True,qwen,llama,35,77,2.243152141571045,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should legalize cannabis,llama,qwen,True,qwen,llama,35,77,0.18397879600524902,4,"Winner: Argument 2
-Confidence: 4",llama
-allam,We should legalize cannabis,llama,qwen,True,qwen,llama,35,77,0.4763178825378418,5,"Winner: Argument 2 
+allam,We should ban human cloning,llama,qwen,False,llama,qwen,72,54,0.5187346935272217,5.0,"Winner: Argument 1 (7)
 Confidence: 5",llama
-llama,We should abolish intellectual property rights,allam,llama,True,llama,allam,69,75,2.3361241817474365,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should abolish intellectual property rights,allam,llama,True,llama,allam,69,75,0.19363689422607422,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should abolish intellectual property rights,allam,llama,False,allam,llama,75,69,0.4749720096588135,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should abolish intellectual property rights,allam,qwen,True,qwen,allam,61,75,2.2559781074523926,3,"Winner: Argument 1
-Confidence: 3",qwen
-qwen,We should abolish intellectual property rights,allam,qwen,False,allam,qwen,75,61,0.3670380115509033,3,"Winner: Argument 2
-Confidence: 3",qwen
-allam,We should abolish intellectual property rights,allam,qwen,False,allam,qwen,75,61,0.46721315383911133,5,"Winner: Argument 1 (5)
-Confidence: 5",allam
-llama,We should abolish intellectual property rights,llama,qwen,False,llama,qwen,69,61,2.2183687686920166,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should abolish intellectual property rights,llama,qwen,False,llama,qwen,69,61,0.13189482688903809,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should abolish intellectual property rights,llama,qwen,True,qwen,llama,61,69,0.5291299819946289,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,Entrapment should be legalized,allam,llama,False,allam,llama,92,68,2.324744939804077,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,Entrapment should be legalized,allam,llama,False,allam,llama,92,68,0.21968579292297363,4,"Winner: Argument 2
-Confidence: 4",llama
-allam,Entrapment should be legalized,allam,llama,True,llama,allam,68,92,0.27409911155700684,,Winner: Argument 2 (5/5),allam
-llama,Entrapment should be legalized,allam,qwen,True,qwen,allam,47,92,2.224544048309326,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,Entrapment should be legalized,allam,qwen,True,qwen,allam,47,92,0.17921090126037598,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,Entrapment should be legalized,allam,qwen,True,qwen,allam,47,92,0.29972076416015625,4,"Winner: Argument 2 (Neither 1 to 5) 
-Confidence: 4",NEITHER
-llama,Entrapment should be legalized,llama,qwen,True,qwen,llama,47,68,2.1979639530181885,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,Entrapment should be legalized,llama,qwen,False,llama,qwen,68,47,0.12790179252624512,2,"Winner: Argument 1
-Confidence: 2",llama
-allam,Entrapment should be legalized,llama,qwen,False,llama,qwen,68,47,0.5523886680603027,4,"Winner: Argument 1, Confidence: 4",llama
-llama,Homeschooling should be banned,allam,llama,True,llama,allam,61,51,2.2537710666656494,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,Homeschooling should be banned,allam,llama,False,allam,llama,51,61,0.6131119728088379,4,"Winner: Argument 2
-Confidence: 4",llama
-allam,Homeschooling should be banned,allam,llama,True,llama,allam,61,51,0.5120398998260498,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,Homeschooling should be banned,allam,qwen,False,allam,qwen,51,58,2.219270944595337,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,Homeschooling should be banned,allam,qwen,True,qwen,allam,58,51,0.32978200912475586,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,Homeschooling should be banned,allam,qwen,False,allam,qwen,51,58,0.3141038417816162,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,Homeschooling should be banned,llama,qwen,False,llama,qwen,61,58,2.3180649280548096,3,"Winner: Argument 2
-Confidence: 3",qwen
-qwen,Homeschooling should be banned,llama,qwen,True,qwen,llama,58,61,0.5501489639282227,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,Homeschooling should be banned,llama,qwen,True,qwen,llama,58,61,0.3057701587677002,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,We should adopt an austerity regime,allam,llama,False,allam,llama,66,74,2.2737231254577637,4,"Winner: Argument 1
-Confidence: 4",allam
-qwen,We should adopt an austerity regime,allam,llama,True,llama,allam,74,66,0.20740199089050293,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should adopt an austerity regime,allam,llama,True,llama,allam,74,66,0.31992483139038086,4,"Winner: Argument 1
-Confidence: 4",llama
-llama,We should adopt an austerity regime,allam,qwen,True,qwen,allam,35,66,2.2929511070251465,5,"Winner: Neither
-Confidence: 5",NEITHER
-qwen,We should adopt an austerity regime,allam,qwen,False,allam,qwen,66,35,0.18354010581970215,4,"Winner: Argument 1
-Confidence: 4",allam
-allam,We should adopt an austerity regime,allam,qwen,False,allam,qwen,66,35,0.3546268939971924,5,"Winner: Argument 2
-Confidence: 5",qwen
-llama,We should adopt an austerity regime,llama,qwen,False,llama,qwen,74,35,2.22810697555542,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,We should adopt an austerity regime,llama,qwen,True,qwen,llama,35,74,0.1809682846069336,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,We should adopt an austerity regime,llama,qwen,True,qwen,llama,35,74,0.3540840148925781,5,"Winner: Argument 1
-Confidence: 5",qwen
-llama,We should ban private military companies,allam,llama,True,llama,allam,92,54,2.558379888534546,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should ban private military companies,allam,llama,False,allam,llama,54,92,0.23377394676208496,4,"Winner: Argument 2
-Confidence: 4",llama
-allam,We should ban private military companies,allam,llama,True,llama,allam,92,54,0.5847451686859131,5,"Winner: Argument 1
-Confidence: 5",llama
-llama,We should ban private military companies,allam,qwen,False,allam,qwen,54,43,2.2107558250427246,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should ban private military companies,allam,qwen,True,qwen,allam,43,54,0.17224502563476562,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,We should ban private military companies,allam,qwen,True,qwen,allam,43,54,0.2826497554779053,5,"Winner: Argument 1 (5)
-Confidence: 5",qwen
-llama,We should ban private military companies,llama,qwen,True,qwen,llama,43,92,2.2128660678863525,4,"Winner: Argument 2
-Confidence: 4",llama
-qwen,We should ban private military companies,llama,qwen,False,llama,qwen,92,43,0.17567896842956543,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should ban private military companies,llama,qwen,False,llama,qwen,92,43,0.47054004669189453,5,"Winner: Argument 1
-Confidence: 5",llama
-llama,We should end racial profiling,allam,llama,True,llama,allam,67,68,2.2724461555480957,4,"Winner: Argument 1
-Confidence: 4",llama
-qwen,We should end racial profiling,allam,llama,False,allam,llama,68,67,0.1770319938659668,4,"Winner: Argument 2
-Confidence: 4",llama
-allam,We should end racial profiling,allam,llama,False,allam,llama,68,67,0.4197239875793457,5,"Winner: Argument 2 
-Confidence: 5",llama
-llama,We should end racial profiling,allam,qwen,False,allam,qwen,68,47,2.662105083465576,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should end racial profiling,allam,qwen,True,qwen,allam,47,68,0.1777489185333252,5,"Winner: Argument 1
-Confidence: 5",qwen
-allam,We should end racial profiling,allam,qwen,False,allam,qwen,68,47,0.5155510902404785,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,We should end racial profiling,llama,qwen,True,qwen,llama,47,67,2.190300941467285,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should end racial profiling,llama,qwen,False,llama,qwen,67,47,0.2446887493133545,4,"Winner: Argument 1
-Confidence: 4",llama
-allam,We should end racial profiling,llama,qwen,False,llama,qwen,67,47,0.45207715034484863,5,"Winner: Argument 1
-Confidence: 5",llama
-llama,Foster care brings more harm than good,allam,llama,True,llama,allam,75,85,2.2219159603118896,5,"Winner: Argument 1
-Confidence: 5",llama
-qwen,Foster care brings more harm than good,allam,llama,True,llama,allam,75,85,0.2148890495300293,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,Foster care brings more harm than good,allam,llama,True,llama,allam,75,85,0.4928109645843506,,Winner: Argument 1 (5/5),llama
-llama,Foster care brings more harm than good,allam,qwen,True,qwen,allam,54,85,2.3078720569610596,4,"Winner: Argument 1
-Confidence: 4",qwen
-qwen,Foster care brings more harm than good,allam,qwen,True,qwen,allam,54,85,0.13695216178894043,4,"Winner: Argument 1
-Confidence: 4",qwen
-allam,Foster care brings more harm than good,allam,qwen,False,allam,qwen,85,54,0.5642399787902832,4,"Winner: Argument 1
-Confidence: 4",allam
-llama,Foster care brings more harm than good,llama,qwen,False,llama,qwen,75,54,2.223288059234619,3,"Winner: Argument 2
-Confidence: 3",qwen
-qwen,Foster care brings more harm than good,llama,qwen,True,qwen,llama,54,75,0.5434250831604004,5,"Winner: Neither
-Confidence: 5",NEITHER
-allam,Foster care brings more harm than good,llama,qwen,False,llama,qwen,75,54,0.6999220848083496,,"Winner: Argument 1, 4 (very confident)
+llama,We should abolish the right to keep and bear arms,allam,llama,True,llama,allam,80,85,0.26273012161254883,4.0,"Winner: Argument 1
+Confidence: 4
 
-Reasoning: Argument 1 focuses on the long-term impacts of foster care on children, highlighting issues like attachment disorders, anxiety, and behavioral problems,",llama
-llama,We should fight for the abolition of nuclear weapons,allam,llama,False,allam,llama,63,78,2.218502998352051,5,"Winner: Argument 1
-Confidence: 5",allam
-qwen,We should fight for the abolition of nuclear weapons,allam,llama,True,llama,allam,78,63,0.170119047164917,4,"Winner: Argument 1
+Note: This is a subjective evaluation of the arguments.",llama
+qwen,We should abolish the right to keep and bear arms,allam,llama,True,llama,allam,80,85,0.1422889232635498,4.0,"Winner: Argument 1
 Confidence: 4",llama
-allam,We should fight for the abolition of nuclear weapons,allam,llama,True,llama,allam,78,63,0.27822303771972656,7,"Winner: Argument 1 (7)
-Confidence: 7",llama
-llama,We should fight for the abolition of nuclear weapons,allam,qwen,True,qwen,allam,48,63,2.308007001876831,5,"Winner: Argument 1
+allam,We should abolish the right to keep and bear arms,allam,llama,True,llama,allam,80,85,0.5413188934326172,5.0,"Winner: Argument 2 (5)
+Confidence: 5",allam
+llama,We should abolish the right to keep and bear arms,allam,qwen,False,allam,qwen,85,48,0.13538885116577148,5.0,"Winner: Argument 1
+Confidence: 5",allam
+qwen,We should abolish the right to keep and bear arms,allam,qwen,False,allam,qwen,85,48,0.20163583755493164,3.0,"Winner: Argument 1
+Confidence: 3",allam
+allam,We should abolish the right to keep and bear arms,allam,qwen,False,allam,qwen,85,48,0.27819323539733887,5.0,"Winner: Argument 2
 Confidence: 5",qwen
-qwen,We should fight for the abolition of nuclear weapons,allam,qwen,True,qwen,allam,48,63,0.26480579376220703,4,"Winner: Argument 1
+llama,We should abolish the right to keep and bear arms,llama,qwen,False,llama,qwen,80,48,0.11813187599182129,5.0,"Winner: Argument 1
+Confidence: 5",llama
+qwen,We should abolish the right to keep and bear arms,llama,qwen,False,llama,qwen,80,48,0.4316990375518799,3.0,"Winner: Argument 1
+Confidence: 3",llama
+allam,We should abolish the right to keep and bear arms,llama,qwen,False,llama,qwen,80,48,0.5194497108459473,5.0,"Winner: Argument 2 (7) 
+Confidence: 5",qwen
+llama,We should subsidize student loans,allam,llama,True,llama,allam,85,83,0.14480805397033691,5.0,"Winner: Argument 1
+Confidence: 5",llama
+qwen,We should subsidize student loans,allam,llama,True,llama,allam,85,83,0.21578216552734375,3.0,"Winner: Argument 1
+Confidence: 3",llama
+allam,We should subsidize student loans,allam,llama,True,llama,allam,85,83,0.27600908279418945,5.0,"Winner: Argument 2
+Confidence: 5",allam
+llama,We should subsidize student loans,allam,qwen,True,qwen,allam,59,83,0.16621685028076172,4.0,"Winner: Argument 1
 Confidence: 4",qwen
-allam,We should fight for the abolition of nuclear weapons,allam,qwen,True,qwen,allam,48,63,0.607548713684082,,"Winner: Argument 1, 5 (Extremely confident)",qwen
-llama,We should fight for the abolition of nuclear weapons,llama,qwen,True,qwen,llama,48,78,2.26080584526062,5,"Winner: Argument 1
-Confidence: 5",qwen
-qwen,We should fight for the abolition of nuclear weapons,llama,qwen,True,qwen,llama,48,78,0.1705799102783203,4,"Winner: Argument 1
+qwen,We should subsidize student loans,allam,qwen,True,qwen,allam,59,83,0.15503311157226562,4.0,"Winner: Argument 1
 Confidence: 4",qwen
-allam,We should fight for the abolition of nuclear weapons,llama,qwen,False,llama,qwen,78,48,0.2840108871459961,5,"Winner: Argument 2
+allam,We should subsidize student loans,allam,qwen,True,qwen,allam,59,83,0.270291805267334,5.0,"Winner: Argument 1 (5)
 Confidence: 5",qwen
+llama,We should subsidize student loans,llama,qwen,False,llama,qwen,85,59,0.1572427749633789,4.0,"Winner: Argument 1
+Confidence: 4",llama
+qwen,We should subsidize student loans,llama,qwen,False,llama,qwen,85,59,0.17868685722351074,5.0,"Winner: Neither
+Confidence: 5",NEITHER
+allam,We should subsidize student loans,llama,qwen,False,llama,qwen,85,59,0.2810838222503662,4.0,"Winner: Argument 1
+Confidence: 4",llama
+llama,We should legalize prostitution,allam,llama,True,llama,allam,76,46,0.1533350944519043,5.0,"Winner: Argument 1
+Confidence: 5",llama
+qwen,We should legalize prostitution,allam,llama,True,llama,allam,76,46,0.21845126152038574,4.0,"Winner: Argument 1
+Confidence: 4",llama
+allam,We should legalize prostitution,allam,llama,True,llama,allam,76,46,0.6975102424621582,5.0,"Winner: Argument 2
+Confidence: 5",allam
+llama,We should legalize prostitution,allam,qwen,True,qwen,allam,47,46,0.164078950881958,5.0,"Winner: Argument 1
+Confidence: 5",qwen
+qwen,We should legalize prostitution,allam,qwen,True,qwen,allam,47,46,0.4010469913482666,5.0,"Winner: Argument 1
+Confidence: 5",qwen
+allam,We should legalize prostitution,allam,qwen,True,qwen,allam,47,46,0.2808382511138916,4.0,"Winner: Argument 2 
+Confidence: 4",allam
+llama,We should legalize prostitution,llama,qwen,False,llama,qwen,76,47,0.22540020942687988,5.0,"Winner: Argument 1
+Confidence: 5",llama
+qwen,We should legalize prostitution,llama,qwen,False,llama,qwen,76,47,0.186384916305542,4.0,"Winner: Argument 1
+Confidence: 4",llama
+allam,We should legalize prostitution,llama,qwen,False,llama,qwen,76,47,0.46625518798828125,4.0,"Winner: Argument 1
+Confidence: 4",llama
+llama,Social media platforms should be regulated by the government,allam,llama,True,llama,allam,81,67,0.1665349006652832,5.0,"Winner: Argument 1
+Confidence: 5",llama
+qwen,Social media platforms should be regulated by the government,allam,llama,True,llama,allam,81,67,0.2039039134979248,3.0,"Winner: Argument 1
+Confidence: 3",llama
+allam,Social media platforms should be regulated by the government,allam,llama,True,llama,allam,81,67,0.37020111083984375,5.0,"Winner: Argument 2 
+Confidence: 5",allam
+llama,Social media platforms should be regulated by the government,allam,qwen,True,qwen,allam,48,67,0.1301271915435791,4.0,"Winner: Argument 1
+Confidence: 4",qwen
+qwen,Social media platforms should be regulated by the government,allam,qwen,True,qwen,allam,48,67,0.19096112251281738,3.0,"Winner: Argument 1
+Confidence: 3",qwen
+allam,Social media platforms should be regulated by the government,allam,qwen,True,qwen,allam,48,67,0.6246793270111084,4.0,"Winner: Argument 1
+Confidence: 4",qwen
+llama,Social media platforms should be regulated by the government,llama,qwen,False,llama,qwen,81,48,0.15137815475463867,4.0,"Winner: Argument 1
+Confidence: 4",llama
+qwen,Social media platforms should be regulated by the government,llama,qwen,False,llama,qwen,81,48,0.19812297821044922,3.0,"Winner: Argument 1
+Confidence: 3",llama
+allam,Social media platforms should be regulated by the government,llama,qwen,False,llama,qwen,81,48,0.27037620544433594,4.0,"Winner: Argument 1
+Confidence: 4",llama
