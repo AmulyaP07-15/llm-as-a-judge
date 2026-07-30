@@ -7,7 +7,7 @@ OUTPUT_FILE = "argument_outputs.csv"
 
 MODELS = list(MODEL_IDS.keys())  
 
-TEST_LIMIT = 5
+TEST_LIMIT = None
 
 
 def load_topics(topics_file, limit=None):
