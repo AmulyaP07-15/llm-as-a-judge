@@ -1,21 +1,21 @@
 import csv
 import random
 import re
-import time
 import itertools
 from collections import defaultdict
 
-import ollama
 import pandas as pd
+
+from groq_utils import call_groq, MODEL_IDS
 
 ARGUMENTS_FILE = "argument_outputs.csv"   
 OUTPUT_FILE = "judge_verdicts.csv"
 
-JUDGE_MODELS = ["llama3.1", "gemma"]
+JUDGE_MODELS = list(MODEL_IDS.keys())  
 
 RANDOM_SEED = 42
 
-TEST_LIMIT = None
+TEST_LIMIT = 5
 
 
 def load_arguments(arguments_file):
@@ -72,13 +72,8 @@ def parse_verdict(raw_text):
 def get_verdict(judge_model, topic, first_argument, second_argument):
     """Ask judge_model to pick between the two arguments as presented (in order)."""
     prompt = build_judge_prompt(topic, first_argument, second_argument)
-    start = time.time()
-    response = ollama.chat(
-        model=judge_model,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    elapsed = time.time() - start
-    return response["message"]["content"].strip(), elapsed
+    messages = [{"role": "user", "content": prompt}]
+    return call_groq(judge_model, messages, max_tokens=50) 
 
 
 def main():
