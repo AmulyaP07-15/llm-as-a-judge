@@ -1,0 +1,947 @@
+question,correct_answer,model_a,answer_a,len_a,model_b,answer_b,len_b,swapped
+Whose character ran a bookshop in the film 'Notting Hill'?,Hugh Grant,mistral,William Thacker,2,llama3.1,Hugh Grant's.,2,True
+Whose character ran a bookshop in the film 'Notting Hill'?,Hugh Grant,llama3.1,Hugh Grant's.,2,gemma,Anna's,1,False
+Whose character ran a bookshop in the film 'Notting Hill'?,Hugh Grant,mistral,William Thacker,2,gemma,Anna's,1,False
+Which playing card is called the curse of Scotland,Nine of Diamonds,llama3.1,"The ""Fou La Mort"" (Death)",5,mistral,The Ace of Spades,4,False
+Which playing card is called the curse of Scotland,Nine of Diamonds,gemma,The Ace of Spades,4,llama3.1,"The ""Fou La Mort"" (Death)",5,True
+Which playing card is called the curse of Scotland,Nine of Diamonds,gemma,The Ace of Spades,4,mistral,The Ace of Spades,4,True
+"""Which is the Muppet character who appeared in """"The Muppet Show"""" from the third season and in a number of Muppet films, who throws fish which return to him and plays a fish organ (a line of fish that, when squeezed, each gargle a different note)?""",Robin (Muppet),mistral,"Dr. Teeth, the Frog Band Leader",6,llama3.1,"Dr. Bunsen Honeydew's assistant is not correct; it is Beaker's sidekick: ""Beaker""",12,True
+"""Which is the Muppet character who appeared in """"The Muppet Show"""" from the third season and in a number of Muppet films, who throws fish which return to him and plays a fish organ (a line of fish that, when squeezed, each gargle a different note)?""",Robin (Muppet),llama3.1,"Dr. Bunsen Honeydew's assistant is not correct; it is Beaker's sidekick: ""Beaker""",12,gemma,Poisson,1,False
+"""Which is the Muppet character who appeared in """"The Muppet Show"""" from the third season and in a number of Muppet films, who throws fish which return to him and plays a fish organ (a line of fish that, when squeezed, each gargle a different note)?""",Robin (Muppet),mistral,"Dr. Teeth, the Frog Band Leader",6,gemma,Poisson,1,False
+Which town is the capital of Papua New Guinea?,PG-NCD,llama3.1,Port Moresby.,2,mistral,Port Moresby,2,False
+Which town is the capital of Papua New Guinea?,PG-NCD,llama3.1,Port Moresby.,2,gemma,Port Moresby,2,False
+Which town is the capital of Papua New Guinea?,PG-NCD,gemma,Port Moresby,2,mistral,Port Moresby,2,True
+What is a Teeter-Totter more commonly called?,C-saw,llama3.1,See-Saw.,1,mistral,See-saw,1,False
+What is a Teeter-Totter more commonly called?,C-saw,llama3.1,See-Saw.,1,gemma,See-saw,1,False
+What is a Teeter-Totter more commonly called?,C-saw,gemma,See-saw,1,mistral,See-saw,1,True
+‘Mucke’ is the Serbo-Croatian name for which UK tv series?,Sunglasses Ron,mistral,'Fawlty Towers',2,llama3.1,The IT Crowd,3,True
+‘Mucke’ is the Serbo-Croatian name for which UK tv series?,Sunglasses Ron,llama3.1,The IT Crowd,3,gemma,Doctor Who,2,False
+‘Mucke’ is the Serbo-Croatian name for which UK tv series?,Sunglasses Ron,gemma,Doctor Who,2,mistral,'Fawlty Towers',2,True
+What is the name of the village druid in the comic strip ‘Asterix’?,Unhygienix,mistral,Getafix,1,llama3.1,Getafix,1,True
+What is the name of the village druid in the comic strip ‘Asterix’?,Unhygienix,llama3.1,Getafix,1,gemma,Tremenor,1,False
+What is the name of the village druid in the comic strip ‘Asterix’?,Unhygienix,gemma,Tremenor,1,mistral,Getafix,1,True
+What is the Latin motto of the film company Metro-Goldwyn-Mayer has the motto?,Art for art's sake,mistral,Ars Gratia Artis,3,llama3.1,Ars Gratia Artis,3,True
+What is the Latin motto of the film company Metro-Goldwyn-Mayer has the motto?,Art for art's sake,llama3.1,Ars Gratia Artis,3,gemma,"Artifex, Ingenio, Optimismus",3,False
+What is the Latin motto of the film company Metro-Goldwyn-Mayer has the motto?,Art for art's sake,mistral,Ars Gratia Artis,3,gemma,"Artifex, Ingenio, Optimismus",3,False
+"In Roman mythology, what was the name of the brother slain by Romulus?",Remus and Romulus,mistral,Remus,1,llama3.1,Remus.,1,True
+"In Roman mythology, what was the name of the brother slain by Romulus?",Remus and Romulus,llama3.1,Remus.,1,gemma,Twin brother Remus,3,False
+"In Roman mythology, what was the name of the brother slain by Romulus?",Remus and Romulus,mistral,Remus,1,gemma,Twin brother Remus,3,False
+The Dude would know that stroking and cranking are the two main types of delivery in what sport?,Bowling pathway,llama3.1,Baseball,1,mistral,Bowling,1,False
+The Dude would know that stroking and cranking are the two main types of delivery in what sport?,Bowling pathway,gemma,Bowling,1,llama3.1,Baseball,1,True
+The Dude would know that stroking and cranking are the two main types of delivery in what sport?,Bowling pathway,gemma,Bowling,1,mistral,Bowling,1,True
+Where certain religions divide the notion of heaven into parts there are generally?,Seven,mistral,Three levels or realms.,4,llama3.1,Heavenly realms or levels.,4,True
+Where certain religions divide the notion of heaven into parts there are generally?,Seven,gemma,Levels,1,llama3.1,Heavenly realms or levels.,4,True
+Where certain religions divide the notion of heaven into parts there are generally?,Seven,gemma,Levels,1,mistral,Three levels or realms.,4,True
+The Frenchman Jean Robert-Houdin (1805-1871) is credited with formalizing what form of entertainment?,Magikal,mistral,Magic theater (Mission impossible to keep it in one word!),10,llama3.1,Magic.,1,True
+The Frenchman Jean Robert-Houdin (1805-1871) is credited with formalizing what form of entertainment?,Magikal,llama3.1,Magic.,1,gemma,Magicianship,1,False
+The Frenchman Jean Robert-Houdin (1805-1871) is credited with formalizing what form of entertainment?,Magikal,gemma,Magicianship,1,mistral,Magic theater (Mission impossible to keep it in one word!),10,True
+Which singer had a big 60s No 1 with Roses Are Red?,Bobby Vinton,mistral,Ozzie Nelson,2,llama3.1,Bobby Vinton,2,True
+Which singer had a big 60s No 1 with Roses Are Red?,Bobby Vinton,gemma,Nancy Sinatra,2,llama3.1,Bobby Vinton,2,True
+Which singer had a big 60s No 1 with Roses Are Red?,Bobby Vinton,gemma,Nancy Sinatra,2,mistral,Ozzie Nelson,2,True
+Which country is currently ruled by the Chakri dynasty that has been in power since 1782?,Muang Thai,mistral,Thailand,1,llama3.1,Thailand.,1,True
+Which country is currently ruled by the Chakri dynasty that has been in power since 1782?,Muang Thai,gemma,Thailand,1,llama3.1,Thailand.,1,True
+Which country is currently ruled by the Chakri dynasty that has been in power since 1782?,Muang Thai,mistral,Thailand,1,gemma,Thailand,1,False
+What is a female skunk called?,Sows,llama3.1,A doe.,2,mistral,A female skunk is called a sow.,7,False
+What is a female skunk called?,Sows,llama3.1,A doe.,2,gemma,Doe,1,False
+What is a female skunk called?,Sows,mistral,A female skunk is called a sow.,7,gemma,Doe,1,False
+"What cocktail typically consists of 3 parts vodka, 1 part apple schnapps, and 1 part cointreau?",Appletini,llama3.1,Harvey Wallbanger.,2,mistral,Cosmopolitan cocktail,2,False
+"What cocktail typically consists of 3 parts vodka, 1 part apple schnapps, and 1 part cointreau?",Appletini,llama3.1,Harvey Wallbanger.,2,gemma,Moscow Mule,2,False
+"What cocktail typically consists of 3 parts vodka, 1 part apple schnapps, and 1 part cointreau?",Appletini,mistral,Cosmopolitan cocktail,2,gemma,Moscow Mule,2,False
+Catoptromancy is the term for predicting the future using what object? Who's the fairest of them all!,Handmirror,mistral,Mirrors (Snow White's reflection),4,llama3.1,"Catoptromancy is a form of divination that uses mirrors.
+
+Snow White.",11,True
+Catoptromancy is the term for predicting the future using what object? Who's the fairest of them all!,Handmirror,llama3.1,"Catoptromancy is a form of divination that uses mirrors.
+
+Snow White.",11,gemma,Mirrors,1,False
+Catoptromancy is the term for predicting the future using what object? Who's the fairest of them all!,Handmirror,mistral,Mirrors (Snow White's reflection),4,gemma,Mirrors,1,False
+"""Whose last recorded words in the House of Commons were: """"I wish everyone, friend or foe, well. And that is that. The end """" ?""",Rt Hon Anthony Blair MP,llama3.1,Airey Neave,2,mistral,Winston Churchill,2,False
+"""Whose last recorded words in the House of Commons were: """"I wish everyone, friend or foe, well. And that is that. The end """" ?""",Rt Hon Anthony Blair MP,llama3.1,Airey Neave,2,gemma,Margaret Thatcher.,2,False
+"""Whose last recorded words in the House of Commons were: """"I wish everyone, friend or foe, well. And that is that. The end """" ?""",Rt Hon Anthony Blair MP,gemma,Margaret Thatcher.,2,mistral,Winston Churchill,2,True
+"What can be a legislative body, a collective name for type of bird, and a funk band?",Parliamnet,mistral,"Legislature, Sparrow, Parliament (funk band)",5,llama3.1,Parliament.,1,True
+"What can be a legislative body, a collective name for type of bird, and a funk band?",Parliamnet,gemma,Parliament,1,llama3.1,Parliament.,1,True
+"What can be a legislative body, a collective name for type of bird, and a funk band?",Parliamnet,mistral,"Legislature, Sparrow, Parliament (funk band)",5,gemma,Parliament,1,False
+Milford Sound in Fiordland National Park that was once judged the world's top travel destination is in which country,N Z,mistral,New Zealand,2,llama3.1,New Zealand.,2,True
+Milford Sound in Fiordland National Park that was once judged the world's top travel destination is in which country,N Z,llama3.1,New Zealand.,2,gemma,New Zealand,2,False
+Milford Sound in Fiordland National Park that was once judged the world's top travel destination is in which country,N Z,mistral,New Zealand,2,gemma,New Zealand,2,False
+What is the result of raising any number to the power of zero?,1,mistral,1 (or 1.0),3,llama3.1,1.,1,True
+What is the result of raising any number to the power of zero?,1,gemma,One,1,llama3.1,1.,1,True
+What is the result of raising any number to the power of zero?,1,gemma,One,1,mistral,1 (or 1.0),3,True
+Which jazz saxophonist was nicknamed Bird,Charlie Parker,mistral,Charlie Parker,2,llama3.1,Charlie Parker,2,True
+Which jazz saxophonist was nicknamed Bird,Charlie Parker,gemma,Charlie Parker,2,llama3.1,Charlie Parker,2,True
+Which jazz saxophonist was nicknamed Bird,Charlie Parker,gemma,Charlie Parker,2,mistral,Charlie Parker,2,True
+209 year ago today was the founding of the United States Military Academy at what New York location?,West point,llama3.1,West Point.,2,mistral,West Point,2,False
+209 year ago today was the founding of the United States Military Academy at what New York location?,West point,llama3.1,West Point.,2,gemma,West Point,2,False
+209 year ago today was the founding of the United States Military Academy at what New York location?,West point,mistral,West Point,2,gemma,West Point,2,False
+The Koppen System is a classification system for what?,Climate,llama3.1,Climate zones.,2,mistral,"Climate
+
+The Koppen System, developed by German climatologist Wladimir Köppen in the late 19th century, is a widely used classification system for global climate zones based on temperature and precipitation patterns. It provides a standardized way to categorize climate types around the world, which can be useful for understanding regional weather patterns, predicting plant life distribution, studying long-term climate trends, and more.",62,False
+The Koppen System is a classification system for what?,Climate,llama3.1,Climate zones.,2,gemma,Climates,1,False
+The Koppen System is a classification system for what?,Climate,gemma,Climates,1,mistral,"Climate
+
+The Koppen System, developed by German climatologist Wladimir Köppen in the late 19th century, is a widely used classification system for global climate zones based on temperature and precipitation patterns. It provides a standardized way to categorize climate types around the world, which can be useful for understanding regional weather patterns, predicting plant life distribution, studying long-term climate trends, and more.",62,True
+In what modern-day country would you find Machu Picchu?,Lower Peru,mistral,Peru,1,llama3.1,Peru.,1,True
+In what modern-day country would you find Machu Picchu?,Lower Peru,llama3.1,Peru.,1,gemma,Peru,1,False
+In what modern-day country would you find Machu Picchu?,Lower Peru,gemma,Peru,1,mistral,Peru,1,True
+"Which band have announced they have recorded the official Wales anthem for the upcoming Euro football championship, entitled Together Stronger (C’mon Wales)?",Manic Street Preachers,llama3.1,Stereophonics.,1,mistral,Manic Street Preachers,3,False
+"Which band have announced they have recorded the official Wales anthem for the upcoming Euro football championship, entitled Together Stronger (C’mon Wales)?",Manic Street Preachers,gemma,The Stereophonics,2,llama3.1,Stereophonics.,1,True
+"Which band have announced they have recorded the official Wales anthem for the upcoming Euro football championship, entitled Together Stronger (C’mon Wales)?",Manic Street Preachers,mistral,Manic Street Preachers,3,gemma,The Stereophonics,2,False
+Which country is separated into two parts by the town of Limbang of Malaysia?,Abode of Peace,llama3.1,Brunei and Sarawak.,3,mistral,Borneo (split between Malaysia and Brunei),6,False
+Which country is separated into two parts by the town of Limbang of Malaysia?,Abode of Peace,llama3.1,Brunei and Sarawak.,3,gemma,Brunei,1,False
+Which country is separated into two parts by the town of Limbang of Malaysia?,Abode of Peace,gemma,Brunei,1,mistral,Borneo (split between Malaysia and Brunei),6,True
+"""Which Shakespeare play features the line: """" The play's the thing / Wherein I'll catch the conscience of the king. """" ?""",The Hamlet,llama3.1,Hamlet,1,mistral,"""Hamlet""",1,False
+"""Which Shakespeare play features the line: """" The play's the thing / Wherein I'll catch the conscience of the king. """" ?""",The Hamlet,gemma,Hamlet,1,llama3.1,Hamlet,1,True
+"""Which Shakespeare play features the line: """" The play's the thing / Wherein I'll catch the conscience of the king. """" ?""",The Hamlet,gemma,Hamlet,1,mistral,"""Hamlet""",1,True
+"Which BBC TV sitcom about a retired security guard was set at 37 Wyngate Drive in the first series then at 19, Riverbank for the final 5 series?",List of One Foot in the Grave characters,llama3.1,Porridge.,1,mistral,"""Only Fools and Horses"" resided at both addresses.",8,False
+"Which BBC TV sitcom about a retired security guard was set at 37 Wyngate Drive in the first series then at 19, Riverbank for the final 5 series?",List of One Foot in the Grave characters,llama3.1,Porridge.,1,gemma,Only Fools and Horses,4,False
+"Which BBC TV sitcom about a retired security guard was set at 37 Wyngate Drive in the first series then at 19, Riverbank for the final 5 series?",List of One Foot in the Grave characters,gemma,Only Fools and Horses,4,mistral,"""Only Fools and Horses"" resided at both addresses.",8,True
+Zebu cattle are famously distinguished by?,Hump,mistral,Humped back profile,3,llama3.1,Their distinctive hump.,3,True
+Zebu cattle are famously distinguished by?,Hump,llama3.1,Their distinctive hump.,3,gemma,Their humps.,2,False
+Zebu cattle are famously distinguished by?,Hump,mistral,Humped back profile,3,gemma,Their humps.,2,False
+Which European country has the world’s oldest national flag?,Eastern Denmark,llama3.1,Denmark.,1,mistral,Denmark (Dannebrog),2,False
+Which European country has the world’s oldest national flag?,Eastern Denmark,gemma,Malta,1,llama3.1,Denmark.,1,True
+Which European country has the world’s oldest national flag?,Eastern Denmark,gemma,Malta,1,mistral,Denmark (Dannebrog),2,True
+"What is the common name for Hydrocephalus, a pathological condition whereby fluid is retained within the skull?",Hydrocephalic,llama3.1,Water on the brain.,4,mistral,Water on the brain,4,False
+"What is the common name for Hydrocephalus, a pathological condition whereby fluid is retained within the skull?",Hydrocephalic,llama3.1,Water on the brain.,4,gemma,Water on the brain,4,False
+"What is the common name for Hydrocephalus, a pathological condition whereby fluid is retained within the skull?",Hydrocephalic,mistral,Water on the brain,4,gemma,Water on the brain,4,False
+What synthetic fiber is used in most bulletproof vests?,Kevlar,mistral,Kevlar or Polyethylene (UHMWPE),4,llama3.1,Kevlar.,1,True
+What synthetic fiber is used in most bulletproof vests?,Kevlar,gemma,Kevlar,1,llama3.1,Kevlar.,1,True
+What synthetic fiber is used in most bulletproof vests?,Kevlar,gemma,Kevlar,1,mistral,Kevlar or Polyethylene (UHMWPE),4,True
+Who had a 60s No 1 hit with This Diamond Ring?,Dave Gonzalez (Gary Lewis & the Playboys),mistral,Gary Lewis,2,llama3.1,Gary Lewis and the Playboys.,5,True
+Who had a 60s No 1 hit with This Diamond Ring?,Dave Gonzalez (Gary Lewis & the Playboys),llama3.1,Gary Lewis and the Playboys.,5,gemma,Engelbert Humperdinck,2,False
+Who had a 60s No 1 hit with This Diamond Ring?,Dave Gonzalez (Gary Lewis & the Playboys),gemma,Engelbert Humperdinck,2,mistral,Gary Lewis,2,True
+"""""""At night they fly, you better run, these winged things are not much fun."""" """"In the jungle you must wait, until the dice read five or eight."""" """"A tiny bite can make you itch, make you sneeze, make you twitch."""" """"This will not be an easy mission, monkeys slow the expedition."""" Clues from what 1995 movie game?""",Jumangi,mistral,Myst Game,2,llama3.1,Myst III: Exile.,3,True
+"""""""At night they fly, you better run, these winged things are not much fun."""" """"In the jungle you must wait, until the dice read five or eight."""" """"A tiny bite can make you itch, make you sneeze, make you twitch."""" """"This will not be an easy mission, monkeys slow the expedition."""" Clues from what 1995 movie game?""",Jumangi,gemma,Golden Monkey,2,llama3.1,Myst III: Exile.,3,True
+"""""""At night they fly, you better run, these winged things are not much fun."""" """"In the jungle you must wait, until the dice read five or eight."""" """"A tiny bite can make you itch, make you sneeze, make you twitch."""" """"This will not be an easy mission, monkeys slow the expedition."""" Clues from what 1995 movie game?""",Jumangi,mistral,Myst Game,2,gemma,Golden Monkey,2,False
+‘Loitering With Intent’ is a 1993 autobiography by which British actor?,Peter o toole,mistral,Steve Coogan,2,llama3.1,Richard E. Grant,3,True
+‘Loitering With Intent’ is a 1993 autobiography by which British actor?,Peter o toole,llama3.1,Richard E. Grant,3,gemma,Michael Caine,2,False
+‘Loitering With Intent’ is a 1993 autobiography by which British actor?,Peter o toole,mistral,Steve Coogan,2,gemma,Michael Caine,2,False
+"In Switzerland, 1978, the corpse of which entertainer was reburied in concrete after it was recovered from extortionists?",Roy Export Company Establishment,llama3.1,"Jumbo the Elephant is incorrect
+James Brown's bodyguard 
+was actually 
+Spalding Gray 
+is incorrect",14,mistral,Marco Pantani (cyclist),3,False
+"In Switzerland, 1978, the corpse of which entertainer was reburied in concrete after it was recovered from extortionists?",Roy Export Company Establishment,gemma,Anna Neapolitano,2,llama3.1,"Jumbo the Elephant is incorrect
+James Brown's bodyguard 
+was actually 
+Spalding Gray 
+is incorrect",14,True
+"In Switzerland, 1978, the corpse of which entertainer was reburied in concrete after it was recovered from extortionists?",Roy Export Company Establishment,gemma,Anna Neapolitano,2,mistral,Marco Pantani (cyclist),3,True
+"Translating from the Greek as ""separating circle"", what is the name of the apparent line that separates the earth from the sky?",Horizon distance,llama3.1,The Horizon.,2,mistral,Horizon,1,False
+"Translating from the Greek as ""separating circle"", what is the name of the apparent line that separates the earth from the sky?",Horizon distance,gemma,Horizon,1,llama3.1,The Horizon.,2,True
+"Translating from the Greek as ""separating circle"", what is the name of the apparent line that separates the earth from the sky?",Horizon distance,mistral,Horizon,1,gemma,Horizon,1,False
+Which member of the cabinet is MP for Maidenhead?,Theresa Mary May,mistral,Theresa May (was),3,llama3.1,"Amber Rudd's successor, was replaced by, is now,  Theresa May.",10,True
+Which member of the cabinet is MP for Maidenhead?,Theresa Mary May,gemma,Sir William Aitkenhead,3,llama3.1,"Amber Rudd's successor, was replaced by, is now,  Theresa May.",10,True
+Which member of the cabinet is MP for Maidenhead?,Theresa Mary May,mistral,Theresa May (was),3,gemma,Sir William Aitkenhead,3,False
+What was the French sounding winner of the 2011 Epsom Derby?,Pour Moi,mistral,Workforce (Frankel),2,llama3.1,Pour Moi,2,True
+What was the French sounding winner of the 2011 Epsom Derby?,Pour Moi,gemma,Ilex,1,llama3.1,Pour Moi,2,True
+What was the French sounding winner of the 2011 Epsom Derby?,Pour Moi,mistral,Workforce (Frankel),2,gemma,Ilex,1,False
+In Architecture what are a series of short upright pillars supporting a coping or rail called?,Baluster,mistral,Balusters make up a balustrade.,5,llama3.1,Copings.,1,True
+In Architecture what are a series of short upright pillars supporting a coping or rail called?,Baluster,gemma,Columns,1,llama3.1,Copings.,1,True
+In Architecture what are a series of short upright pillars supporting a coping or rail called?,Baluster,gemma,Columns,1,mistral,Balusters make up a balustrade.,5,True
+David Balfour and Alan Breck are characters in books by which author?,Robert Lewis Balfour Stevenson,mistral,Robert Louis Stevenson,3,llama3.1,Robert Louis Stevenson.,3,True
+David Balfour and Alan Breck are characters in books by which author?,Robert Lewis Balfour Stevenson,llama3.1,Robert Louis Stevenson.,3,gemma,Sir Walter Scott,3,False
+David Balfour and Alan Breck are characters in books by which author?,Robert Lewis Balfour Stevenson,mistral,Robert Louis Stevenson,3,gemma,Sir Walter Scott,3,False
+In which country will you find the 'Carisbrook Rugby Stadium'?,N Z,llama3.1,New Zealand.,2,mistral,New Zealand,2,False
+In which country will you find the 'Carisbrook Rugby Stadium'?,N Z,gemma,New Zealand,2,llama3.1,New Zealand.,2,True
+In which country will you find the 'Carisbrook Rugby Stadium'?,N Z,gemma,New Zealand,2,mistral,New Zealand,2,True
+Facebook's new music sharing/streaming feature launched in 2015 was called 'Music... ?,Story,mistral,"Facebook's music feature from 2015 was called ""Facebook Music.""",9,llama3.1,On Repeat,2,True
+Facebook's new music sharing/streaming feature launched in 2015 was called 'Music... ?,Story,llama3.1,On Repeat,2,gemma,Pulse,1,False
+Facebook's new music sharing/streaming feature launched in 2015 was called 'Music... ?,Story,mistral,"Facebook's music feature from 2015 was called ""Facebook Music.""",9,gemma,Pulse,1,False
+Which Shakespeare play begins 'Now is the winter of our discontent'?,"Richard III, King of England",mistral,Richard III,2,llama3.1,Richard III.,2,True
+Which Shakespeare play begins 'Now is the winter of our discontent'?,"Richard III, King of England",gemma,King Lear,2,llama3.1,Richard III.,2,True
+Which Shakespeare play begins 'Now is the winter of our discontent'?,"Richard III, King of England",mistral,Richard III,2,gemma,King Lear,2,False
+Which geological perioed falls between the Triassic and the Cretaceous periods?,Dinosaur types of the jurassic,llama3.1,Jurassic.,1,mistral,Jurassic Period,2,False
+Which geological perioed falls between the Triassic and the Cretaceous periods?,Dinosaur types of the jurassic,llama3.1,Jurassic.,1,gemma,Jurassic,1,False
+Which geological perioed falls between the Triassic and the Cretaceous periods?,Dinosaur types of the jurassic,gemma,Jurassic,1,mistral,Jurassic Period,2,True
+Justine Thornton is the fiancee of which politician?,Red Ed,mistral,Keir Starmer,2,llama3.1,Jack Straw.,2,True
+Justine Thornton is the fiancee of which politician?,Red Ed,llama3.1,Jack Straw.,2,gemma,Michael Bloomberg,2,False
+Justine Thornton is the fiancee of which politician?,Red Ed,mistral,Keir Starmer,2,gemma,Michael Bloomberg,2,False
+In which county would you find Chesil Beach?,County of Dorset,mistral,Dorset (England),2,llama3.1,Dorset.,1,True
+In which county would you find Chesil Beach?,County of Dorset,llama3.1,Dorset.,1,gemma,Dorset,1,False
+In which county would you find Chesil Beach?,County of Dorset,gemma,Dorset,1,mistral,Dorset (England),2,True
+"""Who duetted with Bryan Adams on the 1985 hit """"It's Only Love""""?""",Anna Bullock,llama3.1,Tina Turner.,2,mistral,Tarja Turunen (ex-Nightwish),3,False
+"""Who duetted with Bryan Adams on the 1985 hit """"It's Only Love""""?""",Anna Bullock,llama3.1,Tina Turner.,2,gemma,Kim Carnes,2,False
+"""Who duetted with Bryan Adams on the 1985 hit """"It's Only Love""""?""",Anna Bullock,gemma,Kim Carnes,2,mistral,Tarja Turunen (ex-Nightwish),3,True
+Chi is the Chinese year of what?,Cock (disambiguation),mistral,Year of the Rooster (2017),5,llama3.1,The Water cycle.,3,True
+Chi is the Chinese year of what?,Cock (disambiguation),llama3.1,The Water cycle.,3,gemma,Rooster,1,False
+Chi is the Chinese year of what?,Cock (disambiguation),mistral,Year of the Rooster (2017),5,gemma,Rooster,1,False
+Who was the second wife of Henry VIII?,Anne Boylen,mistral,Anne Boleyn,2,llama3.1,Anne of Cleves,3,True
+Who was the second wife of Henry VIII?,Anne Boylen,gemma,Anne Boleyn,2,llama3.1,Anne of Cleves,3,True
+Who was the second wife of Henry VIII?,Anne Boylen,mistral,Anne Boleyn,2,gemma,Anne Boleyn,2,False
+Who wrote The female of the species more deadly than the male?,Joseph Rudyard Kipling,mistral,Rudyard Kipling,2,llama3.1,Rudyard Kipling.,2,True
+Who wrote The female of the species more deadly than the male?,Joseph Rudyard Kipling,llama3.1,Rudyard Kipling.,2,gemma,Agatha Christie,2,False
+Who wrote The female of the species more deadly than the male?,Joseph Rudyard Kipling,mistral,Rudyard Kipling,2,gemma,Agatha Christie,2,False
+In Hanna and Barbera's TV cartoons base on The Addams Family who was the voice of Gomez?,John Astin,llama3.1,John Astin (reprising his role),5,mistral,John Astin,2,False
+In Hanna and Barbera's TV cartoons base on The Addams Family who was the voice of Gomez?,John Astin,gemma,Vincent Price,2,llama3.1,John Astin (reprising his role),5,True
+In Hanna and Barbera's TV cartoons base on The Addams Family who was the voice of Gomez?,John Astin,mistral,John Astin,2,gemma,Vincent Price,2,False
+"Originating in early central American culture, where on the body would a huarache be worn?",Foot fracture,llama3.1,On the foot.,3,mistral,On the foot.,3,False
+"Originating in early central American culture, where on the body would a huarache be worn?",Foot fracture,llama3.1,On the foot.,3,gemma,Huaraches were worn on feet.,5,False
+"Originating in early central American culture, where on the body would a huarache be worn?",Foot fracture,gemma,Huaraches were worn on feet.,5,mistral,On the foot.,3,True
+If the states of the US are listed alphabetically which is the last that does NOT contain the letter O?,Demographics of West Virginia,llama3.1,Wyoming,1,mistral,Wyoming,1,False
+If the states of the US are listed alphabetically which is the last that does NOT contain the letter O?,Demographics of West Virginia,gemma,Vermont,1,llama3.1,Wyoming,1,True
+If the states of the US are listed alphabetically which is the last that does NOT contain the letter O?,Demographics of West Virginia,gemma,Vermont,1,mistral,Wyoming,1,True
+"""In 1936, whose paper """"On Computable Numbers, with an Application to the Entscheidungsproblem"""" proved that a machine could perform any conceivable mathematical computation if it were able to be represented as an algorithm?""",Alan M. Turing,llama3.1,Alan Turing.,2,mistral,Alonzo Church's paper introduced the lambda calculus theory for computability.,10,False
+"""In 1936, whose paper """"On Computable Numbers, with an Application to the Entscheidungsproblem"""" proved that a machine could perform any conceivable mathematical computation if it were able to be represented as an algorithm?""",Alan M. Turing,llama3.1,Alan Turing.,2,gemma,Turing,1,False
+"""In 1936, whose paper """"On Computable Numbers, with an Application to the Entscheidungsproblem"""" proved that a machine could perform any conceivable mathematical computation if it were able to be represented as an algorithm?""",Alan M. Turing,gemma,Turing,1,mistral,Alonzo Church's paper introduced the lambda calculus theory for computability.,10,True
+What is Chandler's surname in Friends,Bing.com,llama3.1,Bingoson,1,mistral,"Bing
+
+[Explanation for future reference: Chandler Muriel Bing is the character's full name in the TV series Friends. However, his last name ""Bing"" is mentioned less frequently compared to his first name ""Chandler.""]",33,False
+What is Chandler's surname in Friends,Bing.com,llama3.1,Bingoson,1,gemma,Bing,1,False
+What is Chandler's surname in Friends,Bing.com,gemma,Bing,1,mistral,"Bing
+
+[Explanation for future reference: Chandler Muriel Bing is the character's full name in the TV series Friends. However, his last name ""Bing"" is mentioned less frequently compared to his first name ""Chandler.""]",33,True
+Which cartoon character is mentioned in the single ‘Life on Mars’ by David Bowie?,Mickey Mouse Operation,mistral,Ziggy Stardust,2,llama3.1,Johnny B. Goode's contemporary,4,True
+Which cartoon character is mentioned in the single ‘Life on Mars’ by David Bowie?,Mickey Mouse Operation,llama3.1,Johnny B. Goode's contemporary,4,gemma,Martian,1,False
+Which cartoon character is mentioned in the single ‘Life on Mars’ by David Bowie?,Mickey Mouse Operation,gemma,Martian,1,mistral,Ziggy Stardust,2,True
+"In which city would you find the International Court of Justice, otherwise known as The World Court?",The hague,mistral,"The Hague, Netherlands",3,llama3.1,The Hague.,2,True
+"In which city would you find the International Court of Justice, otherwise known as The World Court?",The hague,llama3.1,The Hague.,2,gemma,The Hague,2,False
+"In which city would you find the International Court of Justice, otherwise known as The World Court?",The hague,mistral,"The Hague, Netherlands",3,gemma,The Hague,2,False
+Which Scottish author who died in 1930 had Ignatius as one of his christian names?,A Conan Doyle,llama3.1,James Hogg,2,mistral,George Bernard Shaw,3,False
+Which Scottish author who died in 1930 had Ignatius as one of his christian names?,A Conan Doyle,llama3.1,James Hogg,2,gemma,Sir Arthur Conan Doyle,4,False
+Which Scottish author who died in 1930 had Ignatius as one of his christian names?,A Conan Doyle,mistral,George Bernard Shaw,3,gemma,Sir Arthur Conan Doyle,4,False
+"In 2009, who became the first woman to referee the World Snooker Championship final?",Michaela Tabb,mistral,Jenny Takhar,2,llama3.1,Jan Verheijen was not it.,5,True
+"In 2009, who became the first woman to referee the World Snooker Championship final?",Michaela Tabb,gemma,Lisa Illingsworth,2,llama3.1,Jan Verheijen was not it.,5,True
+"In 2009, who became the first woman to referee the World Snooker Championship final?",Michaela Tabb,gemma,Lisa Illingsworth,2,mistral,Jenny Takhar,2,True
+What is the chief river of Burma ?,IRRAWADDY,llama3.1,Irrawaddy River.,2,mistral,Irrawaddy River,2,False
+What is the chief river of Burma ?,IRRAWADDY,llama3.1,Irrawaddy River.,2,gemma,Irrawaddy,1,False
+What is the chief river of Burma ?,IRRAWADDY,mistral,Irrawaddy River,2,gemma,Irrawaddy,1,False
+What is a dish of pickled herring fillets wrapped around an onion or gerkhin called,Rollmop,mistral,Herringe mit Zwiebeln (German) or Gurkelschinken (Gherkin roll),8,llama3.1,Kibbeling,1,True
+What is a dish of pickled herring fillets wrapped around an onion or gerkhin called,Rollmop,llama3.1,Kibbeling,1,gemma,Dill spear,2,False
+What is a dish of pickled herring fillets wrapped around an onion or gerkhin called,Rollmop,mistral,Herringe mit Zwiebeln (German) or Gurkelschinken (Gherkin roll),8,gemma,Dill spear,2,False
+"Known as The Hoosier State, what was the 19th state to join the Union on december 11, 1816?","Indiana, United States",llama3.1,Indiana.,1,mistral,Indiana,1,False
+"Known as The Hoosier State, what was the 19th state to join the Union on december 11, 1816?","Indiana, United States",llama3.1,Indiana.,1,gemma,Indiana,1,False
+"Known as The Hoosier State, what was the 19th state to join the Union on december 11, 1816?","Indiana, United States",mistral,Indiana,1,gemma,Indiana,1,False
+What was President Gerald Ford's middle name?,Rudolph (disambiguation),llama3.1,Ellison.,1,mistral,Gerald Ford's middle name is Alonzo.,6,False
+What was President Gerald Ford's middle name?,Rudolph (disambiguation),gemma,Rudolph,1,llama3.1,Ellison.,1,True
+What was President Gerald Ford's middle name?,Rudolph (disambiguation),mistral,Gerald Ford's middle name is Alonzo.,6,gemma,Rudolph,1,False
+Which illness is commonly treated with the drugs lisinopril and ramipril?,Hypertensive diseases,mistral,Hypertension (High Blood Pressure),4,llama3.1,Hypertension.,1,True
+Which illness is commonly treated with the drugs lisinopril and ramipril?,Hypertensive diseases,gemma,Hypertension,1,llama3.1,Hypertension.,1,True
+Which illness is commonly treated with the drugs lisinopril and ramipril?,Hypertensive diseases,mistral,Hypertension (High Blood Pressure),4,gemma,Hypertension,1,False
+The 'naut' in the words 'astronaut' and 'aeronaut' meant originally what?,Merchant mariner,mistral,Sailor on water or air.,5,llama3.1,"French word ""naute"", meaning sailor.",5,True
+The 'naut' in the words 'astronaut' and 'aeronaut' meant originally what?,Merchant mariner,gemma,Greek for 'sailor',3,llama3.1,"French word ""naute"", meaning sailor.",5,True
+The 'naut' in the words 'astronaut' and 'aeronaut' meant originally what?,Merchant mariner,gemma,Greek for 'sailor',3,mistral,Sailor on water or air.,5,True
+"Written by Earl Derr Biggers in 1925, 'The House Without A Key' was the first novel to feature which Chinese- American detective?",Charlie Chan,mistral,Charlie Chan,2,llama3.1,Charlie Chan.,2,True
+"Written by Earl Derr Biggers in 1925, 'The House Without A Key' was the first novel to feature which Chinese- American detective?",Charlie Chan,gemma,Charlie Chan,2,llama3.1,Charlie Chan.,2,True
+"Written by Earl Derr Biggers in 1925, 'The House Without A Key' was the first novel to feature which Chinese- American detective?",Charlie Chan,mistral,Charlie Chan,2,gemma,Charlie Chan,2,False
+Which Palestinian co-founded al Fatah in 1957?,Yasir Arafat,llama3.1,Yasser Arafat.,2,mistral,Ahmed Shukeiri,2,False
+Which Palestinian co-founded al Fatah in 1957?,Yasir Arafat,llama3.1,Yasser Arafat.,2,gemma,Yasser Arafat,2,False
+Which Palestinian co-founded al Fatah in 1957?,Yasir Arafat,mistral,Ahmed Shukeiri,2,gemma,Yasser Arafat,2,False
+Who was the longest reigning British king?,"George III, King of Great Britain and Ireland",llama3.1,"Queen Victoria's son, King Edward VII, and his grandson, King George III, all reigned longer than Queen Victoria. However, according to records, the longest reigning British monarch is actually Queen Victoria's son's son's wife's uncle, or simply put:",38,mistral,King Henry III (1216-1272) had the longest reign of any British king at 56 years.,15,False
+Who was the longest reigning British king?,"George III, King of Great Britain and Ireland",llama3.1,"Queen Victoria's son, King Edward VII, and his grandson, King George III, all reigned longer than Queen Victoria. However, according to records, the longest reigning British monarch is actually Queen Victoria's son's son's wife's uncle, or simply put:",38,gemma,Victoria,1,False
+Who was the longest reigning British king?,"George III, King of Great Britain and Ireland",gemma,Victoria,1,mistral,King Henry III (1216-1272) had the longest reign of any British king at 56 years.,15,True
+Who opened the Sydney Opera House in 1973,The Queen (disambiguation),llama3.1,Queen Elizabeth II.,3,mistral,Queen Elizabeth II opened it.,5,False
+Who opened the Sydney Opera House in 1973,The Queen (disambiguation),gemma,Queen Elizabeth II,3,llama3.1,Queen Elizabeth II.,3,True
+Who opened the Sydney Opera House in 1973,The Queen (disambiguation),mistral,Queen Elizabeth II opened it.,5,gemma,Queen Elizabeth II,3,False
+In the 'Jungle Book' what type of creature was 'Bagheera'?,Panther athletics,llama3.1,Black panther.,2,mistral,Bagheera is a panther.,4,False
+In the 'Jungle Book' what type of creature was 'Bagheera'?,Panther athletics,gemma,Panther,1,llama3.1,Black panther.,2,True
+In the 'Jungle Book' what type of creature was 'Bagheera'?,Panther athletics,gemma,Panther,1,mistral,Bagheera is a panther.,4,True
+Which iconic British female singer made the highly regarded album titled '(her first name) in Memphis' ?,Dusty springfield,mistral,"Elvis Presley, not a female. The title refers to him.",10,llama3.1,Petula.,1,True
+Which iconic British female singer made the highly regarded album titled '(her first name) in Memphis' ?,Dusty springfield,gemma,Dusty,1,llama3.1,Petula.,1,True
+Which iconic British female singer made the highly regarded album titled '(her first name) in Memphis' ?,Dusty springfield,mistral,"Elvis Presley, not a female. The title refers to him.",10,gemma,Dusty,1,False
+What was the name of the private eye played by Trevor Eve on TV in the '70s?,Shoestring (TV series),llama3.1,Jack Osbourne,2,mistral,Shoestring (1979-1980),2,False
+What was the name of the private eye played by Trevor Eve on TV in the '70s?,Shoestring (TV series),gemma,Wynonna,1,llama3.1,Jack Osbourne,2,True
+What was the name of the private eye played by Trevor Eve on TV in the '70s?,Shoestring (TV series),gemma,Wynonna,1,mistral,Shoestring (1979-1980),2,True
+"Which country occupying 47% of South America has states including Amazonas, Sao Paulo, Bahia and Para?",Brazil,mistral,Brazil,1,llama3.1,Brazil.,1,True
+"Which country occupying 47% of South America has states including Amazonas, Sao Paulo, Bahia and Para?",Brazil,gemma,Brazil,1,llama3.1,Brazil.,1,True
+"Which country occupying 47% of South America has states including Amazonas, Sao Paulo, Bahia and Para?",Brazil,mistral,Brazil,1,gemma,Brazil,1,False
+Which English town's Anglo Saxon name was Gipeswic pronounced Gipperswick,"Ipswich, UK",mistral,Modern-day Ipswich,2,llama3.1,Ipswich.,1,True
+Which English town's Anglo Saxon name was Gipeswic pronounced Gipperswick,"Ipswich, UK",gemma,Cambridge,1,llama3.1,Ipswich.,1,True
+Which English town's Anglo Saxon name was Gipeswic pronounced Gipperswick,"Ipswich, UK",gemma,Cambridge,1,mistral,Modern-day Ipswich,2,True
+In which English county is there a town called Shitlingthorpe,County Yorkshire,llama3.1,Lincolnshire,1,mistral,Lincolnshire,1,False
+In which English county is there a town called Shitlingthorpe,County Yorkshire,gemma,There is no such town as Shitlingthorpe in England or anywhere else in the world.,15,llama3.1,Lincolnshire,1,True
+In which English county is there a town called Shitlingthorpe,County Yorkshire,mistral,Lincolnshire,1,gemma,There is no such town as Shitlingthorpe in England or anywhere else in the world.,15,False
+What is the name of Humphrey Bogart’s character in the film ‘Casablanca’?,Rick Blaine,llama3.1,Rick Blaine.,2,mistral,Rick Blaine,2,False
+What is the name of Humphrey Bogart’s character in the film ‘Casablanca’?,Rick Blaine,gemma,Rick Blaine,2,llama3.1,Rick Blaine.,2,True
+What is the name of Humphrey Bogart’s character in the film ‘Casablanca’?,Rick Blaine,gemma,Rick Blaine,2,mistral,Rick Blaine,2,True
+The archaeological site of the ancient city of Troy is in which country?,Turkey,llama3.1,Turkey.,1,mistral,Turkey,1,False
+The archaeological site of the ancient city of Troy is in which country?,Turkey,llama3.1,Turkey.,1,gemma,Turkey,1,False
+The archaeological site of the ancient city of Troy is in which country?,Turkey,gemma,Turkey,1,mistral,Turkey,1,True
+‘The Crafty Cockney’ was the nickname of which British darts player?,Crafty Cockney,llama3.1,Eric Bristow.,2,mistral,Eric Bristow,2,False
+‘The Crafty Cockney’ was the nickname of which British darts player?,Crafty Cockney,gemma,Phil Taylor,2,llama3.1,Eric Bristow.,2,True
+‘The Crafty Cockney’ was the nickname of which British darts player?,Crafty Cockney,gemma,Phil Taylor,2,mistral,Eric Bristow,2,True
+"In Greek legend, who turned everything he touched into gold ?",Midas and the Golden Touch,llama3.1,Midas.,1,mistral,Midas (the king),3,False
+"In Greek legend, who turned everything he touched into gold ?",Midas and the Golden Touch,gemma,King Midas,2,llama3.1,Midas.,1,True
+"In Greek legend, who turned everything he touched into gold ?",Midas and the Golden Touch,gemma,King Midas,2,mistral,Midas (the king),3,True
+Which was the second British motorway,M1 (disambiguation),mistral,M1 (opened in 1959),4,llama3.1,M1 was the first. The M6 is the answer.,9,True
+Which was the second British motorway,M1 (disambiguation),llama3.1,M1 was the first. The M6 is the answer.,9,gemma,M25,1,False
+Which was the second British motorway,M1 (disambiguation),gemma,M25,1,mistral,M1 (opened in 1959),4,True
+Dame Judi Dench and which other actress played the Widdington sisters in the 2004 film Ladies in Lavender?,Dame Maggie Smith,llama3.1,Dame Kristin Scott Thomas.,4,mistral,Maggie Smith,2,False
+Dame Judi Dench and which other actress played the Widdington sisters in the 2004 film Ladies in Lavender?,Dame Maggie Smith,llama3.1,Dame Kristin Scott Thomas.,4,gemma,Phyllida Lloyd,2,False
+Dame Judi Dench and which other actress played the Widdington sisters in the 2004 film Ladies in Lavender?,Dame Maggie Smith,gemma,Phyllida Lloyd,2,mistral,Maggie Smith,2,True
+"In 1657, who turned down the opportunity to become King of England?",Cromwell,llama3.1,Oliver Cromwell.,2,mistral,Oliver Cromwell declined the offer,5,False
+"In 1657, who turned down the opportunity to become King of England?",Cromwell,llama3.1,Oliver Cromwell.,2,gemma,Oliver Cromwell,2,False
+"In 1657, who turned down the opportunity to become King of England?",Cromwell,gemma,Oliver Cromwell,2,mistral,Oliver Cromwell declined the offer,5,True
+What is either a type of wood or an African-American magazine?,St Helena Ebony,llama3.1,Ebony.,1,mistral,Ebony magazine is not a type of wood.,8,False
+What is either a type of wood or an African-American magazine?,St Helena Ebony,llama3.1,Ebony.,1,gemma,Ebony,1,False
+What is either a type of wood or an African-American magazine?,St Helena Ebony,gemma,Ebony,1,mistral,Ebony magazine is not a type of wood.,8,True
+Name the last US president to meet the leader of Cuba before Barack Obama did in 2015?,Eisenhower Dwight,mistral,Jimmy Carter (1977),3,llama3.1,George W. Bush (2006) and Bill Clinton (2000) both met Fidel Castro.,12,True
+Name the last US president to meet the leader of Cuba before Barack Obama did in 2015?,Eisenhower Dwight,llama3.1,George W. Bush (2006) and Bill Clinton (2000) both met Fidel Castro.,12,gemma,No US president met the Cuban leader before Obama.,9,False
+Name the last US president to meet the leader of Cuba before Barack Obama did in 2015?,Eisenhower Dwight,mistral,Jimmy Carter (1977),3,gemma,No US president met the Cuban leader before Obama.,9,False
+Who did Princess Anne marry in 1992?,Sir Timothy Laurence,llama3.1,Mark Phillips was divorced and then she married Vice Admiral Sir Timothy Laurence but in 1992 it was Mark Phillips.,20,mistral,Mark Phillips,2,False
+Who did Princess Anne marry in 1992?,Sir Timothy Laurence,gemma,Timothy Laurence,2,llama3.1,Mark Phillips was divorced and then she married Vice Admiral Sir Timothy Laurence but in 1992 it was Mark Phillips.,20,True
+Who did Princess Anne marry in 1992?,Sir Timothy Laurence,gemma,Timothy Laurence,2,mistral,Mark Phillips,2,True
+What was the Paramount Film Company originally called?,Raleigh Studios,mistral,Famous Players Film Company,4,llama3.1,Nestor Film Company.,3,True
+What was the Paramount Film Company originally called?,Raleigh Studios,llama3.1,Nestor Film Company.,3,gemma,United Artists,2,False
+What was the Paramount Film Company originally called?,Raleigh Studios,mistral,Famous Players Film Company,4,gemma,United Artists,2,False
+Which British monarch was nicknamed ‘The Sailor King’?,William IV (disambiguation),mistral,William IV,2,llama3.1,King William IV.,3,True
+Which British monarch was nicknamed ‘The Sailor King’?,William IV (disambiguation),gemma,Henry VIII,2,llama3.1,King William IV.,3,True
+Which British monarch was nicknamed ‘The Sailor King’?,William IV (disambiguation),gemma,Henry VIII,2,mistral,William IV,2,True
+What nationality was 19th Century author Hans Christian Anderson?,Danish,mistral,Danish,1,llama3.1,Danish.,1,True
+What nationality was 19th Century author Hans Christian Anderson?,Danish,gemma,Danish,1,llama3.1,Danish.,1,True
+What nationality was 19th Century author Hans Christian Anderson?,Danish,mistral,Danish,1,gemma,Danish,1,False
+"Held at Max Yasgurs 600 acre dairy farm, what event, which opened on Aug 15, 1969, was billed as An Aquarian Exposition: 3 Days of Peace & Music?",Woodstock Music and Art Fair,mistral,Woodstock Festival,2,llama3.1,Woodstock Festival.,2,True
+"Held at Max Yasgurs 600 acre dairy farm, what event, which opened on Aug 15, 1969, was billed as An Aquarian Exposition: 3 Days of Peace & Music?",Woodstock Music and Art Fair,llama3.1,Woodstock Festival.,2,gemma,Woodstock,1,False
+"Held at Max Yasgurs 600 acre dairy farm, what event, which opened on Aug 15, 1969, was billed as An Aquarian Exposition: 3 Days of Peace & Music?",Woodstock Music and Art Fair,gemma,Woodstock,1,mistral,Woodstock Festival,2,True
+Two counties in the Irish province of Munster begin with the letter C. One is Cork. Name the other.,CLARE,mistral,County Cavan,2,llama3.1,Clare.,1,True
+Two counties in the Irish province of Munster begin with the letter C. One is Cork. Name the other.,CLARE,llama3.1,Clare.,1,gemma,Clare,1,False
+Two counties in the Irish province of Munster begin with the letter C. One is Cork. Name the other.,CLARE,mistral,County Cavan,2,gemma,Clare,1,False
+What is the largest natural lake in Wales,Lake Bala,llama3.1,Llyn Tegid,2,mistral,Lake Vyrnwy (or Llyn Wyddw),5,False
+What is the largest natural lake in Wales,Lake Bala,gemma,Llyn Padarn,2,llama3.1,Llyn Tegid,2,True
+What is the largest natural lake in Wales,Lake Bala,mistral,Lake Vyrnwy (or Llyn Wyddw),5,gemma,Llyn Padarn,2,False
+The A23 road connects London to which coastal resort in East Sussex?,Brighthelmstone,mistral,Brighton,1,llama3.1,Eastbourne.,1,True
+The A23 road connects London to which coastal resort in East Sussex?,Brighthelmstone,gemma,Brighton,1,llama3.1,Eastbourne.,1,True
+The A23 road connects London to which coastal resort in East Sussex?,Brighthelmstone,mistral,Brighton,1,gemma,Brighton,1,False
+"""From which Bob Dylan song does the following come: """"Now you don't talk so loud, now you don't seem so proud about havin' to be scrounging for your next meal""""?""",Like a rolling stone,mistral,"""The Times They Are A-Changin'""",5,llama3.1,"""Bruce Springsteen isn't mentioned, it's from 'Bob Dylan'"" is incorrect. ""Subterranean Homesick Blues""",13,True
+"""From which Bob Dylan song does the following come: """"Now you don't talk so loud, now you don't seem so proud about havin' to be scrounging for your next meal""""?""",Like a rolling stone,llama3.1,"""Bruce Springsteen isn't mentioned, it's from 'Bob Dylan'"" is incorrect. ""Subterranean Homesick Blues""",13,gemma,"""Desolation Row""",2,False
+"""From which Bob Dylan song does the following come: """"Now you don't talk so loud, now you don't seem so proud about havin' to be scrounging for your next meal""""?""",Like a rolling stone,mistral,"""The Times They Are A-Changin'""",5,gemma,"""Desolation Row""",2,False
+Which fruit can go in the middle of the word aped to make a new word?,Pear (fruit),mistral,Pine (aped->apine),2,llama3.1,Ape,1,True
+Which fruit can go in the middle of the word aped to make a new word?,Pear (fruit),gemma,Peach,1,llama3.1,Ape,1,True
+Which fruit can go in the middle of the word aped to make a new word?,Pear (fruit),mistral,Pine (aped->apine),2,gemma,Peach,1,False
+Which sought-after item was situated in the kingdom of Colchis?,Golden Fleece (disambiguation),llama3.1,The Golden Fleece.,3,mistral,Golden Fleece,2,False
+Which sought-after item was situated in the kingdom of Colchis?,Golden Fleece (disambiguation),llama3.1,The Golden Fleece.,3,gemma,Golden Fleece,2,False
+Which sought-after item was situated in the kingdom of Colchis?,Golden Fleece (disambiguation),mistral,Golden Fleece,2,gemma,Golden Fleece,2,False
+Where exactly is the tallest habitable building located in the UK? It is 50 stories high with a height of 235 metres (771 feet) and was completed in 1991?,"Canary Wharf, London",mistral,"The Shard, London.",3,llama3.1,Canary Wharf Tower in London.,5,True
+Where exactly is the tallest habitable building located in the UK? It is 50 stories high with a height of 235 metres (771 feet) and was completed in 1991?,"Canary Wharf, London",gemma,Manchester One,2,llama3.1,Canary Wharf Tower in London.,5,True
+Where exactly is the tallest habitable building located in the UK? It is 50 stories high with a height of 235 metres (771 feet) and was completed in 1991?,"Canary Wharf, London",mistral,"The Shard, London.",3,gemma,Manchester One,2,False
+"Used in cooking, agar-agar is a gelatin made from what?",Macroalgal,mistral,Seaweed (Red algae),3,llama3.1,Red algae.,2,True
+"Used in cooking, agar-agar is a gelatin made from what?",Macroalgal,gemma,Algae,1,llama3.1,Red algae.,2,True
+"Used in cooking, agar-agar is a gelatin made from what?",Macroalgal,mistral,Seaweed (Red algae),3,gemma,Algae,1,False
+Who was named the best player at Euro 2012 by UEFA ?,Andrés Iniesta Luján,llama3.1,Andrés Iniesta.,2,mistral,Andres Iniesta,2,False
+Who was named the best player at Euro 2012 by UEFA ?,Andrés Iniesta Luján,llama3.1,Andrés Iniesta.,2,gemma,Xavi,1,False
+Who was named the best player at Euro 2012 by UEFA ?,Andrés Iniesta Luján,gemma,Xavi,1,mistral,Andres Iniesta,2,True
+Which company was built into a world-wide organisation by Ray Kroc?,Mackey D's,mistral,McDonald's Corporation,2,llama3.1,McDonald's.,1,True
+Which company was built into a world-wide organisation by Ray Kroc?,Mackey D's,gemma,McDonald's,1,llama3.1,McDonald's.,1,True
+Which company was built into a world-wide organisation by Ray Kroc?,Mackey D's,gemma,McDonald's,1,mistral,McDonald's Corporation,2,True
+"Perhaps foreshadowing recent events in Ukraine, over what region of the Southern Caucasus did Russia and Georgia go to war in 2008?",Tskhinvali region,mistral,South Ossetia,2,llama3.1,South Ossetia.,2,True
+"Perhaps foreshadowing recent events in Ukraine, over what region of the Southern Caucasus did Russia and Georgia go to war in 2008?",Tskhinvali region,llama3.1,South Ossetia.,2,gemma,South Ossetia,2,False
+"Perhaps foreshadowing recent events in Ukraine, over what region of the Southern Caucasus did Russia and Georgia go to war in 2008?",Tskhinvali region,mistral,South Ossetia,2,gemma,South Ossetia,2,False
+Which country was the birthplace of Henry V111’s first wife Catherine Of Aragon ?,Islands of Spain,llama3.1,Spain.,1,mistral,Spain,1,False
+Which country was the birthplace of Henry V111’s first wife Catherine Of Aragon ?,Islands of Spain,gemma,Spain,1,llama3.1,Spain.,1,True
+Which country was the birthplace of Henry V111’s first wife Catherine Of Aragon ?,Islands of Spain,gemma,Spain,1,mistral,Spain,1,True
+What type of animal was Bambi's friend Flower?,Wood pussy,mistral,Skunk,1,llama3.1,Skunk.,1,True
+What type of animal was Bambi's friend Flower?,Wood pussy,gemma,Deer,1,llama3.1,Skunk.,1,True
+What type of animal was Bambi's friend Flower?,Wood pussy,mistral,Skunk,1,gemma,Deer,1,False
+"In Only Fools And Horses, Rodney Trotter shares his middle name with which London football club?",Charlton (disambiguation),llama3.1,Arsenal.,1,mistral,Queens Park Rangers (QPR),4,False
+"In Only Fools And Horses, Rodney Trotter shares his middle name with which London football club?",Charlton (disambiguation),llama3.1,Arsenal.,1,gemma,Arsenal,1,False
+"In Only Fools And Horses, Rodney Trotter shares his middle name with which London football club?",Charlton (disambiguation),gemma,Arsenal,1,mistral,Queens Park Rangers (QPR),4,True
+Who played the role of George Carter in The Sweeney?,Dennis Waterman,mistral,John Thaw,2,llama3.1,John Thaw.,2,True
+Who played the role of George Carter in The Sweeney?,Dennis Waterman,llama3.1,John Thaw.,2,gemma,Mark Strong,2,False
+Who played the role of George Carter in The Sweeney?,Dennis Waterman,gemma,Mark Strong,2,mistral,John Thaw,2,True
+"Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",Jules Rimet,llama3.1,Jules Rimet.,2,mistral,Jules Rimet,2,False
+"Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",Jules Rimet,gemma,Jean-Pierre Frick,2,llama3.1,Jules Rimet.,2,True
+"Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",Jules Rimet,gemma,Jean-Pierre Frick,2,mistral,Jules Rimet,2,True
+"Because he held the earth on his shoulders, for what Greek figure did Gerardus Mercator name his book of maps?",Atlases,mistral,Atlas,1,llama3.1,Atlas.,1,True
+"Because he held the earth on his shoulders, for what Greek figure did Gerardus Mercator name his book of maps?",Atlases,gemma,Atlas,1,llama3.1,Atlas.,1,True
+"Because he held the earth on his shoulders, for what Greek figure did Gerardus Mercator name his book of maps?",Atlases,gemma,Atlas,1,mistral,Atlas,1,True
+Which sauce made from ham drippings and coffee and seen in the cuisine of the Southern United States gets its name from its appearance like that of a certain body organ?,Redeye gravy,llama3.1,Liver gravy.,2,mistral,Black-eyed Pea Gravy (not a sauce),6,False
+Which sauce made from ham drippings and coffee and seen in the cuisine of the Southern United States gets its name from its appearance like that of a certain body organ?,Redeye gravy,gemma,Gravy,1,llama3.1,Liver gravy.,2,True
+Which sauce made from ham drippings and coffee and seen in the cuisine of the Southern United States gets its name from its appearance like that of a certain body organ?,Redeye gravy,mistral,Black-eyed Pea Gravy (not a sauce),6,gemma,Gravy,1,False
+In which part of the human body can you find the Malleus or Hammer bone ?,THE EAR,mistral,Ear (Middle ear),3,llama3.1,Ear.,1,True
+In which part of the human body can you find the Malleus or Hammer bone ?,THE EAR,gemma,Ear,1,llama3.1,Ear.,1,True
+In which part of the human body can you find the Malleus or Hammer bone ?,THE EAR,gemma,Ear,1,mistral,Ear (Middle ear),3,True
+Who was the Georgia Peach?,"Cobb, Ty",mistral,Tommy Lasorda,2,llama3.1,Ty Cobb.,2,True
+Who was the Georgia Peach?,"Cobb, Ty",llama3.1,Ty Cobb.,2,gemma,Ty Cobb,2,False
+Who was the Georgia Peach?,"Cobb, Ty",gemma,Ty Cobb,2,mistral,Tommy Lasorda,2,True
+Matt Busby played for Manchester City from 1928 to 1936. Which club did he play for from 1936 to 1941?,Liverpudlian,llama3.1,Liverpool.,1,mistral,Manchester United,2,False
+Matt Busby played for Manchester City from 1928 to 1936. Which club did he play for from 1936 to 1941?,Liverpudlian,gemma,Manchester United,2,llama3.1,Liverpool.,1,True
+Matt Busby played for Manchester City from 1928 to 1936. Which club did he play for from 1936 to 1941?,Liverpudlian,gemma,Manchester United,2,mistral,Manchester United,2,True
+"What 1989 best picture Oscar winning movie, based on a play by Alfred Uhry, and co-starring Morgan Freeman, gave Jessica Tandy, at age 80, the award for Best Actress, the oldest winner in history?",Miss Daisy,llama3.1,Driving Miss Daisy.,3,mistral,"""Driving Miss Daisy""",3,False
+"What 1989 best picture Oscar winning movie, based on a play by Alfred Uhry, and co-starring Morgan Freeman, gave Jessica Tandy, at age 80, the award for Best Actress, the oldest winner in history?",Miss Daisy,gemma,Driving Miss Daisy,3,llama3.1,Driving Miss Daisy.,3,True
+"What 1989 best picture Oscar winning movie, based on a play by Alfred Uhry, and co-starring Morgan Freeman, gave Jessica Tandy, at age 80, the award for Best Actress, the oldest winner in history?",Miss Daisy,mistral,"""Driving Miss Daisy""",3,gemma,Driving Miss Daisy,3,False
+"""Which boxer famously said,"""" If I can't beat this bum take my name off the record books?""""""",Rocco Marchegiano,llama3.1,Joe Louis.,2,mistral,Muhammad Ali (George Foreman Quote),5,False
+"""Which boxer famously said,"""" If I can't beat this bum take my name off the record books?""""""",Rocco Marchegiano,gemma,Muhammad Ali,2,llama3.1,Joe Louis.,2,True
+"""Which boxer famously said,"""" If I can't beat this bum take my name off the record books?""""""",Rocco Marchegiano,mistral,Muhammad Ali (George Foreman Quote),5,gemma,Muhammad Ali,2,False
+Which ‘P’ describes the chasing pack in a cycling race?,Pelaton,llama3.1,Peloton.,1,mistral,Pursuit group,2,False
+Which ‘P’ describes the chasing pack in a cycling race?,Pelaton,llama3.1,Peloton.,1,gemma,Peloton,1,False
+Which ‘P’ describes the chasing pack in a cycling race?,Pelaton,mistral,Pursuit group,2,gemma,Peloton,1,False
+On which British holiday did the 2004 tsunami occur?,Second Christmas Day,mistral,Boxing Day Tsunami,3,llama3.1,Boxing Day.,2,True
+On which British holiday did the 2004 tsunami occur?,Second Christmas Day,gemma,Boxing Day,2,llama3.1,Boxing Day.,2,True
+On which British holiday did the 2004 tsunami occur?,Second Christmas Day,mistral,Boxing Day Tsunami,3,gemma,Boxing Day,2,False
+The 2014 'Bendgate' controversy/publicity concerned version 6 of which famous product?,Bendgate,mistral,iPhone 6 Plus,3,llama3.1,iPhone 6 Plus,3,True
+The 2014 'Bendgate' controversy/publicity concerned version 6 of which famous product?,Bendgate,llama3.1,iPhone 6 Plus,3,gemma,Golf clubs,2,False
+The 2014 'Bendgate' controversy/publicity concerned version 6 of which famous product?,Bendgate,gemma,Golf clubs,2,mistral,iPhone 6 Plus,3,True
+What is the 3rd largest car rental company in the United States?,The alamo,mistral,Enterprise Rent-A-Car,2,llama3.1,"Enterprise Rent-A-Car's parent company, Enterprise Holdings, acquired Alamo and National to form a single entity.",15,True
+What is the 3rd largest car rental company in the United States?,The alamo,gemma,Avis,1,llama3.1,"Enterprise Rent-A-Car's parent company, Enterprise Holdings, acquired Alamo and National to form a single entity.",15,True
+What is the 3rd largest car rental company in the United States?,The alamo,mistral,Enterprise Rent-A-Car,2,gemma,Avis,1,False
+Who was the first African American holder of the world heavyweight boxing title?,Jack Johnson,mistral,Joe Louis (1937),3,llama3.1,Jack Johnson.,2,True
+Who was the first African American holder of the world heavyweight boxing title?,Jack Johnson,llama3.1,Jack Johnson.,2,gemma,Muhammad Ali,2,False
+Who was the first African American holder of the world heavyweight boxing title?,Jack Johnson,gemma,Muhammad Ali,2,mistral,Joe Louis (1937),3,True
+"From which country do French fries originate? France, Belgium or Switzerland?",ISO 3166-1:CH,llama3.1,Belgium.,1,mistral,Belgium,1,False
+"From which country do French fries originate? France, Belgium or Switzerland?",ISO 3166-1:CH,llama3.1,Belgium.,1,gemma,France,1,False
+"From which country do French fries originate? France, Belgium or Switzerland?",ISO 3166-1:CH,mistral,Belgium,1,gemma,France,1,False
+"""What Latin expression means """"Seize the Day""""?""",Carpe diem quam minimum credula postero,mistral,Carpe Diem,2,llama3.1,"""Carpe Diem.""",2,True
+"""What Latin expression means """"Seize the Day""""?""",Carpe diem quam minimum credula postero,llama3.1,"""Carpe Diem.""",2,gemma,Carpe diem,2,False
+"""What Latin expression means """"Seize the Day""""?""",Carpe diem quam minimum credula postero,gemma,Carpe diem,2,mistral,Carpe Diem,2,True
+"Which film about a submarine had as one of its stars Denzil Washington, whose character had violent disagreements with his Captain played by Gene Hackman?",'CRIMSON TIDE',mistral,Crystal Clear (1994),3,llama3.1,Crimson Tide.,2,True
+"Which film about a submarine had as one of its stars Denzil Washington, whose character had violent disagreements with his Captain played by Gene Hackman?",'CRIMSON TIDE',llama3.1,Crimson Tide.,2,gemma,Crimson Tide,2,False
+"Which film about a submarine had as one of its stars Denzil Washington, whose character had violent disagreements with his Captain played by Gene Hackman?",'CRIMSON TIDE',gemma,Crimson Tide,2,mistral,Crystal Clear (1994),3,True
+Which was the first commercial jet airliner to go into service in the UK?,Cometary nuclei,llama3.1,de Havilland Comet.,3,mistral,Comet 1 (DEA) by British Overseas Airways Corporation (BOAC),9,False
+Which was the first commercial jet airliner to go into service in the UK?,Cometary nuclei,gemma,Comet 4,2,llama3.1,de Havilland Comet.,3,True
+Which was the first commercial jet airliner to go into service in the UK?,Cometary nuclei,mistral,Comet 1 (DEA) by British Overseas Airways Corporation (BOAC),9,gemma,Comet 4,2,False
+"Who was the leader of the gang whose members included Benny the Ball ,Brain and Choo Choo?",Brain (Top Cat character,mistral,Tommy Gun/Scarface (assuming reference to the movie character),8,llama3.1,Top Cat.,2,True
+"Who was the leader of the gang whose members included Benny the Ball ,Brain and Choo Choo?",Brain (Top Cat character,gemma,Frank,1,llama3.1,Top Cat.,2,True
+"Who was the leader of the gang whose members included Benny the Ball ,Brain and Choo Choo?",Brain (Top Cat character,gemma,Frank,1,mistral,Tommy Gun/Scarface (assuming reference to the movie character),8,True
+‘Hampsteads’ is Cockney rhyming slang for what?,Tooth root,mistral,Legs,1,llama3.1,Headstones.,1,True
+‘Hampsteads’ is Cockney rhyming slang for what?,Tooth root,gemma,Homes,1,llama3.1,Headstones.,1,True
+‘Hampsteads’ is Cockney rhyming slang for what?,Tooth root,mistral,Legs,1,gemma,Homes,1,False
+What was the scene of the final defeat of the Jacobites under Charles Edward by forces under the command of the Duke of Cumberland on 16 April 1746?,Culloden,llama3.1,Culloden Moor.,2,mistral,Battle of Culloden,3,False
+What was the scene of the final defeat of the Jacobites under Charles Edward by forces under the command of the Duke of Cumberland on 16 April 1746?,Culloden,gemma,Battle of Culloden,3,llama3.1,Culloden Moor.,2,True
+What was the scene of the final defeat of the Jacobites under Charles Edward by forces under the command of the Duke of Cumberland on 16 April 1746?,Culloden,mistral,Battle of Culloden,3,gemma,Battle of Culloden,3,False
+"Ushuaia, which is now generally accepted as the southernmost city in the world, is in which country?",Arxintina,llama3.1,Argentina.,1,mistral,Argentina,1,False
+"Ushuaia, which is now generally accepted as the southernmost city in the world, is in which country?",Arxintina,gemma,Argentina,1,llama3.1,Argentina.,1,True
+"Ushuaia, which is now generally accepted as the southernmost city in the world, is in which country?",Arxintina,gemma,Argentina,1,mistral,Argentina,1,True
+What English expression for a long complex procedure derived from a old legal document called a ragman roll?,Rigmarole,llama3.1,"""Ragging through the red tape.""",5,mistral,"""Rag and bone man's run""",5,False
+What English expression for a long complex procedure derived from a old legal document called a ragman roll?,Rigmarole,llama3.1,"""Ragging through the red tape.""",5,gemma,Convoluted process,2,False
+What English expression for a long complex procedure derived from a old legal document called a ragman roll?,Rigmarole,mistral,"""Rag and bone man's run""",5,gemma,Convoluted process,2,False
+Beloved in 1999 was whose first movie since The Color Purple in 1985?,Oprah,llama3.1,Morgan Freeman's.,2,mistral,"Oprah Winfrey's
+
+(Explanation: In 1999, the film ""Beloved"" marked Oprah Winfrey's first acting role in a feature film since her performance in ""The Color Purple"" in 1985.)",27,False
+Beloved in 1999 was whose first movie since The Color Purple in 1985?,Oprah,llama3.1,Morgan Freeman's.,2,gemma,Oprah Winfrey,2,False
+Beloved in 1999 was whose first movie since The Color Purple in 1985?,Oprah,mistral,"Oprah Winfrey's
+
+(Explanation: In 1999, the film ""Beloved"" marked Oprah Winfrey's first acting role in a feature film since her performance in ""The Color Purple"" in 1985.)",27,gemma,Oprah Winfrey,2,False
+What was the name of Butch Cassidy's gang,Hole in the Wall gang,llama3.1,The Wild Bunch.,3,mistral,Hole-in-the-Wall Gang,2,False
+What was the name of Butch Cassidy's gang,Hole in the Wall gang,gemma,The Sundance Kid Gang,4,llama3.1,The Wild Bunch.,3,True
+What was the name of Butch Cassidy's gang,Hole in the Wall gang,gemma,The Sundance Kid Gang,4,mistral,Hole-in-the-Wall Gang,2,True
+What type of camel has two humps?,Bactrian,mistral,Dromedary camel,2,llama3.1,Bactrian camel.,2,True
+What type of camel has two humps?,Bactrian,gemma,bactrian camel,2,llama3.1,Bactrian camel.,2,True
+What type of camel has two humps?,Bactrian,mistral,Dromedary camel,2,gemma,bactrian camel,2,False
+What word is used to mean the dead skin at the base of a fingernail?,Cuticles,mistral,Cuticle,1,llama3.1,Eponychium.,1,True
+What word is used to mean the dead skin at the base of a fingernail?,Cuticles,llama3.1,Eponychium.,1,gemma,Cuticle,1,False
+What word is used to mean the dead skin at the base of a fingernail?,Cuticles,mistral,Cuticle,1,gemma,Cuticle,1,False
+What does an octopus spray when threatened?,Ink,llama3.1,Ink.,1,mistral,Ink (not water),3,False
+What does an octopus spray when threatened?,Ink,gemma,Ink,1,llama3.1,Ink.,1,True
+What does an octopus spray when threatened?,Ink,gemma,Ink,1,mistral,Ink (not water),3,True
+"The English towns of Abingdon, Wallingford and Marlow lie on which river?",Theems,llama3.1,The River Thames.,3,mistral,Thames,1,False
+"The English towns of Abingdon, Wallingford and Marlow lie on which river?",Theems,llama3.1,The River Thames.,3,gemma,Thames,1,False
+"The English towns of Abingdon, Wallingford and Marlow lie on which river?",Theems,mistral,Thames,1,gemma,Thames,1,False
+What song was a hit for Tom Jones and Cerys Matthews in 1999?,It's Cold Outside,llama3.1,"""Baby It's You""",3,mistral,"""Baby, It's Cold Outside""",4,False
+What song was a hit for Tom Jones and Cerys Matthews in 1999?,It's Cold Outside,gemma,Sexbomb,1,llama3.1,"""Baby It's You""",3,True
+What song was a hit for Tom Jones and Cerys Matthews in 1999?,It's Cold Outside,gemma,Sexbomb,1,mistral,"""Baby, It's Cold Outside""",4,True
+What lake can be found on the border of Vermont and New York?,Champlain Lake,llama3.1,Lake Champlain.,2,mistral,Lake Champlain,2,False
+What lake can be found on the border of Vermont and New York?,Champlain Lake,llama3.1,Lake Champlain.,2,gemma,Lake Champlain,2,False
+What lake can be found on the border of Vermont and New York?,Champlain Lake,gemma,Lake Champlain,2,mistral,Lake Champlain,2,True
+"What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",Bean sidhe,mistral,Banshee makes the noise.,4,llama3.1,The Banshee.,2,True
+"What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",Bean sidhe,llama3.1,The Banshee.,2,gemma,Banshee,1,False
+"What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",Bean sidhe,gemma,Banshee,1,mistral,Banshee makes the noise.,4,True
+"Frenchman Maurice André, who attributed his stamina and breath control to his teenage years as a coal miner, was a famous virtuoso player of what instrument?",Trumpet.,mistral,Trumpet,1,llama3.1,The oboe.,2,True
+"Frenchman Maurice André, who attributed his stamina and breath control to his teenage years as a coal miner, was a famous virtuoso player of what instrument?",Trumpet.,gemma,Violinist,1,llama3.1,The oboe.,2,True
+"Frenchman Maurice André, who attributed his stamina and breath control to his teenage years as a coal miner, was a famous virtuoso player of what instrument?",Trumpet.,mistral,Trumpet,1,gemma,Violinist,1,False
+Complete this boxing phrase 'The Thriller in'?,"Manila, Phillipine Islands",llama3.1,Manila.,1,mistral,Manila,1,False
+Complete this boxing phrase 'The Thriller in'?,"Manila, Phillipine Islands",llama3.1,Manila.,1,gemma,Manilla,1,False
+Complete this boxing phrase 'The Thriller in'?,"Manila, Phillipine Islands",mistral,Manila,1,gemma,Manilla,1,False
+What drinking vessel supposedly confers eternal life on those who drink from it?,Sangrael,llama3.1,Holy Grail.,2,mistral,The Holy Grail cup.,4,False
+What drinking vessel supposedly confers eternal life on those who drink from it?,Sangrael,gemma,The Holy Grail,3,llama3.1,Holy Grail.,2,True
+What drinking vessel supposedly confers eternal life on those who drink from it?,Sangrael,mistral,The Holy Grail cup.,4,gemma,The Holy Grail,3,False
+"April 5, 1614 saw early American settler and tobacco exporter John Rolfe marry who?",Pocahontas (Pocahontas),llama3.1,Pocahontas.,1,mistral,Pocahontas,1,False
+"April 5, 1614 saw early American settler and tobacco exporter John Rolfe marry who?",Pocahontas (Pocahontas),gemma,Pocahontas,1,llama3.1,Pocahontas.,1,True
+"April 5, 1614 saw early American settler and tobacco exporter John Rolfe marry who?",Pocahontas (Pocahontas),mistral,Pocahontas,1,gemma,Pocahontas,1,False
+What is the fin called underneath the rear of a surfboard?,Skeg (surfing),mistral,Skeg or Fin Box,4,llama3.1,Center fin.,2,True
+What is the fin called underneath the rear of a surfboard?,Skeg (surfing),llama3.1,Center fin.,2,gemma,Finbox,1,False
+What is the fin called underneath the rear of a surfboard?,Skeg (surfing),mistral,Skeg or Fin Box,4,gemma,Finbox,1,False
+"""After stints backing Little Richard and the Isley Brothers, who was discovered leading """"Jimmy James and the Blue Flames"""" at the Caf Wha? in New York and taken to London on 26 September 1966 to make hit records?""",Hendrix,mistral,Jimi Hendrix,2,llama3.1,Eric Clapton.,2,True
+"""After stints backing Little Richard and the Isley Brothers, who was discovered leading """"Jimmy James and the Blue Flames"""" at the Caf Wha? in New York and taken to London on 26 September 1966 to make hit records?""",Hendrix,llama3.1,Eric Clapton.,2,gemma,Chuck Berry,2,False
+"""After stints backing Little Richard and the Isley Brothers, who was discovered leading """"Jimmy James and the Blue Flames"""" at the Caf Wha? in New York and taken to London on 26 September 1966 to make hit records?""",Hendrix,gemma,Chuck Berry,2,mistral,Jimi Hendrix,2,True
+Which country is known to its people as Suomen Tasavalta?,FinlanD,mistral,Finland (its official Finnish name),5,llama3.1,Finland.,1,True
+Which country is known to its people as Suomen Tasavalta?,FinlanD,llama3.1,Finland.,1,gemma,Finland,1,False
+Which country is known to its people as Suomen Tasavalta?,FinlanD,mistral,Finland (its official Finnish name),5,gemma,Finland,1,False
+In which year did St George die?,three hundred and three,llama3.1,303 AD.,2,mistral,303 AD (approximately),3,False
+In which year did St George die?,three hundred and three,gemma,Unknown - St George is a legendary figure and his death is not historically documented.,15,llama3.1,303 AD.,2,True
+In which year did St George die?,three hundred and three,gemma,Unknown - St George is a legendary figure and his death is not historically documented.,15,mistral,303 AD (approximately),3,True
+Who allegedly solved the riddle of the Gordian knot simply by slicing it with his sword?,Μέγας Ἀλέξανδρος,llama3.1,Alexander the Great.,3,mistral,Alexander the Great,3,False
+Who allegedly solved the riddle of the Gordian knot simply by slicing it with his sword?,Μέγας Ἀλέξανδρος,llama3.1,Alexander the Great.,3,gemma,Alexander,1,False
+Who allegedly solved the riddle of the Gordian knot simply by slicing it with his sword?,Μέγας Ἀλέξανδρος,gemma,Alexander,1,mistral,Alexander the Great,3,True
+Nick Begs was lead singer with which 80’s pop band?,Kaja Googoo,llama3.1,Nick Kamen was the lead singer.,6,mistral,Rick Astley (Band: Bucks Fizz),5,False
+Nick Begs was lead singer with which 80’s pop band?,Kaja Googoo,gemma,Huey Lewis and the News,5,llama3.1,Nick Kamen was the lead singer.,6,True
+Nick Begs was lead singer with which 80’s pop band?,Kaja Googoo,gemma,Huey Lewis and the News,5,mistral,Rick Astley (Band: Bucks Fizz),5,True
+As at 2012 Goulburn Correctional Centre is considered the highest security prison of which country?,Australia (Commonwealth realm),mistral,Australia,1,llama3.1,Australia.,1,True
+As at 2012 Goulburn Correctional Centre is considered the highest security prison of which country?,Australia (Commonwealth realm),gemma,Australia,1,llama3.1,Australia.,1,True
+As at 2012 Goulburn Correctional Centre is considered the highest security prison of which country?,Australia (Commonwealth realm),gemma,Australia,1,mistral,Australia,1,True
+What is the name of Tokyo's seaport ?,横浜,mistral,"Tokyo Bay Port
+
+For more detailed response, it can be specified that the primary seaport in Tokyo is the Tokyo Bay area which includes several ports like Tokyo Port, Yokohama Port, and Kawasaki Port.",34,llama3.1,"Tokyo Port (also known as Shinagawa-ku Port) and Yokohama Port are often referred to together, but Tokyo has several.",19,True
+What is the name of Tokyo's seaport ?,横浜,gemma,Tokyo Bay,2,llama3.1,"Tokyo Port (also known as Shinagawa-ku Port) and Yokohama Port are often referred to together, but Tokyo has several.",19,True
+What is the name of Tokyo's seaport ?,横浜,gemma,Tokyo Bay,2,mistral,"Tokyo Bay Port
+
+For more detailed response, it can be specified that the primary seaport in Tokyo is the Tokyo Bay area which includes several ports like Tokyo Port, Yokohama Port, and Kawasaki Port.",34,True
+"Located in North Carolina, which is both the highest mountain in the Appalachians and the highest mountain east of the Mississippi?",Mount Mitchell,mistral,Mount Mitchell is the peak.,5,llama3.1,Mount Mitchell.,2,True
+"Located in North Carolina, which is both the highest mountain in the Appalachians and the highest mountain east of the Mississippi?",Mount Mitchell,gemma,Mount Mitchell,2,llama3.1,Mount Mitchell.,2,True
+"Located in North Carolina, which is both the highest mountain in the Appalachians and the highest mountain east of the Mississippi?",Mount Mitchell,gemma,Mount Mitchell,2,mistral,Mount Mitchell is the peak.,5,True
+"What speaker component is used to produce the highest audio frequencies, usually between 2,000HZ and 20,000HZ?",Piezo tweeter,mistral,Tweeter,1,llama3.1,Tweeter.,1,True
+"What speaker component is used to produce the highest audio frequencies, usually between 2,000HZ and 20,000HZ?",Piezo tweeter,gemma,Tweeter,1,llama3.1,Tweeter.,1,True
+"What speaker component is used to produce the highest audio frequencies, usually between 2,000HZ and 20,000HZ?",Piezo tweeter,mistral,Tweeter,1,gemma,Tweeter,1,False
+Who on TV is the Naked Chef,Jools oliver,llama3.1,Jamie Oliver.,2,mistral,Jamie Oliver,2,False
+Who on TV is the Naked Chef,Jools oliver,llama3.1,Jamie Oliver.,2,gemma,Rachael Ray,2,False
+Who on TV is the Naked Chef,Jools oliver,gemma,Rachael Ray,2,mistral,Jamie Oliver,2,True
+What name was given to the floating harbours used on D-Day?,Mulberry tea,mistral,Mulberry Harbors,2,llama3.1,Mulberry Harbours.,2,True
+What name was given to the floating harbours used on D-Day?,Mulberry tea,gemma,Higgins boats,2,llama3.1,Mulberry Harbours.,2,True
+What name was given to the floating harbours used on D-Day?,Mulberry tea,gemma,Higgins boats,2,mistral,Mulberry Harbors,2,True
+Las Vegas is situated in which US State?,Silver State,llama3.1,Nevada.,1,mistral,Nevada,1,False
+Las Vegas is situated in which US State?,Silver State,llama3.1,Nevada.,1,gemma,Nevada,1,False
+Las Vegas is situated in which US State?,Silver State,mistral,Nevada,1,gemma,Nevada,1,False
+"What is the name of the system of stellar designation in which a specific star is identified by a Greek letter (then Latin letters in lower-case then upper-case), followed by the genitive form of its parent constellation's Latin name (e.g. Tauri)?",Bayer's Name,llama3.1,Bayer designation,2,mistral,Bayer Designation (Flamsteed expanded),4,False
+"What is the name of the system of stellar designation in which a specific star is identified by a Greek letter (then Latin letters in lower-case then upper-case), followed by the genitive form of its parent constellation's Latin name (e.g. Tauri)?",Bayer's Name,llama3.1,Bayer designation,2,gemma,Bayer System,2,False
+"What is the name of the system of stellar designation in which a specific star is identified by a Greek letter (then Latin letters in lower-case then upper-case), followed by the genitive form of its parent constellation's Latin name (e.g. Tauri)?",Bayer's Name,gemma,Bayer System,2,mistral,Bayer Designation (Flamsteed expanded),4,True
+David Tyler is the current chairman of which leading supermarket chain?,Sainsburys.com,llama3.1,No information available.,3,mistral,Tesco,1,False
+David Tyler is the current chairman of which leading supermarket chain?,Sainsburys.com,llama3.1,No information available.,3,gemma,Sainsbury's,1,False
+David Tyler is the current chairman of which leading supermarket chain?,Sainsburys.com,gemma,Sainsbury's,1,mistral,Tesco,1,True
+"Although he never won an Oscar for best director, one of Hitchcock's films did win an Oscar for best picture. What was the film?",Rifkah,mistral,"""The Apartment"" (1960) was not directed by Hitchcock, but won Best Picture. Hitchcock's ""Vertigo"" (1958) was nominated.",17,llama3.1,"""Rebecca.""",1,True
+"Although he never won an Oscar for best director, one of Hitchcock's films did win an Oscar for best picture. What was the film?",Rifkah,llama3.1,"""Rebecca.""",1,gemma,Rear Window,2,False
+"Although he never won an Oscar for best director, one of Hitchcock's films did win an Oscar for best picture. What was the film?",Rifkah,mistral,"""The Apartment"" (1960) was not directed by Hitchcock, but won Best Picture. Hitchcock's ""Vertigo"" (1958) was nominated.",17,gemma,Rear Window,2,False
+Who had a 60s No 1 with Downtown?,Petula Clark,mistral,Petula Clark,2,llama3.1,Petula Clark,2,True
+Who had a 60s No 1 with Downtown?,Petula Clark,llama3.1,Petula Clark,2,gemma,George Harrison,2,False
+Who had a 60s No 1 with Downtown?,Petula Clark,mistral,Petula Clark,2,gemma,George Harrison,2,False
+Jimi Hendrix presented the broken parts of the guitar that he destroyed on-stage at the 1968 Miami Pop Festival to whom? Not sure if the recipient named it Moon Unit.,Frank zappa,llama3.1,"Frank Zappa's daughter, Moon Zappa.",5,mistral,"Unclear about the specific recipient, but it was gifted to Bill Graham.",12,False
+Jimi Hendrix presented the broken parts of the guitar that he destroyed on-stage at the 1968 Miami Pop Festival to whom? Not sure if the recipient named it Moon Unit.,Frank zappa,gemma,Museum of Modern Art,4,llama3.1,"Frank Zappa's daughter, Moon Zappa.",5,True
+Jimi Hendrix presented the broken parts of the guitar that he destroyed on-stage at the 1968 Miami Pop Festival to whom? Not sure if the recipient named it Moon Unit.,Frank zappa,gemma,Museum of Modern Art,4,mistral,"Unclear about the specific recipient, but it was gifted to Bill Graham.",12,True
+"""From which Beatles song do the following lyrics come, """"Nothing's going to change my world""""?""",Across The Universe,mistral,"""The Fool on the Hill""",5,llama3.1,"""Change (Love Can Change Me)""",5,True
+"""From which Beatles song do the following lyrics come, """"Nothing's going to change my world""""?""",Across The Universe,gemma,"""All You Need Is Love""",5,llama3.1,"""Change (Love Can Change Me)""",5,True
+"""From which Beatles song do the following lyrics come, """"Nothing's going to change my world""""?""",Across The Universe,gemma,"""All You Need Is Love""",5,mistral,"""The Fool on the Hill""",5,True
+Which “Thom” is Radiohead’s lead singer and principal songwriter?,Youwouldn’tlikemewhenI’mangry,llama3.1,Thomas Yorke.,2,mistral,Thom Yorke,2,False
+Which “Thom” is Radiohead’s lead singer and principal songwriter?,Youwouldn’tlikemewhenI’mangry,llama3.1,Thomas Yorke.,2,gemma,Thom Yorke,2,False
+Which “Thom” is Radiohead’s lead singer and principal songwriter?,Youwouldn’tlikemewhenI’mangry,mistral,Thom Yorke,2,gemma,Thom Yorke,2,False
+Which former British PM was christened “Grocer” by Private Eye?,Sir Edward Heath,mistral,Edward Heath,2,llama3.1,Margaret Thatcher.,2,True
+Which former British PM was christened “Grocer” by Private Eye?,Sir Edward Heath,gemma,Margaret Thatcher,2,llama3.1,Margaret Thatcher.,2,True
+Which former British PM was christened “Grocer” by Private Eye?,Sir Edward Heath,gemma,Margaret Thatcher,2,mistral,Edward Heath,2,True
+In which sport would you see someone slam-dunking the ball?,Basketball,llama3.1,Basketball.,1,mistral,Basketball,1,False
+In which sport would you see someone slam-dunking the ball?,Basketball,gemma,Basketball,1,llama3.1,Basketball.,1,True
+In which sport would you see someone slam-dunking the ball?,Basketball,gemma,Basketball,1,mistral,Basketball,1,True
+"In Greek mythology, who was the mother of Perseus visited by Zeus disguised as a shower of gold?",Danaë,mistral,Danae (was visited),3,llama3.1,Danaë.,1,True
+"In Greek mythology, who was the mother of Perseus visited by Zeus disguised as a shower of gold?",Danaë,llama3.1,Danaë.,1,gemma,Danaë,1,False
+"In Greek mythology, who was the mother of Perseus visited by Zeus disguised as a shower of gold?",Danaë,mistral,Danae (was visited),3,gemma,Danaë,1,False
+Captain Corelli's mandolin is a book a film set in which country,Yunanistan,llama3.1,Greece,1,mistral,Greece,1,False
+Captain Corelli's mandolin is a book a film set in which country,Yunanistan,llama3.1,Greece,1,gemma,Greece,1,False
+Captain Corelli's mandolin is a book a film set in which country,Yunanistan,mistral,Greece,1,gemma,Greece,1,False
+"""The American film made at the very start of the sound film era, """"All Quiet on the Western Front"""" (1930), on the grimness of warfare in WWI was banned in Germany (after a brief run in 1930) not unexpectedly, but also where?""",Australia (Commonwealth realm),mistral,Banned in Italy,3,llama3.1,It was banned in Poland.,5,True
+"""The American film made at the very start of the sound film era, """"All Quiet on the Western Front"""" (1930), on the grimness of warfare in WWI was banned in Germany (after a brief run in 1930) not unexpectedly, but also where?""",Australia (Commonwealth realm),llama3.1,It was banned in Poland.,5,gemma,Nazi Germany,2,False
+"""The American film made at the very start of the sound film era, """"All Quiet on the Western Front"""" (1930), on the grimness of warfare in WWI was banned in Germany (after a brief run in 1930) not unexpectedly, but also where?""",Australia (Commonwealth realm),mistral,Banned in Italy,3,gemma,Nazi Germany,2,False
+Which is the largest cat in the world?,Manchurian Tiger,llama3.1,Siberian tiger.,2,mistral,Siberian Tiger is the largest cat species.,7,False
+Which is the largest cat in the world?,Manchurian Tiger,llama3.1,Siberian tiger.,2,gemma,Asiatic Lion,2,False
+Which is the largest cat in the world?,Manchurian Tiger,gemma,Asiatic Lion,2,mistral,Siberian Tiger is the largest cat species.,7,True
+"Which French winner of the Nobel Prize for Literature, famously dedicated it to his primary school teacher?",The Blood of the Hungarians,llama3.1,François Mauriac.,2,mistral,André Gide (dedicated Nobel Prize to his teacher),8,False
+"Which French winner of the Nobel Prize for Literature, famously dedicated it to his primary school teacher?",The Blood of the Hungarians,llama3.1,François Mauriac.,2,gemma,Mistral,1,False
+"Which French winner of the Nobel Prize for Literature, famously dedicated it to his primary school teacher?",The Blood of the Hungarians,gemma,Mistral,1,mistral,André Gide (dedicated Nobel Prize to his teacher),8,True
+"""What is the longest running emergency medical drama series in the world, and the second-longest-running medical drama in the world behind America's """"General Hospital""""?""",Casualty (disambiguation),llama3.1,"""ER""",1,mistral,ER (NBC),2,False
+"""What is the longest running emergency medical drama series in the world, and the second-longest-running medical drama in the world behind America's """"General Hospital""""?""",Casualty (disambiguation),gemma,"""Emergency!""",1,llama3.1,"""ER""",1,True
+"""What is the longest running emergency medical drama series in the world, and the second-longest-running medical drama in the world behind America's """"General Hospital""""?""",Casualty (disambiguation),mistral,ER (NBC),2,gemma,"""Emergency!""",1,False
+Clement (Clym) Yeobright is a leading character in which novel?,Return of the native,llama3.1,The Return of the Native,5,mistral,The Return of the Native,5,False
+Clement (Clym) Yeobright is a leading character in which novel?,Return of the native,llama3.1,The Return of the Native,5,gemma,Twilight,1,False
+Clement (Clym) Yeobright is a leading character in which novel?,Return of the native,mistral,The Return of the Native,5,gemma,Twilight,1,False
+A member of which profession would reside in a manse,Clergyman,llama3.1,Minister.,1,mistral,Minister (of religion),3,False
+A member of which profession would reside in a manse,Clergyman,llama3.1,Minister.,1,gemma,Priest,1,False
+A member of which profession would reside in a manse,Clergyman,gemma,Priest,1,mistral,Minister (of religion),3,True
+With what country did the United States re-establish diplomatic relations in 2015?,Republic of Cuba,llama3.1,Cuba.,1,mistral,Cuba,1,False
+With what country did the United States re-establish diplomatic relations in 2015?,Republic of Cuba,gemma,Cuba,1,llama3.1,Cuba.,1,True
+With what country did the United States re-establish diplomatic relations in 2015?,Republic of Cuba,gemma,Cuba,1,mistral,Cuba,1,True
+'Spring' and 'Rhenish' are the popular names given to symphonies by which composer?,"Schumann, Robert Alexander",llama3.1,Beethoven.,1,mistral,Beethoven,1,False
+'Spring' and 'Rhenish' are the popular names given to symphonies by which composer?,"Schumann, Robert Alexander",llama3.1,Beethoven.,1,gemma,Beethoven,1,False
+'Spring' and 'Rhenish' are the popular names given to symphonies by which composer?,"Schumann, Robert Alexander",mistral,Beethoven,1,gemma,Beethoven,1,False
+"In which arcade game, would you find ghosts called Inky, Pinky, Blinky and Clyde?",Pakman,mistral,Pac-Man,1,llama3.1,Pac-Man,1,True
+"In which arcade game, would you find ghosts called Inky, Pinky, Blinky and Clyde?",Pakman,gemma,Pac-Man,1,llama3.1,Pac-Man,1,True
+"In which arcade game, would you find ghosts called Inky, Pinky, Blinky and Clyde?",Pakman,mistral,Pac-Man,1,gemma,Pac-Man,1,False
+The most southerly part of mainland Australia is in which state?,CIVI-TV,mistral,Victoria (Wilson's Promontory),3,llama3.1,South Australia.,2,True
+The most southerly part of mainland Australia is in which state?,CIVI-TV,gemma,Queensland,1,llama3.1,South Australia.,2,True
+The most southerly part of mainland Australia is in which state?,CIVI-TV,gemma,Queensland,1,mistral,Victoria (Wilson's Promontory),3,True
+"What seven letter word, beginning with the letters 'Ra' is a palindrome?",Racing cars,mistral,"Arara
+
+(Arara is a type of parrot, and it reads the same backward as forward.)",15,llama3.1,Radar,1,True
+"What seven letter word, beginning with the letters 'Ra' is a palindrome?",Racing cars,gemma,Radar,1,llama3.1,Radar,1,True
+"What seven letter word, beginning with the letters 'Ra' is a palindrome?",Racing cars,mistral,"Arara
+
+(Arara is a type of parrot, and it reads the same backward as forward.)",15,gemma,Radar,1,False
+Who memorably failed to win the Marathon in the 1954 Commonwealth Games?,Jim Peters,llama3.1,Roger Bannister.,2,mistral,Roger Bannister (he won a mile race instead),8,False
+Who memorably failed to win the Marathon in the 1954 Commonwealth Games?,Jim Peters,llama3.1,Roger Bannister.,2,gemma,Derek Ibbotson,2,False
+Who memorably failed to win the Marathon in the 1954 Commonwealth Games?,Jim Peters,mistral,Roger Bannister (he won a mile race instead),8,gemma,Derek Ibbotson,2,False
+Breugel; Van Dyck and Rubens were all citizens of which country?,Belguim,mistral,Belgium,1,llama3.1,Flanders (which is part of Belgium),6,True
+Breugel; Van Dyck and Rubens were all citizens of which country?,Belguim,gemma,Belgium,1,llama3.1,Flanders (which is part of Belgium),6,True
+Breugel; Van Dyck and Rubens were all citizens of which country?,Belguim,mistral,Belgium,1,gemma,Belgium,1,False
+Which 1968 album released by George Harrison is notable for being the first official solo album by one of The Beatles?,Wonderwall Music,mistral,"""Wonderful Tonight"" (wrong, it's not George Harrison's album, but a song. The correct answer is ""All Things Must Pass"")",19,llama3.1,"The Beatles' solo career was not formally announced until later. However, George Harrison's ""Wonderwall Music"" (1968) was released earlier in that year as a soundtrack for the film ""Wonderwall"", but his 1970 release ""All Things Must Pass"" is often considered his debut solo album.
+
+That being said, the correct answer to your question would be: Wonderwall Music",57,True
+Which 1968 album released by George Harrison is notable for being the first official solo album by one of The Beatles?,Wonderwall Music,gemma,All Things Must Pass,4,llama3.1,"The Beatles' solo career was not formally announced until later. However, George Harrison's ""Wonderwall Music"" (1968) was released earlier in that year as a soundtrack for the film ""Wonderwall"", but his 1970 release ""All Things Must Pass"" is often considered his debut solo album.
+
+That being said, the correct answer to your question would be: Wonderwall Music",57,True
+Which 1968 album released by George Harrison is notable for being the first official solo album by one of The Beatles?,Wonderwall Music,mistral,"""Wonderful Tonight"" (wrong, it's not George Harrison's album, but a song. The correct answer is ""All Things Must Pass"")",19,gemma,All Things Must Pass,4,False
+What was Warren Beatty's first movie?,Splendor in the Grass,mistral,"""MacLean's Gladiators"" (1951)",3,llama3.1,Splendor in the Grass.,4,True
+What was Warren Beatty's first movie?,Splendor in the Grass,gemma,Heaven Can Wait,3,llama3.1,Splendor in the Grass.,4,True
+What was Warren Beatty's first movie?,Splendor in the Grass,mistral,"""MacLean's Gladiators"" (1951)",3,gemma,Heaven Can Wait,3,False
+"What company encourages you to ""Think Outside the Bun""?",Taco Bell Corporation,mistral,Burger King,2,llama3.1,Auntie Anne's.,2,True
+"What company encourages you to ""Think Outside the Bun""?",Taco Bell Corporation,gemma,McDonald's,1,llama3.1,Auntie Anne's.,2,True
+"What company encourages you to ""Think Outside the Bun""?",Taco Bell Corporation,mistral,Burger King,2,gemma,McDonald's,1,False
+How many avenues radiate from the Arc de Triomphe?,twelve,llama3.1,12.,1,mistral,Thirteen avenues radiate.,3,False
+How many avenues radiate from the Arc de Triomphe?,twelve,llama3.1,12.,1,gemma,Six,1,False
+How many avenues radiate from the Arc de Triomphe?,twelve,gemma,Six,1,mistral,Thirteen avenues radiate.,3,True
+"The longest running television series ever, November 6, 1947 saw the debut of what now weekly news program, now hosted by David Gregory, following the unfortunante sudden death of host Tim Russert?",Meet the Press with David Gregory,mistral,"""Meet the Press"" debuted on November 6, 1947.",8,llama3.1,Meet the Press.,3,True
+"The longest running television series ever, November 6, 1947 saw the debut of what now weekly news program, now hosted by David Gregory, following the unfortunante sudden death of host Tim Russert?",Meet the Press with David Gregory,llama3.1,Meet the Press.,3,gemma,NBC Nightly News,3,False
+"The longest running television series ever, November 6, 1947 saw the debut of what now weekly news program, now hosted by David Gregory, following the unfortunante sudden death of host Tim Russert?",Meet the Press with David Gregory,gemma,NBC Nightly News,3,mistral,"""Meet the Press"" debuted on November 6, 1947.",8,True
+"Indians used wampum for money, what was wampum",Beads or shells,llama3.1,Seashells and beads.,3,mistral,"Wampum is a form of beads made from shells, used as a medium of exchange among native American tribes.",19,False
+"Indians used wampum for money, what was wampum",Beads or shells,gemma,Beads,1,llama3.1,Seashells and beads.,3,True
+"Indians used wampum for money, what was wampum",Beads or shells,gemma,Beads,1,mistral,"Wampum is a form of beads made from shells, used as a medium of exchange among native American tribes.",19,True
+"In Jeff Wayne's 'Musical Version of Spartacus' released in 1992, which later Oscar-winning British actress sings the principal female role of Palene?",Catherine ζ-Jones,llama3.1,Susan Boyle doesn't appear to be involved.,7,mistral,Joan Collins,2,False
+"In Jeff Wayne's 'Musical Version of Spartacus' released in 1992, which later Oscar-winning British actress sings the principal female role of Palene?",Catherine ζ-Jones,gemma,Joely Richardson,2,llama3.1,Susan Boyle doesn't appear to be involved.,7,True
+"In Jeff Wayne's 'Musical Version of Spartacus' released in 1992, which later Oscar-winning British actress sings the principal female role of Palene?",Catherine ζ-Jones,gemma,Joely Richardson,2,mistral,Joan Collins,2,True
+What celestial object was visited by the New Horizons spacecraft in 2015?,134340 Pluto.,mistral,Pluto (dwarf planet),3,llama3.1,Pluto.,1,True
+What celestial object was visited by the New Horizons spacecraft in 2015?,134340 Pluto.,llama3.1,Pluto.,1,gemma,Pluto,1,False
+What celestial object was visited by the New Horizons spacecraft in 2015?,134340 Pluto.,gemma,Pluto,1,mistral,Pluto (dwarf planet),3,True
+"What 1945 film won best picture, actor, director Oscars?",The Lost Weekend,mistral,"""The Lost Weekend""",3,llama3.1,It Happened One Night.,4,True
+"What 1945 film won best picture, actor, director Oscars?",The Lost Weekend,llama3.1,It Happened One Night.,4,gemma,Citizen Kane,2,False
+"What 1945 film won best picture, actor, director Oscars?",The Lost Weekend,mistral,"""The Lost Weekend""",3,gemma,Citizen Kane,2,False
+"With 47 attacks in the year 2010 alone, what body of water is known as Pirate Alley?",Gulf of Aden,llama3.1,Gulf of Aden.,3,mistral,Caribbean Sea,2,False
+"With 47 attacks in the year 2010 alone, what body of water is known as Pirate Alley?",Gulf of Aden,gemma,Caribbean Sea,2,llama3.1,Gulf of Aden.,3,True
+"With 47 attacks in the year 2010 alone, what body of water is known as Pirate Alley?",Gulf of Aden,mistral,Caribbean Sea,2,gemma,Caribbean Sea,2,False
+What is the state capital of Alabama,Montgomerie,mistral,Montgomery,1,llama3.1,Montgomery,1,True
+What is the state capital of Alabama,Montgomerie,gemma,Montgomery,1,llama3.1,Montgomery,1,True
+What is the state capital of Alabama,Montgomerie,mistral,Montgomery,1,gemma,Montgomery,1,False
+English sportswoman Charlotte Edwards is associated with which sport?,Cricket games,mistral,Cricket,1,llama3.1,Cricket.,1,True
+English sportswoman Charlotte Edwards is associated with which sport?,Cricket games,gemma,Cricket,1,llama3.1,Cricket.,1,True
+English sportswoman Charlotte Edwards is associated with which sport?,Cricket games,gemma,Cricket,1,mistral,Cricket,1,True
+Which French racecourse hosts the 'Prix de l'Arc de Triomphe?,Longchamps,mistral,Longchamp racecourse,2,llama3.1,Longchamp.,1,True
+Which French racecourse hosts the 'Prix de l'Arc de Triomphe?,Longchamps,llama3.1,Longchamp.,1,gemma,Longchamp,1,False
+Which French racecourse hosts the 'Prix de l'Arc de Triomphe?,Longchamps,gemma,Longchamp,1,mistral,Longchamp racecourse,2,True
+Which doctor - an eternal optimist – features in Voltaire’s Candide?,Dr Pangloss,mistral,Dr. Pangloss,2,llama3.1,Pangloss.,1,True
+Which doctor - an eternal optimist – features in Voltaire’s Candide?,Dr Pangloss,llama3.1,Pangloss.,1,gemma,Pangloss,1,False
+Which doctor - an eternal optimist – features in Voltaire’s Candide?,Dr Pangloss,gemma,Pangloss,1,mistral,Dr. Pangloss,2,True
+Which journalist first told the world about the My Lai massacre?,Seymour Hersch,mistral,Seymour Hersh,2,llama3.1,Seymour Hersh.,2,True
+Which journalist first told the world about the My Lai massacre?,Seymour Hersch,llama3.1,Seymour Hersh.,2,gemma,Seymour Hersh,2,False
+Which journalist first told the world about the My Lai massacre?,Seymour Hersch,mistral,Seymour Hersh,2,gemma,Seymour Hersh,2,False
+What are the last six words of Rudyard Kipling’s ‘If’?,"YOU’LL BE A MAN, MY SON",mistral,"""If—, by Rudyard Kipling, ends with 'Or walk with Kings—nor lose the common touch.' """,15,llama3.1,And – which is more – you'll be a Man.,10,True
+What are the last six words of Rudyard Kipling’s ‘If’?,"YOU’LL BE A MAN, MY SON",llama3.1,And – which is more – you'll be a Man.,10,gemma,"""The world that never seems to end.""",7,False
+What are the last six words of Rudyard Kipling’s ‘If’?,"YOU’LL BE A MAN, MY SON",gemma,"""The world that never seems to end.""",7,mistral,"""If—, by Rudyard Kipling, ends with 'Or walk with Kings—nor lose the common touch.' """,15,True
+What was the name of the Liverpool nightclub where the Beatles regularly played?,Cavern club,mistral,Cavern Club,2,llama3.1,The Cavern Club.,3,True
+What was the name of the Liverpool nightclub where the Beatles regularly played?,Cavern club,llama3.1,The Cavern Club.,3,gemma,Cavern,1,False
+What was the name of the Liverpool nightclub where the Beatles regularly played?,Cavern club,gemma,Cavern,1,mistral,Cavern Club,2,True
+What are the topmost 7 vertebrae of the backbone called?,Cervical,llama3.1,Cervical spine.,2,mistral,Cervical vertebrae (C1-C7),3,False
+What are the topmost 7 vertebrae of the backbone called?,Cervical,llama3.1,Cervical spine.,2,gemma,Atlas to C7,3,False
+What are the topmost 7 vertebrae of the backbone called?,Cervical,gemma,Atlas to C7,3,mistral,Cervical vertebrae (C1-C7),3,True
+What is the name of the vessel in Paul Gallico's 1969 adventure novel that has been adapted as a film four times?,Earth Shaker,llama3.1,The Poseidon.,2,mistral,"""The Poseidon Adventure"" (ship)",4,False
+What is the name of the vessel in Paul Gallico's 1969 adventure novel that has been adapted as a film four times?,Earth Shaker,llama3.1,The Poseidon.,2,gemma,The Golden Fleece,3,False
+What is the name of the vessel in Paul Gallico's 1969 adventure novel that has been adapted as a film four times?,Earth Shaker,gemma,The Golden Fleece,3,mistral,"""The Poseidon Adventure"" (ship)",4,True
+On which coast of South America would you find the country of Venezuela?,Northward,llama3.1,Caribbean Coast.,2,mistral,Caribbean coast,2,False
+On which coast of South America would you find the country of Venezuela?,Northward,llama3.1,Caribbean Coast.,2,gemma,Caribbean,1,False
+On which coast of South America would you find the country of Venezuela?,Northward,gemma,Caribbean,1,mistral,Caribbean coast,2,True
+What is the more common name for the white crystalline salt called hydrated sodium pyroborate?,Na2b4o7,llama3.1,Borax.,1,mistral,"Borax
+
+Note: Hydrated sodium borate or sodium borate decahydrate is another common name.",13,False
+What is the more common name for the white crystalline salt called hydrated sodium pyroborate?,Na2b4o7,gemma,Borax,1,llama3.1,Borax.,1,True
+What is the more common name for the white crystalline salt called hydrated sodium pyroborate?,Na2b4o7,gemma,Borax,1,mistral,"Borax
+
+Note: Hydrated sodium borate or sodium borate decahydrate is another common name.",13,True
+Which element takes its name from the Persian for 'gold coloured'?,Zirconium salts,llama3.1,Cadmium.,1,mistral,Cadmium,1,False
+Which element takes its name from the Persian for 'gold coloured'?,Zirconium salts,llama3.1,Cadmium.,1,gemma,Mercury,1,False
+Which element takes its name from the Persian for 'gold coloured'?,Zirconium salts,gemma,Mercury,1,mistral,Cadmium,1,True
+A Varsovian is a native of which capital city,Warwaw,llama3.1,Warsaw.,1,mistral,Warsaw (Poland),2,False
+A Varsovian is a native of which capital city,Warwaw,gemma,Warsaw,1,llama3.1,Warsaw.,1,True
+A Varsovian is a native of which capital city,Warwaw,mistral,Warsaw (Poland),2,gemma,Warsaw,1,False
+What name besides glove is given commonly to a baseball player's handwear?,Mitt,mistral,Mitt (or Baseball Mitt),4,llama3.1,Mitt.,1,True
+What name besides glove is given commonly to a baseball player's handwear?,Mitt,gemma,Mit,1,llama3.1,Mitt.,1,True
+What name besides glove is given commonly to a baseball player's handwear?,Mitt,gemma,Mit,1,mistral,Mitt (or Baseball Mitt),4,True
+"What American animal is commonly called an antelope, but is not actually an antelope?",Pronghorns,llama3.1,Pronghorn.,1,mistral,"Pronghorn, not an antelope.",4,False
+"What American animal is commonly called an antelope, but is not actually an antelope?",Pronghorns,gemma,Mustang,1,llama3.1,Pronghorn.,1,True
+"What American animal is commonly called an antelope, but is not actually an antelope?",Pronghorns,mistral,"Pronghorn, not an antelope.",4,gemma,Mustang,1,False
+Scrying commonly entails the use of a?,Crystal ball,llama3.1,Mirror.,1,mistral,"Reflective surface (crystal ball, mirror)",5,False
+Scrying commonly entails the use of a?,Crystal ball,gemma,Crystal ball,2,llama3.1,Mirror.,1,True
+Scrying commonly entails the use of a?,Crystal ball,mistral,"Reflective surface (crystal ball, mirror)",5,gemma,Crystal ball,2,False
+What is the last name name of the doctor who first described a certain disease in An Essay on the Shaking Palsy written in 1817?,Dr. (James) Parkinson,mistral,Parkinson,1,llama3.1,James Parkinson.,2,True
+What is the last name name of the doctor who first described a certain disease in An Essay on the Shaking Palsy written in 1817?,Dr. (James) Parkinson,llama3.1,James Parkinson.,2,gemma,Parkinson,1,False
+What is the last name name of the doctor who first described a certain disease in An Essay on the Shaking Palsy written in 1817?,Dr. (James) Parkinson,gemma,Parkinson,1,mistral,Parkinson,1,True
+"Two all beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun describes what?",Big Mac Sauce,llama3.1,A Big Mac.,3,mistral,A Big Mac from McDonald's.,5,False
+"Two all beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun describes what?",Big Mac Sauce,gemma,A McDonald's burger.,3,llama3.1,A Big Mac.,3,True
+"Two all beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun describes what?",Big Mac Sauce,mistral,A Big Mac from McDonald's.,5,gemma,A McDonald's burger.,3,False
+Who was the first person after Scott to reach the South Pole overland?,Sir Edmund Hillary,mistral,Roald Amundsen (1911),3,llama3.1,Roald Amundsen.,2,True
+Who was the first person after Scott to reach the South Pole overland?,Sir Edmund Hillary,llama3.1,Roald Amundsen.,2,gemma,Amundsen,1,False
+Who was the first person after Scott to reach the South Pole overland?,Sir Edmund Hillary,mistral,Roald Amundsen (1911),3,gemma,Amundsen,1,False
+What type of aircraft was used by Alcock and Brown when they became the first men to fly the Atlantic non stop?,Vickers Vimy Commercial,llama3.1,Vickers Vimy bomber.,3,mistral,Vickers Vimy.,2,False
+What type of aircraft was used by Alcock and Brown when they became the first men to fly the Atlantic non stop?,Vickers Vimy Commercial,llama3.1,Vickers Vimy bomber.,3,gemma,Sopwith Camel,2,False
+What type of aircraft was used by Alcock and Brown when they became the first men to fly the Atlantic non stop?,Vickers Vimy Commercial,mistral,Vickers Vimy.,2,gemma,Sopwith Camel,2,False
+Which is the first written single word number in which the letter ‘A’ appears?,Thousand,mistral,Fifteen,1,llama3.1,One,1,True
+Which is the first written single word number in which the letter ‘A’ appears?,Thousand,gemma,Twenty,1,llama3.1,One,1,True
+Which is the first written single word number in which the letter ‘A’ appears?,Thousand,mistral,Fifteen,1,gemma,Twenty,1,False
+What was the name of Shari Lewis' sassy sock puppet?,Lamb Chop,llama3.1,Lamb Chop.,2,mistral,"Larry the Lamb
+
+[Explanation for further understanding: Shari Lewis, an American ventriloquist and television personality, is best known for her marionette and sock puppets, with Larry the Lamb being one of the most popular ones. Created in 1960, Larry was portrayed as a sassy, talkative lamb who often shared funny dialogues and stories.]",53,False
+What was the name of Shari Lewis' sassy sock puppet?,Lamb Chop,llama3.1,Lamb Chop.,2,gemma,Lambchop,1,False
+What was the name of Shari Lewis' sassy sock puppet?,Lamb Chop,gemma,Lambchop,1,mistral,"Larry the Lamb
+
+[Explanation for further understanding: Shari Lewis, an American ventriloquist and television personality, is best known for her marionette and sock puppets, with Larry the Lamb being one of the most popular ones. Created in 1960, Larry was portrayed as a sassy, talkative lamb who often shared funny dialogues and stories.]",53,True
+What is the fastest animal on two legs?,Ostrich farms,mistral,Cheetah (on occasion),3,llama3.1,Ostrich.,1,True
+What is the fastest animal on two legs?,Ostrich farms,gemma,Track runner,2,llama3.1,Ostrich.,1,True
+What is the fastest animal on two legs?,Ostrich farms,mistral,Cheetah (on occasion),3,gemma,Track runner,2,False
+Whose horse was Black Nell?,Wild Bill Hickok's,llama3.1,Eugene Wilson's.,2,mistral,Belonged to Dick Turpin.,4,False
+Whose horse was Black Nell?,Wild Bill Hickok's,llama3.1,Eugene Wilson's.,2,gemma,Lexington's,1,False
+Whose horse was Black Nell?,Wild Bill Hickok's,mistral,Belonged to Dick Turpin.,4,gemma,Lexington's,1,False
+On what body of water did Jesus supposedly walk?,Sea of Genezareth,llama3.1,The Sea of Galilee.,4,mistral,Sea of Galilee,3,False
+On what body of water did Jesus supposedly walk?,Sea of Genezareth,llama3.1,The Sea of Galilee.,4,gemma,Sea of Galilee,3,False
+On what body of water did Jesus supposedly walk?,Sea of Genezareth,gemma,Sea of Galilee,3,mistral,Sea of Galilee,3,True
+"What is the title of Tony Blair's autobiography/memoir published in 2010, which covered events from 1994 to his resignation as Prime Minister?",A Journey,llama3.1,"""A Journey""",2,mistral,"""A Journey""",2,False
+"What is the title of Tony Blair's autobiography/memoir published in 2010, which covered events from 1994 to his resignation as Prime Minister?",A Journey,gemma,Backstage,1,llama3.1,"""A Journey""",2,True
+"What is the title of Tony Blair's autobiography/memoir published in 2010, which covered events from 1994 to his resignation as Prime Minister?",A Journey,gemma,Backstage,1,mistral,"""A Journey""",2,True
+What was Julian Schnabel's acclaimed 2008 film of the book written by a stroke victim's blinking eye?,The Diving-Bell and the Butterfly,mistral,"""The Diving Bell and the Butterfly""",6,llama3.1,"""The Diving Bell and the Butterfly""",6,True
+What was Julian Schnabel's acclaimed 2008 film of the book written by a stroke victim's blinking eye?,The Diving-Bell and the Butterfly,llama3.1,"""The Diving Bell and the Butterfly""",6,gemma,The Diving Bell and the Butterfly,6,False
+What was Julian Schnabel's acclaimed 2008 film of the book written by a stroke victim's blinking eye?,The Diving-Bell and the Butterfly,gemma,The Diving Bell and the Butterfly,6,mistral,"""The Diving Bell and the Butterfly""",6,True
+Which king’s beloved son William was drowned in the tragedy of the White Ship?,Enrique I,llama3.1,King Henry I.,3,mistral,"Henry I's son, William Adelin",5,False
+Which king’s beloved son William was drowned in the tragedy of the White Ship?,Enrique I,gemma,Henry II,2,llama3.1,King Henry I.,3,True
+Which king’s beloved son William was drowned in the tragedy of the White Ship?,Enrique I,gemma,Henry II,2,mistral,"Henry I's son, William Adelin",5,True
+"What was the 42nd state to join the Union on Nov 11, 1889?",Washington (Amtrak station),llama3.1,Washington.,1,mistral,"Washington joined the Union on Nov 11, 1889.",8,False
+"What was the 42nd state to join the Union on Nov 11, 1889?",Washington (Amtrak station),llama3.1,Washington.,1,gemma,Arizona,1,False
+"What was the 42nd state to join the Union on Nov 11, 1889?",Washington (Amtrak station),mistral,"Washington joined the Union on Nov 11, 1889.",8,gemma,Arizona,1,False
+A Suffolk Punch is what kind of animal?,Horse,llama3.1,A breed of horse.,4,mistral,Horse breed,2,False
+A Suffolk Punch is what kind of animal?,Horse,gemma,Horse,1,llama3.1,A breed of horse.,4,True
+A Suffolk Punch is what kind of animal?,Horse,mistral,Horse breed,2,gemma,Horse,1,False
+A rabbit punch is a blow to what part of the body?,Necke,mistral,Ear or side of head,5,llama3.1,The kidney.,2,True
+A rabbit punch is a blow to what part of the body?,Necke,llama3.1,The kidney.,2,gemma,Head,1,False
+A rabbit punch is a blow to what part of the body?,Necke,mistral,Ear or side of head,5,gemma,Head,1,False
+"Which American wit said, 'This is not a novel to be tossed aside lightly. It should be thrown with great force'?",Constant Reader,mistral,Dorothy Parker,2,llama3.1,Ernest Hemingway.,2,True
+"Which American wit said, 'This is not a novel to be tossed aside lightly. It should be thrown with great force'?",Constant Reader,llama3.1,Ernest Hemingway.,2,gemma,Mark Twain,2,False
+"Which American wit said, 'This is not a novel to be tossed aside lightly. It should be thrown with great force'?",Constant Reader,mistral,Dorothy Parker,2,gemma,Mark Twain,2,False
+What was the first Beatles film?,A hard day's night,mistral,"""A Hard Day's Night"" (1964)",5,llama3.1,A Hard Day's Night (1964),5,True
+What was the first Beatles film?,A hard day's night,llama3.1,A Hard Day's Night (1964),5,gemma,A Hard Day's Night,4,False
+What was the first Beatles film?,A hard day's night,gemma,A Hard Day's Night,4,mistral,"""A Hard Day's Night"" (1964)",5,True
+Films. Which Dominic starred as Merry (Meriadoc) in ‘The Lord of the Rings’?,Monaghan Urban Council,llama3.1,Dominic Monaghan.,2,mistral,Elijah Wood,2,False
+Films. Which Dominic starred as Merry (Meriadoc) in ‘The Lord of the Rings’?,Monaghan Urban Council,gemma,Wilson.,1,llama3.1,Dominic Monaghan.,2,True
+Films. Which Dominic starred as Merry (Meriadoc) in ‘The Lord of the Rings’?,Monaghan Urban Council,gemma,Wilson.,1,mistral,Elijah Wood,2,True
+Which celebrity first found fame as the Joan Collins Fan Club,Joan Collins Fanclub,mistral,Andy Warhol,2,llama3.1,"Mick Fleetwood's wife, Christine did not run it.",8,True
+Which celebrity first found fame as the Joan Collins Fan Club,Joan Collins Fanclub,llama3.1,"Mick Fleetwood's wife, Christine did not run it.",8,gemma,Jennifer Love Hewitt,3,False
+Which celebrity first found fame as the Joan Collins Fan Club,Joan Collins Fanclub,gemma,Jennifer Love Hewitt,3,mistral,Andy Warhol,2,True
+Which Japanese island that has its capital at Sapporo is the traditional home of the Ainu people?,Hokkaidou prefecture,llama3.1,Hokkaido.,1,mistral,Hokkaido,1,False
+Which Japanese island that has its capital at Sapporo is the traditional home of the Ainu people?,Hokkaidou prefecture,llama3.1,Hokkaido.,1,gemma,Hokkaido,1,False
+Which Japanese island that has its capital at Sapporo is the traditional home of the Ainu people?,Hokkaidou prefecture,gemma,Hokkaido,1,mistral,Hokkaido,1,True
+In which US city do the Baseball team known as the 'Royals' play their home games?,Kansas City Metro,mistral,Kansas City,2,llama3.1,Kansas City.,2,True
+In which US city do the Baseball team known as the 'Royals' play their home games?,Kansas City Metro,llama3.1,Kansas City.,2,gemma,Kansas City,2,False
+In which US city do the Baseball team known as the 'Royals' play their home games?,Kansas City Metro,gemma,Kansas City,2,mistral,Kansas City,2,True
+"""What medical board game features body parts such as """"Charley Horse"""" and """"Spare Ribs""""?""",Operations,mistral,Operation Board Game,3,llama3.1,Operation.,1,True
+"""What medical board game features body parts such as """"Charley Horse"""" and """"Spare Ribs""""?""",Operations,gemma,Scrabble,1,llama3.1,Operation.,1,True
+"""What medical board game features body parts such as """"Charley Horse"""" and """"Spare Ribs""""?""",Operations,gemma,Scrabble,1,mistral,Operation Board Game,3,True
+What term refers to a triangle with two equal sides?,Isosceles triangle,llama3.1,Isosceles.,1,mistral,Isosceles triangle,2,False
+What term refers to a triangle with two equal sides?,Isosceles triangle,llama3.1,Isosceles.,1,gemma,Isosceles,1,False
+What term refers to a triangle with two equal sides?,Isosceles triangle,gemma,Isosceles,1,mistral,Isosceles triangle,2,True
+Who was the leader of France’s Vichy Government during World War II?,Henri Phillippe Pétain,llama3.1,Marshall Philippe Pétain.,3,mistral,Philippe Pétain,2,False
+Who was the leader of France’s Vichy Government during World War II?,Henri Phillippe Pétain,llama3.1,Marshall Philippe Pétain.,3,gemma,Philippe Pétain,2,False
+Who was the leader of France’s Vichy Government during World War II?,Henri Phillippe Pétain,mistral,Philippe Pétain,2,gemma,Philippe Pétain,2,False
+If I Were A Rich Man Was a big hit from which stage show?,Fiddler on a Roof,llama3.1,Fiddler on the Roof,4,mistral,Fiddler on the Roof,4,False
+If I Were A Rich Man Was a big hit from which stage show?,Fiddler on a Roof,llama3.1,Fiddler on the Roof,4,gemma,Broadway,1,False
+If I Were A Rich Man Was a big hit from which stage show?,Fiddler on a Roof,gemma,Broadway,1,mistral,Fiddler on the Roof,4,True
+"Luzon, Visayas and Mindanao form the three major island groups of which country?",Islas Filipinas,llama3.1,The Philippines.,2,mistral,Philippines,1,False
+"Luzon, Visayas and Mindanao form the three major island groups of which country?",Islas Filipinas,llama3.1,The Philippines.,2,gemma,Philippines,1,False
+"Luzon, Visayas and Mindanao form the three major island groups of which country?",Islas Filipinas,gemma,Philippines,1,mistral,Philippines,1,True
+"First debuting in the cartoon Mickey's Review, what classic turtle neck wearing cartoon character had the original name of Dippy Dog?",Goofy holler,mistral,Donald Duck,2,llama3.1,Yogi Bear,2,True
+"First debuting in the cartoon Mickey's Review, what classic turtle neck wearing cartoon character had the original name of Dippy Dog?",Goofy holler,llama3.1,Yogi Bear,2,gemma,Donald Duck,2,False
+"First debuting in the cartoon Mickey's Review, what classic turtle neck wearing cartoon character had the original name of Dippy Dog?",Goofy holler,gemma,Donald Duck,2,mistral,Donald Duck,2,True
+"What is prussic acid, found in bitter almonds and laurel leaves, also known as?",Formic anammonide,mistral,Cyanoacetic acid or prussian oil,5,llama3.1,Hydrogen cyanide.,2,True
+"What is prussic acid, found in bitter almonds and laurel leaves, also known as?",Formic anammonide,gemma,Hydrogen cyanide,2,llama3.1,Hydrogen cyanide.,2,True
+"What is prussic acid, found in bitter almonds and laurel leaves, also known as?",Formic anammonide,gemma,Hydrogen cyanide,2,mistral,Cyanoacetic acid or prussian oil,5,True
+Which UK band had 2 top ten singles in the same week in 2001?,Manic Street Preachers,mistral,"The Beatles (in 1976, not 2001)",6,llama3.1,Westlife.,1,True
+Which UK band had 2 top ten singles in the same week in 2001?,Manic Street Preachers,gemma,Geri Halliwell,2,llama3.1,Westlife.,1,True
+Which UK band had 2 top ten singles in the same week in 2001?,Manic Street Preachers,mistral,"The Beatles (in 1976, not 2001)",6,gemma,Geri Halliwell,2,False
+"The first US space station was launched on May 14, 1973. What was it called?",Skylab One,mistral,Skylab,1,llama3.1,Skylab B.,2,True
+"The first US space station was launched on May 14, 1973. What was it called?",Skylab One,gemma,Skylab,1,llama3.1,Skylab B.,2,True
+"The first US space station was launched on May 14, 1973. What was it called?",Skylab One,gemma,Skylab,1,mistral,Skylab,1,True
+Which P is the correct technical term for the art of making and displaying fireworks?,Pyrotecnics,mistral,Pyrotechnics,1,llama3.1,Pyrotechnics.,1,True
+Which P is the correct technical term for the art of making and displaying fireworks?,Pyrotecnics,llama3.1,Pyrotechnics.,1,gemma,Pyrotechnics,1,False
+Which P is the correct technical term for the art of making and displaying fireworks?,Pyrotecnics,mistral,Pyrotechnics,1,gemma,Pyrotechnics,1,False
+What is the more common name for atmospheric vapour frozen in a crystalline form,Snowflake structure,llama3.1,Snow.,1,mistral,Frozen atmospheric vapour is commonly known as snow.,8,False
+What is the more common name for atmospheric vapour frozen in a crystalline form,Snowflake structure,gemma,Snow,1,llama3.1,Snow.,1,True
+What is the more common name for atmospheric vapour frozen in a crystalline form,Snowflake structure,gemma,Snow,1,mistral,Frozen atmospheric vapour is commonly known as snow.,8,True
+"In the 2005 Julian Barnes novel ‘Arthur and George’, who is Arthur?",A Conan Doyle,llama3.1,Sir Arthur Conan Doyle.,4,mistral,Arthur Conan Doyle,3,False
+"In the 2005 Julian Barnes novel ‘Arthur and George’, who is Arthur?",A Conan Doyle,llama3.1,Sir Arthur Conan Doyle.,4,gemma,A retired MI5 agent.,4,False
+"In the 2005 Julian Barnes novel ‘Arthur and George’, who is Arthur?",A Conan Doyle,gemma,A retired MI5 agent.,4,mistral,Arthur Conan Doyle,3,True
+Which organization of the Catholic church whose name is Latin for 'Work of God' received world attention with the publication of The Da Vinci Code in which it is portrayed as participating in a sinister international conspiracy?,The Prelature of the Holy Cross and Opus Dei,mistral,Opus Dei,2,llama3.1,Opus Dei.,2,True
+Which organization of the Catholic church whose name is Latin for 'Work of God' received world attention with the publication of The Da Vinci Code in which it is portrayed as participating in a sinister international conspiracy?,The Prelature of the Holy Cross and Opus Dei,gemma,Opus Dei,2,llama3.1,Opus Dei.,2,True
+Which organization of the Catholic church whose name is Latin for 'Work of God' received world attention with the publication of The Da Vinci Code in which it is portrayed as participating in a sinister international conspiracy?,The Prelature of the Holy Cross and Opus Dei,gemma,Opus Dei,2,mistral,Opus Dei,2,True
+Fado is a type of music from which country?,Portogało,llama3.1,Portugal.,1,mistral,Portugal,1,False
+Fado is a type of music from which country?,Portogało,llama3.1,Portugal.,1,gemma,Portugal,1,False
+Fado is a type of music from which country?,Portogało,mistral,Portugal,1,gemma,Portugal,1,False
+What is the capital of Algeria,"Algiers, AL",llama3.1,Algiers,1,mistral,Algiers,1,False
+What is the capital of Algeria,"Algiers, AL",llama3.1,Algiers,1,gemma,Alger,1,False
+What is the capital of Algeria,"Algiers, AL",mistral,Algiers,1,gemma,Alger,1,False
+"In weaving, what are the threads running parallel to the length of the cloth called?",Warping,llama3.1,Warp.,1,mistral,Warp threads,2,False
+"In weaving, what are the threads running parallel to the length of the cloth called?",Warping,gemma,Warp,1,llama3.1,Warp.,1,True
+"In weaving, what are the threads running parallel to the length of the cloth called?",Warping,gemma,Warp,1,mistral,Warp threads,2,True
+"In the human body, what is the common name for the 'Talus bone'?",Ancle,mistral,Ankle bone,2,llama3.1,Ankle Bone.,2,True
+"In the human body, what is the common name for the 'Talus bone'?",Ancle,gemma,Ankle bone,2,llama3.1,Ankle Bone.,2,True
+"In the human body, what is the common name for the 'Talus bone'?",Ancle,gemma,Ankle bone,2,mistral,Ankle bone,2,True
+Can you connect Darwin and his research on Galapagos Islands to the book To Kill a Mockingbird?,Fringillidae,mistral,"No direct connection. Darwin's work is about evolution, while To Kill a Mockingbird deals with racial injustice in the American South.",21,llama3.1,No direct connection.,3,True
+Can you connect Darwin and his research on Galapagos Islands to the book To Kill a Mockingbird?,Fringillidae,llama3.1,No direct connection.,3,gemma,Natural selection and prejudice,4,False
+Can you connect Darwin and his research on Galapagos Islands to the book To Kill a Mockingbird?,Fringillidae,mistral,"No direct connection. Darwin's work is about evolution, while To Kill a Mockingbird deals with racial injustice in the American South.",21,gemma,Natural selection and prejudice,4,False
+"""Who said, To err is human but it feels divine?""""""",Mae West,mistral,"George Santayana said, ""To err is human, to forgive, divine."" However, the phrase you provided, ""it feels divine,"" was not originally part of his quote.",25,llama3.1,Oscar Wilde,2,True
+"""Who said, To err is human but it feels divine?""""""",Mae West,llama3.1,Oscar Wilde,2,gemma,Shakespeare,1,False
+"""Who said, To err is human but it feels divine?""""""",Mae West,gemma,Shakespeare,1,mistral,"George Santayana said, ""To err is human, to forgive, divine."" However, the phrase you provided, ""it feels divine,"" was not originally part of his quote.",25,True
+An isohel is a line on a map connecting two points which have the same duration of what?,Solar Irradiation,mistral,Sunlight intensity (solar time),4,llama3.1,solar time,2,True
+An isohel is a line on a map connecting two points which have the same duration of what?,Solar Irradiation,llama3.1,solar time,2,gemma,Isohel = Isochron line.,4,False
+An isohel is a line on a map connecting two points which have the same duration of what?,Solar Irradiation,gemma,Isohel = Isochron line.,4,mistral,Sunlight intensity (solar time),4,True
+What was placed in Earth’s orbit by Discovery in 1990?,Hubble Space telescope,mistral,Hubble Space Telescope,3,llama3.1,Hubble Space Telescope.,3,True
+What was placed in Earth’s orbit by Discovery in 1990?,Hubble Space telescope,llama3.1,Hubble Space Telescope.,3,gemma,Space Telescope,2,False
+What was placed in Earth’s orbit by Discovery in 1990?,Hubble Space telescope,mistral,Hubble Space Telescope,3,gemma,Space Telescope,2,False
+"Vijay Singh, a US Masters champion, comes from where?",Fiji Islands,llama3.1,Fiji.,1,mistral,Fiji,1,False
+"Vijay Singh, a US Masters champion, comes from where?",Fiji Islands,llama3.1,Fiji.,1,gemma,Fiji,1,False
+"Vijay Singh, a US Masters champion, comes from where?",Fiji Islands,gemma,Fiji,1,mistral,Fiji,1,True
+What are the only two types of mammal that can lay eggs?,Platamapus,mistral,Monotremes (Platypus and Echidna),4,llama3.1,Monotremes (Platypus and Echidna),4,True
+What are the only two types of mammal that can lay eggs?,Platamapus,llama3.1,Monotremes (Platypus and Echidna),4,gemma,Platypus and echidna,3,False
+What are the only two types of mammal that can lay eggs?,Platamapus,gemma,Platypus and echidna,3,mistral,Monotremes (Platypus and Echidna),4,True
+What is animelles the culinary term for,Testical cyst,llama3.1,Egg yolk.,2,mistral,"A type of Japanese animated film or TV show, not a culinary term.",13,False
+What is animelles the culinary term for,Testical cyst,gemma,Garlic,1,llama3.1,Egg yolk.,2,True
+What is animelles the culinary term for,Testical cyst,gemma,Garlic,1,mistral,"A type of Japanese animated film or TV show, not a culinary term.",13,True
+"In the human body, what seven letter word describes the loss of the sense of smell ?",Anosmia,mistral,Olfactory loss (anosmia),3,llama3.1,Anosmia,1,True
+"In the human body, what seven letter word describes the loss of the sense of smell ?",Anosmia,llama3.1,Anosmia,1,gemma,Rhinophilia,1,False
+"In the human body, what seven letter word describes the loss of the sense of smell ?",Anosmia,mistral,Olfactory loss (anosmia),3,gemma,Rhinophilia,1,False
+In which ‘business’ did John Davidson Rockefeller make his fortune?,Oil (disambiguation),llama3.1,Oil industry.,2,mistral,Oil industry,2,False
+In which ‘business’ did John Davidson Rockefeller make his fortune?,Oil (disambiguation),gemma,Oil,1,llama3.1,Oil industry.,2,True
+In which ‘business’ did John Davidson Rockefeller make his fortune?,Oil (disambiguation),mistral,Oil industry,2,gemma,Oil,1,False
+"""What has been described as the """"fifth"""" taste, after sweet, sour, bitter, and salty?""",Savory taste,mistral,Umami (savory),2,llama3.1,Umami.,1,True
+"""What has been described as the """"fifth"""" taste, after sweet, sour, bitter, and salty?""",Savory taste,gemma,Umami,1,llama3.1,Umami.,1,True
+"""What has been described as the """"fifth"""" taste, after sweet, sour, bitter, and salty?""",Savory taste,gemma,Umami,1,mistral,Umami (savory),2,True
+"In Greek mythology, who stole fire from the gods and gave it to the human race?",Trick at mecone,mistral,Prometheus,1,llama3.1,Prometheus.,1,True
+"In Greek mythology, who stole fire from the gods and gave it to the human race?",Trick at mecone,llama3.1,Prometheus.,1,gemma,Prometheus,1,False
+"In Greek mythology, who stole fire from the gods and gave it to the human race?",Trick at mecone,mistral,Prometheus,1,gemma,Prometheus,1,False
+Which metal is added to steel to produce stainless steel?,Chromium compounds,llama3.1,Chromium.,1,mistral,Chromium,1,False
+Which metal is added to steel to produce stainless steel?,Chromium compounds,gemma,Chromium,1,llama3.1,Chromium.,1,True
+Which metal is added to steel to produce stainless steel?,Chromium compounds,gemma,Chromium,1,mistral,Chromium,1,True
+What colour/color is Mr Bump in Hargreaves' Mr Men series of children's cartoon books?,Blue,mistral,Blue (Bump),2,llama3.1,Red,1,True
+What colour/color is Mr Bump in Hargreaves' Mr Men series of children's cartoon books?,Blue,llama3.1,Red,1,gemma,Purple,1,False
+What colour/color is Mr Bump in Hargreaves' Mr Men series of children's cartoon books?,Blue,gemma,Purple,1,mistral,Blue (Bump),2,True
+What is the name given to the official residence provided for the Olympic athletes?,Paralympic Village,mistral,Athletes' Village,2,llama3.1,Olympic Village,2,True
+What is the name given to the official residence provided for the Olympic athletes?,Paralympic Village,llama3.1,Olympic Village,2,gemma,Village,1,False
+What is the name given to the official residence provided for the Olympic athletes?,Paralympic Village,gemma,Village,1,mistral,Athletes' Village,2,True
+"Which organization claims to have the world's largest collection of public records, unpublished opinions, forms, legal, news, and business information?",Matthew Bender,llama3.1,Westlaw.,1,mistral,"LexisNexis
+
+LexisNexis is a digital legal solutions provider that offers access to extensive collections of legal, news, and business information. They claim to have one of the world's largest collections of public records and unpublished opinions.",36,False
+"Which organization claims to have the world's largest collection of public records, unpublished opinions, forms, legal, news, and business information?",Matthew Bender,gemma,Library of Congress,3,llama3.1,Westlaw.,1,True
+"Which organization claims to have the world's largest collection of public records, unpublished opinions, forms, legal, news, and business information?",Matthew Bender,gemma,Library of Congress,3,mistral,"LexisNexis
+
+LexisNexis is a digital legal solutions provider that offers access to extensive collections of legal, news, and business information. They claim to have one of the world's largest collections of public records and unpublished opinions.",36,True
+What colour is the cross on the national flag of Switzerland?,White (Colour),llama3.1,White.,1,mistral,The cross on the Swiss flag is white.,8,False
+What colour is the cross on the national flag of Switzerland?,White (Colour),llama3.1,White.,1,gemma,White,1,False
+What colour is the cross on the national flag of Switzerland?,White (Colour),gemma,White,1,mistral,The cross on the Swiss flag is white.,8,True
+What was the first top ten entry for Ce Ce Peniston (1992),We Got a Love Thang,mistral,"""Finally"" (a song from 1991, reached the charts in 1992)",10,llama3.1,"""Finally""",1,True
+What was the first top ten entry for Ce Ce Peniston (1992),We Got a Love Thang,llama3.1,"""Finally""",1,gemma,I Believe I Can Fly,5,False
+What was the first top ten entry for Ce Ce Peniston (1992),We Got a Love Thang,gemma,I Believe I Can Fly,5,mistral,"""Finally"" (a song from 1991, reached the charts in 1992)",10,True
+Involvement with which corrupt architect led to the resignation of Home Secretary Reginald Maudling in July 1972?,Poulson affair,mistral,Peter Morrison scandal,3,llama3.1,Tiberius Harcourt-Robinson,2,True
+Involvement with which corrupt architect led to the resignation of Home Secretary Reginald Maudling in July 1972?,Poulson affair,llama3.1,Tiberius Harcourt-Robinson,2,gemma,Land Rover affair,3,False
+Involvement with which corrupt architect led to the resignation of Home Secretary Reginald Maudling in July 1972?,Poulson affair,mistral,Peter Morrison scandal,3,gemma,Land Rover affair,3,False
+In which European city is the Belvederen Gallery?,Capital of Austria,mistral,"Vienna, Austria",2,llama3.1,Rome.,1,True
+In which European city is the Belvederen Gallery?,Capital of Austria,llama3.1,Rome.,1,gemma,Rome,1,False
+In which European city is the Belvederen Gallery?,Capital of Austria,gemma,Rome,1,mistral,"Vienna, Austria",2,True
+"Graca Machel, the widow of a President of Mozambique, is the wife of which famous man?",Nelson Mendella,mistral,Nelson Mandela,2,llama3.1,Nelson Mandela,2,True
+"Graca Machel, the widow of a President of Mozambique, is the wife of which famous man?",Nelson Mendella,llama3.1,Nelson Mandela,2,gemma,Nelson Mandela,2,False
+"Graca Machel, the widow of a President of Mozambique, is the wife of which famous man?",Nelson Mendella,gemma,Nelson Mandela,2,mistral,Nelson Mandela,2,True
+Aberdeen is known as what?,The granite city,mistral,"City of Granite
+
+Note: Aberdeen is famous for its granite buildings and quarries.",13,llama3.1,The Granite City.,3,True
+Aberdeen is known as what?,The granite city,llama3.1,The Granite City.,3,gemma,Granite City,2,False
+Aberdeen is known as what?,The granite city,gemma,Granite City,2,mistral,"City of Granite
+
+Note: Aberdeen is famous for its granite buildings and quarries.",13,True
+Which shocking fish is also known as a torpedo?,Torpediniformes,llama3.1,Electric eel.,2,mistral,Electric ray (Torpedo),3,False
+Which shocking fish is also known as a torpedo?,Torpediniformes,gemma,Electric ray,2,llama3.1,Electric eel.,2,True
+Which shocking fish is also known as a torpedo?,Torpediniformes,gemma,Electric ray,2,mistral,Electric ray (Torpedo),3,True
+What name is given to a baby marsupial?,Joey (disambiguation),mistral,Joey (of a kangaroo),4,llama3.1,Joey.,1,True
+What name is given to a baby marsupial?,Joey (disambiguation),gemma,Joey,1,llama3.1,Joey.,1,True
+What name is given to a baby marsupial?,Joey (disambiguation),mistral,Joey (of a kangaroo),4,gemma,Joey,1,False
+What period film of Stanley Kubrick that recounts the exploits of an 18th century Irish adventurer is loosely based on a novel of William Makepeace Thackeray?,Barry Lyndon (film),mistral,Barry Lyndon (1975),3,llama3.1,Barry Lyndon,2,True
+What period film of Stanley Kubrick that recounts the exploits of an 18th century Irish adventurer is loosely based on a novel of William Makepeace Thackeray?,Barry Lyndon (film),llama3.1,Barry Lyndon,2,gemma,Barry Lyndon,2,False
+What period film of Stanley Kubrick that recounts the exploits of an 18th century Irish adventurer is loosely based on a novel of William Makepeace Thackeray?,Barry Lyndon (film),gemma,Barry Lyndon,2,mistral,Barry Lyndon (1975),3,True
+"""'The Doors' generated a controversy with the single """"Hello, I Love You"""" in 1968 when the press pointed out it's resemblance to the 1965 hit """"All Day and All of the Night"""" of which band?""",The Kinks,mistral,The Kinks,2,llama3.1,The Kinks.,2,True
+"""'The Doors' generated a controversy with the single """"Hello, I Love You"""" in 1968 when the press pointed out it's resemblance to the 1965 hit """"All Day and All of the Night"""" of which band?""",The Kinks,gemma,The Righteous Brothers,3,llama3.1,The Kinks.,2,True
+"""'The Doors' generated a controversy with the single """"Hello, I Love You"""" in 1968 when the press pointed out it's resemblance to the 1965 hit """"All Day and All of the Night"""" of which band?""",The Kinks,mistral,The Kinks,2,gemma,The Righteous Brothers,3,False
+The name of which chemical element of the Periodic Table ends with the letters KEL ?,Nickel metallurgy,llama3.1,Tellurium.,1,mistral,Xenon,1,False
+The name of which chemical element of the Periodic Table ends with the letters KEL ?,Nickel metallurgy,gemma,Gallium,1,llama3.1,Tellurium.,1,True
+The name of which chemical element of the Periodic Table ends with the letters KEL ?,Nickel metallurgy,gemma,Gallium,1,mistral,Xenon,1,True
+In which county will you find Fountains abbey and Studley Water Gardens?,Wrench Green,llama3.1,Ryedale.,1,mistral,North Yorkshire (UK),3,False
+In which county will you find Fountains abbey and Studley Water Gardens?,Wrench Green,llama3.1,Ryedale.,1,gemma,Leicestershire,1,False
+In which county will you find Fountains abbey and Studley Water Gardens?,Wrench Green,gemma,Leicestershire,1,mistral,North Yorkshire (UK),3,True
+What nationality was the astronomer Copernicus ?,Polishedly,llama3.1,Polish.,1,mistral,Polish,1,False
+What nationality was the astronomer Copernicus ?,Polishedly,gemma,Polish,1,llama3.1,Polish.,1,True
+What nationality was the astronomer Copernicus ?,Polishedly,gemma,Polish,1,mistral,Polish,1,True
+Darwin is the capital of which Australian state ?,Northern Territory,llama3.1,Northern Territory,2,mistral,"Darwin is not a capital city. It's located in the Northern Territory, but its capital is Darwin itself.",18,False
+Darwin is the capital of which Australian state ?,Northern Territory,llama3.1,Northern Territory,2,gemma,New South Wales,3,False
+Darwin is the capital of which Australian state ?,Northern Territory,mistral,"Darwin is not a capital city. It's located in the Northern Territory, but its capital is Darwin itself.",18,gemma,New South Wales,3,False
+The 19th century invention Paige Compositor sought to replace the typewriter but ended up becoming a failure. Which American author lost nearly all his fortune for its development?,Mark Twain,mistral,Samuel Clemens (Mark Twain),4,llama3.1,Mark Twain,2,True
+The 19th century invention Paige Compositor sought to replace the typewriter but ended up becoming a failure. Which American author lost nearly all his fortune for its development?,Mark Twain,gemma,Mark Twain,2,llama3.1,Mark Twain,2,True
+The 19th century invention Paige Compositor sought to replace the typewriter but ended up becoming a failure. Which American author lost nearly all his fortune for its development?,Mark Twain,mistral,Samuel Clemens (Mark Twain),4,gemma,Mark Twain,2,False
+What product invented by Frederick Walton in 1864 became so widely used and 'stepped on' that the name became generic just 14 years after its invention?,Lynolium,mistral,Rubber Sole for Shoes,4,llama3.1,Linoleum.,1,True
+What product invented by Frederick Walton in 1864 became so widely used and 'stepped on' that the name became generic just 14 years after its invention?,Lynolium,llama3.1,Linoleum.,1,gemma,Rubber,1,False
+What product invented by Frederick Walton in 1864 became so widely used and 'stepped on' that the name became generic just 14 years after its invention?,Lynolium,gemma,Rubber,1,mistral,Rubber Sole for Shoes,4,True
+What is the scientific name given to tea?,Camelia sinensis,mistral,Camellia sinensis,2,llama3.1,Camellia sinensis.,2,True
+What is the scientific name given to tea?,Camelia sinensis,gemma,Camellia sinensis,2,llama3.1,Camellia sinensis.,2,True
+What is the scientific name given to tea?,Camelia sinensis,mistral,Camellia sinensis,2,gemma,Camellia sinensis,2,False
+Who did June Carter marry?,Vivian Cash,mistral,Carl Smith (1952),3,llama3.1,Johnny Cash,2,True
+Who did June Carter marry?,Vivian Cash,gemma,Johnny Cash,2,llama3.1,Johnny Cash,2,True
+Who did June Carter marry?,Vivian Cash,gemma,Johnny Cash,2,mistral,Carl Smith (1952),3,True
+Who on TV has played a scarecrow and a Time Lord?,John Pertwee,llama3.1,David Tennant.,2,mistral,David Tennant,2,False
+Who on TV has played a scarecrow and a Time Lord?,John Pertwee,llama3.1,David Tennant.,2,gemma,Matt Smith,2,False
+Who on TV has played a scarecrow and a Time Lord?,John Pertwee,gemma,Matt Smith,2,mistral,David Tennant,2,True
+Who had the most expensive presidential inauguration ceremony of the 20th century?,George Walker Bush,mistral,"Joseph Beecher McCarthy (not a president, but reference to the inflation-adjusted cost of his hearings)",15,llama3.1,Franklin D. Roosevelt.,3,True
+Who had the most expensive presidential inauguration ceremony of the 20th century?,George Walker Bush,gemma,George W. Bush,3,llama3.1,Franklin D. Roosevelt.,3,True
+Who had the most expensive presidential inauguration ceremony of the 20th century?,George Walker Bush,gemma,George W. Bush,3,mistral,"Joseph Beecher McCarthy (not a president, but reference to the inflation-adjusted cost of his hearings)",15,True
+Arthur Thistlewood led which failed conspiracy in 1820?,CATO STREET,llama3.1,The Cato Street Conspiracy.,4,mistral,The Cato Street Conspiracy,4,False
+Arthur Thistlewood led which failed conspiracy in 1820?,CATO STREET,gemma,Spainish Plot,2,llama3.1,The Cato Street Conspiracy.,4,True
+Arthur Thistlewood led which failed conspiracy in 1820?,CATO STREET,mistral,The Cato Street Conspiracy,4,gemma,Spainish Plot,2,False
+"In April, which sportsman married his childhood sweetheart Kim Sears?",Andy Murray (tennis player),mistral,Andy Murray,2,llama3.1,Andy Murray.,2,True
+"In April, which sportsman married his childhood sweetheart Kim Sears?",Andy Murray (tennis player),llama3.1,Andy Murray.,2,gemma,Andy Murray,2,False
+"In April, which sportsman married his childhood sweetheart Kim Sears?",Andy Murray (tennis player),gemma,Andy Murray,2,mistral,Andy Murray,2,True
+Stalactites grow down from the top of cave. What grows up from the floor of a cave?,Stalagmite,llama3.1,Stalagmites.,1,mistral,Stalagmites,1,False
+Stalactites grow down from the top of cave. What grows up from the floor of a cave?,Stalagmite,llama3.1,Stalagmites.,1,gemma,Stalagmites,1,False
+Stalactites grow down from the top of cave. What grows up from the floor of a cave?,Stalagmite,gemma,Stalagmites,1,mistral,Stalagmites,1,True
+Which was the only eastern bloc country to participate in the 1984 LA Olympics?,ISO 3166-1:RO,llama3.1,Romania.,1,mistral,Yugoslavia,1,False
+Which was the only eastern bloc country to participate in the 1984 LA Olympics?,ISO 3166-1:RO,gemma,Soviet Union,2,llama3.1,Romania.,1,True
+Which was the only eastern bloc country to participate in the 1984 LA Olympics?,ISO 3166-1:RO,gemma,Soviet Union,2,mistral,Yugoslavia,1,True
+"The London production of which play by acclaimed Australian playwright, David Williamson, won him the George Devine Award, the first time for a non-UK writer?",The Removalists,mistral,"""Don's Party"" (1976)",3,llama3.1,"""Rhinoceros""",1,True
+"The London production of which play by acclaimed Australian playwright, David Williamson, won him the George Devine Award, the first time for a non-UK writer?",The Removalists,gemma,The Subject,2,llama3.1,"""Rhinoceros""",1,True
+"The London production of which play by acclaimed Australian playwright, David Williamson, won him the George Devine Award, the first time for a non-UK writer?",The Removalists,gemma,The Subject,2,mistral,"""Don's Party"" (1976)",3,True
+In which country was the first permanent bungee jumping site situated?,N Z,llama3.1,New Zealand.,2,mistral,New Zealand,2,False
+In which country was the first permanent bungee jumping site situated?,N Z,llama3.1,New Zealand.,2,gemma,New Zealand,2,False
+In which country was the first permanent bungee jumping site situated?,N Z,gemma,New Zealand,2,mistral,New Zealand,2,True
+"Which 2010 biographical film, starring Mark Wahlberg and Christian Bale, centred on the life of professional boxer 'Micky Ward' and his older half-brother 'Dicky Eklund'?",The Fighter (2010 film),mistral,The Fighter,2,llama3.1,The Fighter.,2,True
+"Which 2010 biographical film, starring Mark Wahlberg and Christian Bale, centred on the life of professional boxer 'Micky Ward' and his older half-brother 'Dicky Eklund'?",The Fighter (2010 film),gemma,The Fighter,2,llama3.1,The Fighter.,2,True
+"Which 2010 biographical film, starring Mark Wahlberg and Christian Bale, centred on the life of professional boxer 'Micky Ward' and his older half-brother 'Dicky Eklund'?",The Fighter (2010 film),mistral,The Fighter,2,gemma,The Fighter,2,False
+The 'Gowk' is an old dialect word for which bird?,The cuckoo,llama3.1,Cuckoo.,1,mistral,Crow (raven),2,False
+The 'Gowk' is an old dialect word for which bird?,The cuckoo,gemma,Goose,1,llama3.1,Cuckoo.,1,True
+The 'Gowk' is an old dialect word for which bird?,The cuckoo,gemma,Goose,1,mistral,Crow (raven),2,True
+What is the name of the convenience store operated by Apu on TVs The Simpson?,Kwik e mart,mistral,Kwik-E-Mart,1,llama3.1,Kwik-E-Mart.,1,True
+What is the name of the convenience store operated by Apu on TVs The Simpson?,Kwik e mart,gemma,Kwik-E-Mart,1,llama3.1,Kwik-E-Mart.,1,True
+What is the name of the convenience store operated by Apu on TVs The Simpson?,Kwik e mart,mistral,Kwik-E-Mart,1,gemma,Kwik-E-Mart,1,False
+Who played Brad Pitt’s wife Theresa Mills in the film ‘Seven’?,Gwynyth Paltrow,llama3.1,Gwyneth Paltrow,2,mistral,Gwyneth Paltrow,2,False
+Who played Brad Pitt’s wife Theresa Mills in the film ‘Seven’?,Gwynyth Paltrow,gemma,Morgan Freeman,2,llama3.1,Gwyneth Paltrow,2,True
+Who played Brad Pitt’s wife Theresa Mills in the film ‘Seven’?,Gwynyth Paltrow,gemma,Morgan Freeman,2,mistral,Gwyneth Paltrow,2,True
+"""Who wrote the trilogy of books """"The Millennium Trilogy"""" featuring the character Lisbeth Salander?""",Stieg Larsen,llama3.1,Stieg Larsson.,2,mistral,Stieg Larsson,2,False
+"""Who wrote the trilogy of books """"The Millennium Trilogy"""" featuring the character Lisbeth Salander?""",Stieg Larsen,gemma,Stieg Larsson,2,llama3.1,Stieg Larsson.,2,True
+"""Who wrote the trilogy of books """"The Millennium Trilogy"""" featuring the character Lisbeth Salander?""",Stieg Larsen,gemma,Stieg Larsson,2,mistral,Stieg Larsson,2,True
+From which film did The Harry Lime Theme come,The Third Man (film),llama3.1,The Third Man.,3,mistral,"""The Third Man""",3,False
+From which film did The Harry Lime Theme come,The Third Man (film),gemma,The Third Man,3,llama3.1,The Third Man.,3,True
+From which film did The Harry Lime Theme come,The Third Man (film),mistral,"""The Third Man""",3,gemma,The Third Man,3,False
+' Ophidian ' refers to what kind of creatures ?,Snkae,llama3.1,Snakes.,1,mistral,"Reptiles, specifically snakes",3,False
+' Ophidian ' refers to what kind of creatures ?,Snkae,llama3.1,Snakes.,1,gemma,Serpents,1,False
+' Ophidian ' refers to what kind of creatures ?,Snkae,gemma,Serpents,1,mistral,"Reptiles, specifically snakes",3,True
+"The equatorial Republic of Kiribati's 'Kiritimati' (Christmas) Island, among the first land to see each new day/year, is in which ocean?",Pacific Basin,mistral,Pacific Ocean,2,llama3.1,Pacific Ocean.,2,True
+"The equatorial Republic of Kiribati's 'Kiritimati' (Christmas) Island, among the first land to see each new day/year, is in which ocean?",Pacific Basin,gemma,Pacific Ocean,2,llama3.1,Pacific Ocean.,2,True
+"The equatorial Republic of Kiribati's 'Kiritimati' (Christmas) Island, among the first land to see each new day/year, is in which ocean?",Pacific Basin,mistral,Pacific Ocean,2,gemma,Pacific Ocean,2,False
+"Which type of lens is thicker at the centre than at the edge, as used in microscopes?",Lens Maker's Formula,llama3.1,Convex lens.,2,mistral,Convex lens (or positive lens),5,False
+"Which type of lens is thicker at the centre than at the edge, as used in microscopes?",Lens Maker's Formula,gemma,A convex lens.,3,llama3.1,Convex lens.,2,True
+"Which type of lens is thicker at the centre than at the edge, as used in microscopes?",Lens Maker's Formula,gemma,A convex lens.,3,mistral,Convex lens (or positive lens),5,True
+The Mossad is the intelligence agency of what country?,İsrail,llama3.1,Israel.,1,mistral,Israel,1,False
+The Mossad is the intelligence agency of what country?,İsrail,gemma,Israel,1,llama3.1,Israel.,1,True
+The Mossad is the intelligence agency of what country?,İsrail,mistral,Israel,1,gemma,Israel,1,False
+Which chemical element is named after the Greek word for the Moon?,Selenious,llama3.1,"Lunarium (no, just kidding!) Silver (Argentum) isn't correct either... Selenium's symbol Se comes from Latin for moon, but that's not it. Selene, the Greek goddess of the Moon, was associated with a chemical element called LUN... nope! 
+
+It is actually Argentum in Latin and Sé in French, which is derived from the same root as ""Selene"", so it is indeed named after the Moon, but I'll just give you the answer:
+
+Argentum isn't correct because that's Silver.
+
+Answer: LUN. No... just kidding!",82,mistral,Selenium,1,False
+Which chemical element is named after the Greek word for the Moon?,Selenious,llama3.1,"Lunarium (no, just kidding!) Silver (Argentum) isn't correct either... Selenium's symbol Se comes from Latin for moon, but that's not it. Selene, the Greek goddess of the Moon, was associated with a chemical element called LUN... nope! 
+
+It is actually Argentum in Latin and Sé in French, which is derived from the same root as ""Selene"", so it is indeed named after the Moon, but I'll just give you the answer:
+
+Argentum isn't correct because that's Silver.
+
+Answer: LUN. No... just kidding!",82,gemma,Selenium,1,False
+Which chemical element is named after the Greek word for the Moon?,Selenious,mistral,Selenium,1,gemma,Selenium,1,False
