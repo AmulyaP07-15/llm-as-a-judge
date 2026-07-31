@@ -1,12 +1,11 @@
 import itertools
 
 import pandas as pd
-from scipy.stats import binomtest, chi2_contingency
+from scipy.stats import binomtest, chi2_contingency, spearmanr
 from sklearn.metrics import cohen_kappa_score
 
 VERDICTS_FILE = "TriviaQA_judge_verdicts.csv"
 SAMPLED_FILE = "TriviaQA_sampled.csv"
-
 # a verdict is decisive when the judge actually picked one of the two answers
 NON_DECISIVE = {"NEITHER", None}
 
@@ -419,6 +418,53 @@ def verbosity_preference(df):
     return pd.DataFrame(rows)
 
 
+def verbosity_correlation(df):
+    """
+    spearman correlation between the length gap and which answer won.
+
+    one row per comparison, not per answer. the length gap is first minus
+    second in words, and the outcome is 1 if the first answer won and 0 if the
+    second did. a positive correlation means a bigger lead in length makes that
+    answer more likely to win.
+
+    computing this per answer instead would add two rows for every comparison,
+    a win and a loss by construction, and those are not independent so the p
+    value would not mean anything.
+
+    this sits alongside the binomial version. the binomial asks whether longer
+    wins more than chance, this asks whether the size of the gap matters.
+
+    input: decisive verdicts, ties already removed
+    output: a row for ALL and one per judge, with the correlation, n, and p
+    """
+    rows = []
+
+    def compute(group, label):
+        usable = group[group["first_length_words"] != group["second_length_words"]]
+        if len(usable) < 3:
+            return {"judge": label, "spearman": float("nan"),
+                    "n": len(usable), "p_value": float("nan")}
+
+        gap = usable["first_length_words"] - usable["second_length_words"]
+        first_won = (usable["choice"] == "1").astype(int)
+
+        # a judge that always picks the same side gives a constant array and
+        # the correlation is undefined, so report it as such rather than
+        # letting scipy return nan with a warning
+        if gap.nunique() < 2 or first_won.nunique() < 2:
+            return {"judge": label, "spearman": float("nan"),
+                    "n": len(usable), "p_value": float("nan")}
+
+        rho, p = spearmanr(gap, first_won)
+        return {"judge": label, "spearman": rho, "n": len(usable), "p_value": p}
+
+    rows.append(compute(df, "ALL"))
+    for judge, group in df.groupby("judge_model"):
+        rows.append(compute(group, judge))
+
+    return pd.DataFrame(rows)
+
+
 def verbosity_by_position(df):
     """
     does the longer answer win, holding presentation order fixed.
@@ -672,19 +718,34 @@ def main():
     print(f"{df_all['question'].nunique()} questions, "
           f"{df_all['judge_model'].nunique()} judges")
 
+    # the eight metrics the project set out to measure
+    print("\n" + "=" * 60)
+    print("HEADLINE METRICS")
+    print("=" * 60)
+
+    show("1. Self enhancement", self_enhancement(genuine))
+    show("2. First position preference", first_position_preference(genuine))
+    show("3. Verbosity correlation", verbosity_correlation(genuine))
+    show("4. Neither rate", outcome_rates(genuine_all))
+    show("5. Judge confidence", confidence_summary(genuine))
+    show("6. Response time", response_time_summary(df_all))
+    show("7. Ground truth accuracy", ground_truth_accuracy(genuine))
+    show("8. Inter judge agreement", inter_judge_agreement(genuine_all))
+
+    # these exist because several of the headline numbers turn out to be
+    # confounded. position bias is strong enough to create effects that look
+    # like verbosity or self preference, and pooling correct and incorrect
+    # answer pairs hides what a judge can actually discriminate.
+    print("\n" + "=" * 60)
+    print("SUPPORTING EVIDENCE")
+    print("=" * 60)
+
     show("Ties", tie_summary(df))
-    show("Outcome rates", outcome_rates(genuine_all))
-    show("Self enhancement", self_enhancement(genuine))
     show("Self enhancement by position", self_enhancement_by_position(genuine))
-    show("First position preference", first_position_preference(genuine))
-    show("Verbosity preference", verbosity_preference(genuine))
+    show("Verbosity, did the longer answer win", verbosity_preference(genuine))
     show("Verbosity by position", verbosity_by_position(genuine))
     show("Comparison types", case_breakdown(genuine))
-    show("Ground truth accuracy (all cases)", ground_truth_accuracy(genuine))
-    show("Discrimination accuracy (one right only)", discrimination_accuracy(genuine))
-    show("Judge confidence", confidence_summary(genuine))
-    show("Response time", response_time_summary(df_all))
-    show("Inter judge agreement", inter_judge_agreement(genuine_all))
+    show("Discrimination accuracy, one right only", discrimination_accuracy(genuine))
 
 
 if __name__ == "__main__":
