@@ -1,11 +1,13 @@
-import ollama
 import csv
 import pandas as pd
 
+from groq_utils import call_groq, MODEL_IDS
 TOPICS_FILE = "topics.csv"         
 OUTPUT_FILE = "argument_outputs.csv"
 
-MODELS = ["llama3.1", "gemma"]
+MODELS = list(MODEL_IDS.keys())  
+
+TEST_LIMIT = None
 
 
 def load_topics(topics_file, limit=None):
@@ -17,22 +19,20 @@ def load_topics(topics_file, limit=None):
     return topics
 
 
-def get_argument(model, topic):
+def get_argument(model_name, topic):
     """Ask a single model to argue in favor of a topic."""
-    response = ollama.chat(
-        model=model,
-        messages=[
-            {
-                "role": "user",
-                "content": f"Write a short 2-3 sentence argument supporting: {topic}",
-            }
-        ],
-    )
-    return response["message"]["content"].strip()
+    messages = [
+        {
+            "role": "user",
+            "content": f"Write a short 2-3 sentence argument supporting: {topic}",
+        }
+    ]
+    text, _elapsed = call_groq(model_name, messages, max_tokens=150)
+    return text
 
 
 def main():
-    topics = load_topics(TOPICS_FILE)
+    topics = load_topics(TOPICS_FILE, limit=TEST_LIMIT)
     print(f"Loaded {len(topics)} topics. Generating arguments from {len(MODELS)} models...")
 
     # Long-format rows: one row per (topic, model) pair. This scales cleanly
