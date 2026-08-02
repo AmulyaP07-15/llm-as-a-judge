@@ -280,3 +280,145 @@ Order is randomised rather than paired, so we measure a first position
 preference rate rather than watching individual verdicts flip on reversal.
 Running every pair twice would double the judge calls past what the free tier
 covers.
+
+## Results, subjective task
+
+369 judgments across 41 topics (3 pairwise combinations per topic, 3 judges
+each). No ties to exclude — free-form arguments don't repeat by accident, and
+a direct check confirmed zero content-identical pairs. 345 decisive verdicts
+after dropping Neither.
+
+**Two of the three judges are mostly grading position, not content.** Llama
+picks whichever argument loads first 87 percent of the time. Qwen does it 76
+percent of the time. Allam is close to neutral at 59 percent, and even that is
+only marginal (p = 0.053).
+
+**The verbosity effect looked real and wasn't.** Pooled, longer arguments win
+59 percent of the time (p = 0.0008). Split by position, longer arguments win
+83 percent of the time when shown first and lose more often than they win when
+shown second (35 percent). A genuine length preference would hold in both
+positions. This one flips sign, so it's position bias wearing a verbosity
+costume.
+
+**Self-enhancement mostly evaporates once you look at position.** Llama's raw
+self-preference (56 percent) tracks almost exactly with its overall
+first-position rate (87 percent) whenever its own argument happens to load
+first, and drops to 26 percent when it loads second — which is just what a
+judge that always picks position one would do regardless of who wrote what.
+Same pattern, more muted, for qwen. Allam is the exception: self rate (42
+percent) and baseline rate (41 percent) are statistically indistinguishable
+(chi2 p = 1.0) — the most content-driven judge of the three, and the one with
+almost no position bias.
+
+**Confidence and speed pull in the same direction.** Allam is both the
+slowest judge (0.45s average) and the most confident (4.48 / 5). Qwen is the
+fastest (0.24s) and least confident (3.89 / 5). Worth a footnote, not a
+headline.
+
+**Judges agree moderately with each other.** Cohen's kappa ranges from 0.44
+to 0.61. Llama and qwen agree most (0.61) — plausibly because they share the
+same position-bias pattern rather than because they're reasoning about
+arguments the same way. Allam, the outlier judge, agrees least with either.
+
+No ground truth exists for this task — there's no "correct" side of an
+opinion argument — so unlike the objective task there's no accuracy metric
+here. The bias patterns are the finding.
+
+### The numbers (subjective task)
+
+**1. Self enhancement**
+
+| model | self rate | neutral rate | difference | p |
+|---|---|---|---|---|
+| allam | 0.420 (n=81) | 0.408 (n=76) | +0.012 | 1.0000 |
+| llama | 0.561 (n=82) | 0.694 (n=72) | −0.133 | 0.1238 |
+| qwen  | 0.493 (n=69) | 0.410 (n=78) | +0.083 | 0.4023 |
+
+Pooled across all three judges: 0.491 (n=232) — see the position split below
+before reading this as "no self-enhancement."
+
+**2. First position preference**
+
+| judge | rate | n | p |
+|---|---|---|---|
+| all | 0.742 | 345 | <0.0001 |
+| allam | 0.593 | 118 | 0.0527 |
+| llama | 0.870 | 123 | <0.0001 |
+| qwen | 0.760 | 104 | <0.0001 |
+
+**3. Verbosity (position split, in place of pooled correlation)**
+
+| when longer argument shown | win rate | n | p |
+|---|---|---|---|
+| first | 0.825 | 177 | <0.0001 |
+| second | 0.345 | 168 | 0.0001 |
+| pooled (misleading alone) | 0.591 | 345 | 0.0008 |
+
+**4. Outcome rates**
+
+| outcome | rate | n |
+|---|---|---|
+| Neither | 0.065 | 24 |
+| Unclear (unparseable) | 0.000 | 0 |
+| Echoed prompt | 0.000 | 0 |
+| API error | 0.000 | 0 |
+
+(all out of 369 total verdicts)
+
+**5. Judge confidence**
+
+| judge | mean | n |
+|---|---|---|
+| all | 4.22 | 354 |
+| allam | 4.48 | 108 |
+| llama | 4.33 | 123 |
+| qwen | 3.89 | 123 |
+
+**6. Response time**
+
+| judge | mean sec | n |
+|---|---|---|
+| all | 0.321 | 369 |
+| allam | 0.448 | 123 |
+| llama | 0.238 | 123 |
+| qwen | 0.276 | 123 |
+
+**7. Ground truth accuracy**
+
+N/A — ArgKP arguments are opinion, not fact; there's no correct answer to
+score against.
+
+**8. Inter judge agreement**
+
+| pair | kappa | n |
+|---|---|---|
+| allam vs llama | 0.525 | 118 |
+| allam vs qwen | 0.442 | 99 |
+| llama vs qwen | 0.607 | 104 |
+
+### Supporting evidence (subjective task)
+
+**Content ties.** Checked directly rather than assumed: zero pairs where the
+two arguments being compared were textually identical. Unlike the objective
+task's short factual answers, free-form 2-3 sentence arguments essentially
+never collide by chance, so no exclusion was needed here.
+
+**Self-enhancement split by position.**
+
+| model | position | self rate | n |
+|---|---|---|---|
+| allam | first | 0.512 | 43 |
+| allam | second | 0.316 | 38 |
+| llama | first | 0.897 | 39 |
+| llama | second | 0.256 | 43 |
+| qwen | first | 0.774 | 31 |
+| qwen | second | 0.263 | 38 |
+
+Baseline (neutral-judge) rate isn't yet split by position here, only the self
+rate — so this shows self-preference varies sharply by position, but doesn't
+fully isolate a self-preference effect net of position the way a complete
+comparison would. Splitting the baseline the same way is the natural next
+step.
+
+**Verbosity split by position:** see table 3 above — the split is the whole
+finding for this metric, not a side check.
