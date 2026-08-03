@@ -293,12 +293,14 @@ picks whichever argument loads first 87 percent of the time. Qwen does it 76
 percent of the time. Allam is close to neutral at 59 percent, and even that is
 only marginal (p = 0.053).
 
-**The verbosity effect looked real and wasn't.** Pooled, longer arguments win
-59 percent of the time (p = 0.0008). Split by position, longer arguments win
-83 percent of the time when shown first and lose more often than they win when
-shown second (35 percent). A genuine length preference would hold in both
-positions. This one flips sign, so it's position bias wearing a verbosity
-costume.
+**The verbosity effect looked real and wasn't — and it's not just one judge.**
+Pooled, longer arguments win 59 percent of the time (p = 0.0008). Split by
+position, that flips for all three judges individually: llama swings hardest
+(93 percent when longer is shown first, 19 percent when shown second), allam
+and qwen show the same reversal at a smaller scale. Unlike the objective task,
+where qwen was the one judge that barely showed the pattern, here all three
+flip direction — this looks like a property of the setup itself (no ground
+truth to fall back on) rather than one judge's quirk.
 
 **Self-enhancement mostly evaporates once you look at position.** Llama's raw
 self-preference (56 percent) tracks almost exactly with its overall
@@ -346,13 +348,17 @@ before reading this as "no self-enhancement."
 | llama | 0.870 | 123 | <0.0001 |
 | qwen | 0.760 | 104 | <0.0001 |
 
-**3. Verbosity (position split, in place of pooled correlation)**
+**3. Verbosity split by position**
 
-| when longer argument shown | win rate | n | p |
-|---|---|---|---|
-| first | 0.825 | 177 | <0.0001 |
-| second | 0.345 | 168 | 0.0001 |
-| pooled (misleading alone) | 0.591 | 345 | 0.0008 |
+| judge | longer shown | longer wins | n   | p       |
+|-------|--------------|-------------|-----|---------|
+| allam | first        | 0.683       | 60  | 0.0062  |
+| allam | second       | 0.500       | 58  | 1.0000  |
+| llama | first        | 0.934       | 61  | <0.0001 |
+| llama | second       | 0.194       | 62  | <0.0001 |
+| qwen  | first        | 0.857       | 56  | <0.0001 |
+| qwen  | second       | 0.354       | 48  | 0.0595  |
+| pooled (misleading alone) | — | 0.591 | 345 | 0.0008 |
 
 **4. Outcome rates**
 
@@ -420,5 +426,11 @@ fully isolate a self-preference effect net of position the way a complete
 comparison would. Splitting the baseline the same way is the natural next
 step.
 
-**Verbosity split by position:** see table 3 above — the split is the whole
-finding for this metric, not a side check.
+**Verbosity split by position.** See table 3 above. Every judge reverses
+direction between positions, though not by the same amount — llama's swing
+(93% → 19%) is far larger than allam's (68% → 50%, and its second-position
+result doesn't clear significance) or qwen's (86% → 35%, with its
+second-position result only marginal at p=0.0595). The direction is
+consistent; the strength isn't. That's a meaningfully different picture from
+the objective task, where one judge (qwen) was largely exempt from the effect
+— here, none of the three are.

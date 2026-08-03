@@ -16,9 +16,12 @@ Metrics computed:
      binomial test.
   3. Verbosity test: one observation per comparison -- did the longer
      argument win? -- split by whether the longer argument was shown
-     first or second. If the longer argument only wins when shown first,
-     that's position bias, not a length preference; the split is what
-     tells the two apart, and the pooled number alone can't.
+     first or second, computed BOTH pooled and per judge. If the longer
+     argument only wins when shown first, that's position bias, not a
+     length preference; the split is what tells the two apart, and the
+     pooled number alone can't. The per-judge breakdown additionally
+     shows whether a single judge is driving the pooled effect or
+     whether it's consistent across all three.
   4. Inter-judge agreement: Cohen's kappa between each pair of judges,
      computed over items sharing the same (topic, model_a, model_b) --
      not also keyed on `swapped`, since the judge script fixes the
@@ -228,23 +231,15 @@ def _binom_rate(wins, n):
     return rate, p_value
 
 
-def verbosity_test(df):
+def _verbosity_stats_for_subset(subset_df):
     """
-    One observation per comparison (not two): did the longer of the two
-    arguments win? Tested against a null of 0.5 with a binomial test, and
-    ALSO split by whether the longer argument was shown first or second.
-
-    The split is the actual finding here: if the longer argument only
-    wins when it happens to be shown first, that's position bias, not a
-    length preference -- the pooled rate can't distinguish the two, since
-    a judge that just always picks position one will show a "verbosity
-    effect" any time the longer argument happens to load first, purely
-    by chance of the swap assignment.
-
-    Ties (equal word count) are excluded since there's no "longer"
-    argument to evaluate for that comparison.
+    Core verbosity calculation for whatever subset of rows is passed in
+    (pooled, or one judge's rows). Ties (equal word count) are excluded
+    since there's no "longer" argument to evaluate for that comparison.
     """
-    non_tied = df[df["first_arg_length_words"] != df["second_arg_length_words"]].copy()
+    non_tied = subset_df[
+        subset_df["first_arg_length_words"] != subset_df["second_arg_length_words"]
+    ].copy()
 
     def longer_won(row):
         longer_model = (
@@ -266,24 +261,52 @@ def verbosity_test(df):
 
         rate_first, p_first = _binom_rate(int(first_subset.sum()), len(first_subset))
         rate_second, p_second = _binom_rate(int(second_subset.sum()), len(second_subset))
+        n_first, n_second = len(first_subset), len(second_subset)
     else:
         rate = p_value = float("nan")
         rate_first = p_first = float("nan")
         rate_second = p_second = float("nan")
-        first_subset = second_subset = []
+        n_first = n_second = 0
 
     return {
         "longer_arg_win_rate": rate,
         "n": n,
-        "n_ties_excluded": len(df) - n,
+        "n_ties_excluded": len(subset_df) - n,
         "p_value": p_value,
         "rate_when_longer_first": rate_first,
-        "n_when_longer_first": len(first_subset),
+        "n_when_longer_first": n_first,
         "p_when_longer_first": p_first,
         "rate_when_longer_second": rate_second,
-        "n_when_longer_second": len(second_subset),
+        "n_when_longer_second": n_second,
         "p_when_longer_second": p_second,
     }
+
+
+def verbosity_test(df):
+    """
+    One observation per comparison (not two): did the longer of the two
+    arguments win? Tested against a null of 0.5 with a binomial test, and
+    ALSO split by whether the longer argument was shown first or second.
+    Computed pooled AND per judge, so a per-judge breakdown can show
+    whether one specific judge is driving the pooled effect or whether
+    it's consistent across all three.
+
+    The position split is the actual finding here: if the longer argument
+    only wins when it happens to be shown first, that's position bias,
+    not a length preference -- the pooled rate can't distinguish the
+    two, since a judge that just always picks position one will show a
+    "verbosity effect" any time the longer argument happens to load
+    first, purely by chance of the swap assignment.
+    """
+    pooled = _verbosity_stats_for_subset(df)
+
+    by_judge = {
+        judge: _verbosity_stats_for_subset(group)
+        for judge, group in df.groupby("judge_model")
+    }
+
+    pooled["by_judge"] = by_judge
+    return pooled
 
 
 def confidence_stats(df_all):
@@ -390,25 +413,40 @@ def main():
     print(f"  when longer shown second: {vt['rate_when_longer_second']:.3f} "
           f"(n={vt['n_when_longer_second']}, p={vt['p_when_longer_second']:.4f})")
 
+    def _report_flip_status(rf, rs, label, indent="  "):
+        if rf == rf and rs == rs:  # neither is NaN
+            both_above_half = rf > 0.5 and rs > 0.5
+            both_below_half = rf < 0.5 and rs < 0.5
+            if both_above_half or both_below_half:
+                print(f"{indent}-> {label}: consistent across both positions "
+                      f"(first={rf:.3f}, second={rs:.3f}) -- supports a genuine "
+                      f"length effect, though check the p-values above for "
+                      f"significance at this n.")
+            else:
+                print(f"{indent}-> {label}: FLIPS between positions "
+                      f"(first={rf:.3f}, second={rs:.3f}) -- likely position "
+                      f"bias, not a real verbosity preference.")
+        else:
+            print(f"{indent}-> {label}: not enough data in one or both "
+                  f"position splits to compare.")
+
     # Headline call: does the verbosity effect hold up in BOTH positions,
     # or does it only appear in one -- which would mean it's actually
     # position bias, not a genuine preference for longer arguments.
-    rf, rs = vt["rate_when_longer_first"], vt["rate_when_longer_second"]
-    if rf == rf and rs == rs:  # neither is NaN
-        both_above_half = rf > 0.5 and rs > 0.5
-        both_below_half = rf < 0.5 and rs < 0.5
-        if both_above_half or both_below_half:
-            print(f"  -> Effect direction is consistent across both positions "
-                  f"(first={rf:.3f}, second={rs:.3f}): supports a genuine length "
-                  f"effect independent of position, though see the p-values above "
-                  f"for whether either split reaches significance at this n.")
-        else:
-            print(f"  -> Effect direction FLIPS between positions "
-                  f"(first={rf:.3f}, second={rs:.3f}): the pooled rate is likely "
-                  f"driven by position bias (which position had more long "
-                  f"arguments by chance), not a real verbosity preference.")
-    else:
-        print("  -> Not enough data in one or both position splits to compare.")
+    _report_flip_status(vt["rate_when_longer_first"], vt["rate_when_longer_second"], "Pooled")
+
+    print("\n  By judge (does one judge drive the pooled effect, or is it consistent?):")
+    for judge, result in vt["by_judge"].items():
+        print(f"    {judge}: pooled={result['longer_arg_win_rate']:.3f} "
+              f"(n={result['n']}, p={result['p_value']:.4f})")
+        print(f"      when longer first:  {result['rate_when_longer_first']:.3f} "
+              f"(n={result['n_when_longer_first']}, p={result['p_when_longer_first']:.4f})")
+        print(f"      when longer second: {result['rate_when_longer_second']:.3f} "
+              f"(n={result['n_when_longer_second']}, p={result['p_when_longer_second']:.4f})")
+        _report_flip_status(
+            result["rate_when_longer_first"], result["rate_when_longer_second"],
+            judge, indent="      "
+        )
 
     print("\n=== Confidence ===")
     cs = confidence_stats(df_all)
