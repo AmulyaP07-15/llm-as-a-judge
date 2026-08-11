@@ -264,18 +264,6 @@ free tier has a daily token cap a full run can hit.
 `TriviaQA_analyze_bias.py` needs no API access. 37 tests in
 `test_TriviaQA_analyze_bias.py`.
 
-### Running the tests
-
-```bash
-pytest "IBM-Debater dataset"
-```
-
-68 tests covering topic loading, prompt building, verdict parsing, the
-swap/pairing logic in `build_jobs`, and every metric in `analyze_bias.py`
-(self-enhancement, position preference, verbosity, inter-judge kappa, and
-the position-split checks that catch a pooled statistic hiding a confound).
-All Groq calls are mocked, so this needs no `GROQ_API_KEY` and makes no
-network requests.
 
 ## Limitations
 
@@ -447,3 +435,39 @@ second-position result only marginal at p=0.0595). The direction is
 consistent; the strength isn't. That's a meaningfully different picture from
 the objective task, where one judge (qwen) was largely exempt from the effect
 — here, none of the three are.
+
+## Running it
+
+Same setup as objective task, run from inside `IBM-Debater dataset/` since the scripts
+use relative paths:
+
+```bash
+cd "IBM-Debater dataset"
+```
+
+```
+IBM-Debater_dataset_preparation.py        -> topics.csv
+IBM-debater_dataset_argument_generator.py -> argument_outputs.csv
+IBM-Debater_judge_arguments.py            -> judge_verdicts.csv
+analyze_bias.py                           -> results
+```
+
+`IBM-Debater_dataset_preparation.py` pulls the ArgKP topics from
+`NLP-Debater-Project/IBM-Debater-ArgKP` on HuggingFace, so it needs
+`datasets` installed but no Groq key. The generator and judge steps checkpoint
+and resume the same way the TriviaQA ones do, and `analyze_bias.py` needs no
+API access.
+
+### Running the tests
+
+```bash
+pytest "IBM-Debater dataset"
+```
+
+68 tests covering topic loading, prompt building, verdict parsing, the
+swap/pairing logic in `build_jobs`, and every metric in `analyze_bias.py`
+(self-enhancement, position preference, verbosity, inter-judge kappa, and
+the position-split checks that catch a pooled statistic hiding a confound).
+All Groq calls are mocked, so this needs no `GROQ_API_KEY` and makes no
+network requests.
+
