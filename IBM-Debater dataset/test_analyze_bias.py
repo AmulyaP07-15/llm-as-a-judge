@@ -128,6 +128,30 @@ class TestSelfEnhancementRate:
         assert llama_stats["n_second"] == 1
         assert llama_stats["self_rate_second"] == pytest.approx(0.0)
 
+    def test_baseline_split_by_position(self):
+        df = pd.DataFrame([
+            # self cases: llama judges itself, own argument first (win) then second (loss)
+            _row("llama", "llama", "qwen", "llama", first_model="llama", second_model="qwen"),
+            _row("llama", "qwen", "llama", "qwen", first_model="qwen", second_model="llama"),
+            # neutral cases, llama's argument shown first: allam judges llama vs qwen, wins both times
+            _row("allam", "llama", "qwen", "llama", first_model="llama", second_model="qwen"),
+            _row("allam", "llama", "qwen", "llama", first_model="llama", second_model="qwen"),
+            # neutral case, llama's argument shown second: allam judges qwen vs llama, llama loses
+            _row("allam", "qwen", "llama", "qwen", first_model="qwen", second_model="llama"),
+        ])
+
+        result = ab.self_enhancement_rate(df)
+
+        llama_stats = result["by_model"]["llama"]
+        assert llama_stats["baseline_n_first"] == 2
+        assert llama_stats["baseline_rate_first"] == pytest.approx(1.0)
+        assert llama_stats["baseline_n_second"] == 1
+        assert llama_stats["baseline_rate_second"] == pytest.approx(0.0)
+        # self=1.0, baseline=1.0 in position one -> no gap once position is held fixed
+        assert llama_stats["difference_first"] == pytest.approx(0.0)
+        # self=0.0, baseline=0.0 in position two -> also no gap
+        assert llama_stats["difference_second"] == pytest.approx(0.0)
+
     def test_no_self_judged_cases_gives_nan_overall_rate(self):
         df = pd.DataFrame([_row("allam", "llama", "qwen", "llama")])
 

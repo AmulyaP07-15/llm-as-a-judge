@@ -1,43 +1,3 @@
-"""
-Step 6: Analysis.
-
-Computes bias metrics from judge_verdicts.csv. Since ArgKP arguments have
-no ground-truth "correct" answer, there is no accuracy metric here -- the
-bias patterns themselves are the finding (ground truth accuracy only
-applies to the TriviaQA-based project variant).
-
-Metrics computed:
-  1. Self-enhancement rate: per model AND split by whether that model's
-     own argument was shown first or second. A pooled self-rate across
-     positions can hide a real effect that only shows up in one position
-     (or cancel out if the effect flips sign between positions).
-  2. First-position preference rate: proportion of verdicts where the
-     first-presented argument wins, tested against a null of 0.5 with a
-     binomial test.
-  3. Verbosity test: one observation per comparison -- did the longer
-     argument win? -- split by whether the longer argument was shown
-     first or second, computed BOTH pooled and per judge. If the longer
-     argument only wins when shown first, that's position bias, not a
-     length preference; the split is what tells the two apart, and the
-     pooled number alone can't. The per-judge breakdown additionally
-     shows whether a single judge is driving the pooled effect or
-     whether it's consistent across all three.
-  4. Inter-judge agreement: Cohen's kappa between each pair of judges,
-     computed over items sharing the same (topic, model_a, model_b) --
-     not also keyed on `swapped`, since the judge script fixes the
-     argument order per pair, identically across all three judges.
-  5. Confidence and response time: mean judge-reported confidence and
-     mean response time, overall and per judge.
-  6. Content ties: pairs where the two arguments being compared are
-     textually identical are checked for explicitly (not assumed away)
-     and excluded from headline metrics if any exist, since an identical
-     pair carries no information about any bias question.
-  7. Outcome rates: proportion (and count) of verdicts that are NEITHER,
-     UNCLEAR, API_ERROR, or ECHOED_PROMPT -- tracked separately, with
-     counts alongside rates so a 0.000 rate is visibly a real zero and
-     not silently "this outcome was never logged at all."
-"""
-
 import itertools
 from collections import defaultdict
 
@@ -47,13 +7,6 @@ from sklearn.metrics import cohen_kappa_score
 
 VERDICTS_FILE = "judge_verdicts.csv"
 ARGUMENTS_FILE = "argument_outputs.csv"
-
-# Must match the exact sentinel judge_arguments.py writes to winner_model
-# in each non-decisive case -- confirmed against judge_arguments.py:
-#   - "NEITHER"        (parse_verdict() genuine Neither pick)
-#   - "UNCLEAR"        (parse_verdict() couldn't extract a clean answer)
-#   - "ECHOED_PROMPT"  (is_echoed_prompt() caught the model echoing the template)
-#   - "API_ERROR"      (the except block around get_verdict())
 NON_DECISIVE = {"NEITHER", "UNCLEAR", "API_ERROR", "ECHOED_PROMPT"}
 
 
@@ -131,7 +84,9 @@ def self_enhancement_rate(df):
     """
     Per model: self rate (wins when the model judges itself) vs. baseline
     rate (wins when a neutral third-party model judges it), each ALSO
-    split by whether the model's own argument was shown first or second.
+    split by whether the model's own argument was shown first or second --
+    self and baseline are split the same way, so each position row is a
+    genuine self-vs-neutral comparison, not just the self rate on its own.
 
     The position split matters here specifically: if a model only shows
     self-preference when its argument happens to sit in position one (or
@@ -160,6 +115,9 @@ def self_enhancement_rate(df):
         chi2, p_value = _chi_square(self_wins, self_n, baseline_wins, baseline_n)
 
         # Position split: was the model's own argument shown first or second?
+        # Applied to both the self cases AND the neutral baseline, so each
+        # position row is a genuine self-vs-neutral comparison rather than
+        # just the self rate on its own.
         self_first = self_for_model[self_for_model["first_model"] == model]
         self_second = self_for_model[self_for_model["second_model"] == model]
 
@@ -170,6 +128,28 @@ def self_enhancement_rate(df):
         n_second = len(self_second)
         wins_second = int((self_second["winner_model"] == model).sum())
         rate_second = wins_second / n_second if n_second else float("nan")
+
+        baseline_first = baseline_for_model[baseline_for_model["first_model"] == model]
+        baseline_second = baseline_for_model[baseline_for_model["second_model"] == model]
+
+        baseline_n_first = len(baseline_first)
+        baseline_wins_first = int((baseline_first["winner_model"] == model).sum())
+        baseline_rate_first = (
+            baseline_wins_first / baseline_n_first if baseline_n_first else float("nan")
+        )
+
+        baseline_n_second = len(baseline_second)
+        baseline_wins_second = int((baseline_second["winner_model"] == model).sum())
+        baseline_rate_second = (
+            baseline_wins_second / baseline_n_second if baseline_n_second else float("nan")
+        )
+
+        chi2_first, p_first = _chi_square(
+            wins_first, n_first, baseline_wins_first, baseline_n_first
+        )
+        chi2_second, p_second = _chi_square(
+            wins_second, n_second, baseline_wins_second, baseline_n_second
+        )
 
         per_model[model] = {
             "self_rate": self_rate,
@@ -182,6 +162,14 @@ def self_enhancement_rate(df):
             "n_first": n_first,
             "self_rate_second": rate_second,
             "n_second": n_second,
+            "baseline_rate_first": baseline_rate_first,
+            "baseline_n_first": baseline_n_first,
+            "baseline_rate_second": baseline_rate_second,
+            "baseline_n_second": baseline_n_second,
+            "difference_first": rate_first - baseline_rate_first,
+            "p_value_first": p_first,
+            "difference_second": rate_second - baseline_rate_second,
+            "p_value_second": p_second,
         }
 
     overall_self_rate = (
@@ -393,8 +381,14 @@ def main():
         print(f"  {model}: self={result['self_rate']:.3f} (n={result['self_n']}), "
               f"baseline={result['baseline_rate']:.3f} (n={result['baseline_n']}), "
               f"chi2 p={result['p_value']:.4f}")
-        print(f"    when self shown first:  {result['self_rate_first']:.3f} (n={result['n_first']})")
-        print(f"    when self shown second: {result['self_rate_second']:.3f} (n={result['n_second']})")
+        print(f"    when self shown first:  self={result['self_rate_first']:.3f} "
+              f"(n={result['n_first']}), baseline={result['baseline_rate_first']:.3f} "
+              f"(n={result['baseline_n_first']}), diff={result['difference_first']:+.3f}, "
+              f"p={result['p_value_first']:.4f}")
+        print(f"    when self shown second: self={result['self_rate_second']:.3f} "
+              f"(n={result['n_second']}), baseline={result['baseline_rate_second']:.3f} "
+              f"(n={result['baseline_n_second']}), diff={result['difference_second']:+.3f}, "
+              f"p={result['p_value_second']:.4f}")
 
     print("\n=== First-Position Preference Rate ===")
     fp = first_position_preference_rate(df)

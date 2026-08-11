@@ -303,15 +303,19 @@ where qwen was the one judge that barely showed the pattern, here all three
 flip direction — this looks like a property of the setup itself (no ground
 truth to fall back on) rather than one judge's quirk.
 
-**Self-enhancement mostly evaporates once you look at position.** Llama's raw
-self-preference (56 percent) tracks almost exactly with its overall
-first-position rate (87 percent) whenever its own argument happens to load
-first, and drops to 26 percent when it loads second — which is just what a
-judge that always picks position one would do regardless of who wrote what.
-Same pattern, more muted, for qwen. Allam is the exception: self rate (42
-percent) and baseline rate (41 percent) are statistically indistinguishable
-(chi2 p = 1.0) — the most content-driven judge of the three, and the one with
-almost no position bias.
+**Self-enhancement doesn't evaporate once you look at position — it splits
+into two effects that cancel.** Allam's pooled numbers (self 42 percent,
+baseline 41 percent, p = 1.0) read as no self-preference at all, but that's
+two significant, opposite-signed effects nearly averaging to zero: judging
+itself, allam does *worse* than a neutral judge would when its own argument
+is shown first (51 vs 78 percent, p = 0.023) and *better* when shown second
+(32 vs 0 percent, p = 0.0008). Llama shows no gap in first position (90 vs
+89 percent, matching its own first-position habit — just position again),
+but a real negative gap in second (26 vs 51 percent, p = 0.032) — it treats
+its own argument worse than a neutral judge would once it's not in the
+favoured slot. Qwen is the only judge with no significant self-vs-neutral
+gap in either position (p = 0.75 first, p = 0.21 second) — the one case
+where the pooled null result actually holds up under the split.
 
 **Confidence and speed pull in the same direction.** Allam is both the
 slowest judge (0.45s average) and the most confident (4.48 / 5). Qwen is the
@@ -410,22 +414,24 @@ two arguments being compared were textually identical. Unlike the objective
 task's short factual answers, free-form 2-3 sentence arguments essentially
 never collide by chance, so no exclusion was needed here.
 
-**Self-enhancement split by position.**
+**Self-enhancement split by position.** Same self-vs-neutral comparison as
+table 1, but with the neutral baseline split by position too, so each row is
+a genuine self-vs-neutral gap at fixed position rather than the self rate on
+its own.
 
-| model | position | self rate | n |
-|---|---|---|---|
-| allam | first | 0.512 | 43 |
-| allam | second | 0.316 | 38 |
-| llama | first | 0.897 | 39 |
-| llama | second | 0.256 | 43 |
-| qwen | first | 0.774 | 31 |
-| qwen | second | 0.263 | 38 |
+| model | position | self rate | neutral rate | difference | p |
+|---|---|---|---|---|---|
+| allam | first | 0.512 (n=43) | 0.775 (n=40) | −0.263 | 0.0234 |
+| allam | second | 0.316 (n=38) | 0.000 (n=36) | +0.316 | 0.0008 |
+| llama | first | 0.897 (n=39) | 0.886 (n=35) | +0.012 | 1.0000 |
+| llama | second | 0.256 (n=43) | 0.514 (n=37) | −0.258 | 0.0322 |
+| qwen | first | 0.774 (n=31) | 0.711 (n=38) | +0.064 | 0.7463 |
+| qwen | second | 0.263 (n=38) | 0.125 (n=40) | +0.138 | 0.2076 |
 
-Baseline (neutral-judge) rate isn't yet split by position here, only the self
-rate — so this shows self-preference varies sharply by position, but doesn't
-fully isolate a self-preference effect net of position the way a complete
-comparison would. Splitting the baseline the same way is the natural next
-step.
+Allam and llama each carry a significant self-vs-neutral gap in one position
+that flips sign (allam) or vanishes (llama's first position) in the other —
+exactly the kind of thing the pooled table 1 numbers can't show. Qwen is the
+only judge with no significant gap in either position.
 
 **Verbosity split by position.** See table 3 above. Every judge reverses
 direction between positions, though not by the same amount — llama's swing
@@ -464,7 +470,7 @@ API access.
 pytest "IBM-Debater dataset"
 ```
 
-68 tests covering topic loading, prompt building, verdict parsing, the
+69 tests covering topic loading, prompt building, verdict parsing, the
 swap/pairing logic in `build_jobs`, and every metric in `analyze_bias.py`
 (self-enhancement, position preference, verbosity, inter-judge kappa, and
 the position-split checks that catch a pooled statistic hiding a confound).
