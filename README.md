@@ -264,6 +264,19 @@ free tier has a daily token cap a full run can hit.
 `TriviaQA_analyze_bias.py` needs no API access. 37 tests in
 `test_TriviaQA_analyze_bias.py`.
 
+### Running the tests
+
+```bash
+pytest "IBM-Debater dataset"
+```
+
+68 tests covering topic loading, prompt building, verdict parsing, the
+swap/pairing logic in `build_jobs`, and every metric in `analyze_bias.py`
+(self-enhancement, position preference, verbosity, inter-judge kappa, and
+the position-split checks that catch a pooled statistic hiding a confound).
+All Groq calls are mocked, so this needs no `GROQ_API_KEY` and makes no
+network requests.
+
 ## Limitations
 
 One prompt, one temperature, one run per comparison. Results could be specific
