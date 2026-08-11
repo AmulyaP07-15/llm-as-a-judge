@@ -133,11 +133,6 @@ class TestParseVerdict:
         assert choice is None
 
     def test_argument_1_substring_inside_longer_winner_text_wins_the_match(self, jm):
-        # "argument 1" is checked before "argument 2" in the implementation,
-        # so a sentence mentioning both (e.g. "Argument 2 ... than Argument
-        # 1") resolves to 1 rather than 2 -- pinning the actual behavior here
-        # since the docstring's stated intent ("doesn't trip both checks")
-        # doesn't fully hold for text that legitimately contains both phrases.
         choice, _ = jm.parse_verdict("Winner: Argument 2 is stronger than Argument 1")
         assert choice == 1
 
