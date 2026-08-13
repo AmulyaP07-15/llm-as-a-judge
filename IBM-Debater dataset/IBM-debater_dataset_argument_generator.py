@@ -11,7 +11,12 @@ TEST_LIMIT = None
 
 
 def load_topics(topics_file, limit=None):
-    """Load unique topics from the topics CSV."""
+    """
+    loads the unique topics from the topics csv.
+
+    input: topics csv path, optional limit
+    output: list of topic strings
+    """
     df = pd.read_csv(topics_file)
     topics = df["topic"].unique().tolist()
     if limit is not None:
@@ -20,7 +25,12 @@ def load_topics(topics_file, limit=None):
 
 
 def get_argument(model_name, topic):
-    """Ask a single model to argue in favor of a topic."""
+    """
+    asks a single model to argue in favor of a topic.
+
+    input: model name, topic string
+    output: the model's argument text
+    """
     messages = [
         {
             "role": "user",
@@ -32,6 +42,12 @@ def get_argument(model_name, topic):
 
 
 def main():
+    """
+    generates arguments from every model for every topic.
+
+    input: topics.csv
+    output: argument_outputs.csv, one row per (model, topic)
+    """
     topics = load_topics(TOPICS_FILE, limit=TEST_LIMIT)
     print(f"Loaded {len(topics)} topics. Generating arguments from {len(MODELS)} models...")
 

@@ -16,6 +16,8 @@ INPUT = "TriviaQA_sampled.csv"
 OUT = "TriviaQA_model_answers.csv"
 BATCH_SIZE = 50
 
+# input: TriviaQA_sampled.csv (question + correct answer)
+# output: TriviaQA_model_answers.csv, same rows with each model's answer appended
 df = pd.read_csv(INPUT)
 
 # resume from checkpoint if a previous run was interrupted

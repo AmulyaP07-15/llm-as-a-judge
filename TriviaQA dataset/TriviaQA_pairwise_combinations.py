@@ -11,6 +11,8 @@ models = ["llama", "qwen", "allam"]
 
 random.seed(RANDOM_SEED)
 
+# input: TriviaQA_model_answers.csv (question + each model's answer)
+# output: TriviaQA_pairs.csv, one row per model pair per question, order randomized
 df = pd.read_csv(INPUT)
 
 # build the full job list first so the swap flags can be split exactly in half

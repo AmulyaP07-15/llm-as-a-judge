@@ -22,7 +22,12 @@ ECHO_MARKERS = ["<argument 1", "argument 1, argument 2, or neither"]
 
 
 def load_arguments(arguments_file):
-    """Return {topic: {model: argument}}, skipping any error rows."""
+    """
+    loads generated arguments, skipping any error rows.
+
+    input: argument_outputs.csv path
+    output: {topic: {model: argument}}
+    """
     df = pd.read_csv(arguments_file)
     by_topic = defaultdict(dict)
     for _, row in df.iterrows():
@@ -35,8 +40,10 @@ def load_arguments(arguments_file):
 
 def load_completed_keys(output_file):
     """
-    Returns the set of (topic, model_a, model_b, judge_model) already
-    logged in output_file, so a resumed run can skip them.
+    finds which comparisons are already logged, so a resumed run can skip them.
+
+    input: output csv path
+    output: set of (topic, model_a, model_b, judge) already logged
     """
     if not os.path.exists(output_file):
         return set()
@@ -48,6 +55,12 @@ def load_completed_keys(output_file):
 
 
 def build_judge_prompt(topic, first_argument, second_argument):
+    """
+    builds the prompt asking a judge to pick the stronger argument.
+
+    input: topic, both arguments
+    output: the prompt string sent to the judge
+    """
     return (
         f'You are judging two arguments that both support the claim: "{topic}"\n\n'
         f"Argument 1: {first_argument}\n\n"
@@ -61,11 +74,10 @@ def build_judge_prompt(topic, first_argument, second_argument):
 
 def is_echoed_prompt(raw_text):
     """
-    True if the model just echoed the prompt template's placeholder text
-    back (e.g. "Winner: <Argument 1, Argument 2, or Neither>") instead of
-    actually answering. Without this check, "argument 1" inside the echoed
-    placeholder matches the normal parser and silently produces a fake
-    "Argument 1 wins" verdict.
+    checks whether the model just echoed the prompt's placeholder text back instead of answering.
+
+    input: raw model output
+    output: True if it looks like an echo
     """
     text = raw_text.lower()
     return any(marker in text for marker in ECHO_MARKERS)
@@ -73,13 +85,10 @@ def is_echoed_prompt(raw_text):
 
 def parse_verdict(raw_text):
     """
-    Returns (choice, confidence).
-    choice is 1, 2, "NEITHER", or None (couldn't be parsed).
-    confidence is a float in [1, 5], or None if missing/unparseable/out of range.
+    pulls the winner and confidence out of the judge's raw response.
 
-    Matches on the phrases "argument 1" / "argument 2" rather than bare
-    digits, so a response like "Argument 2 is stronger than Argument 1"
-    doesn't trip both checks and collapse to None.
+    input: raw judge text
+    output: (choice, confidence) -- choice is 1, 2, "NEITHER", or None; confidence is 1-5 or None
     """
     winner_match = re.search(r"winner:\s*(.+)", raw_text, re.IGNORECASE)
     # \d+(?:\.\d+)? captures decimals too (e.g. "4.5"), not just whole numbers.
@@ -110,7 +119,12 @@ def parse_verdict(raw_text):
 
 
 def get_verdict(judge_model, topic, first_argument, second_argument):
-    """Ask judge_model to pick between the two arguments as presented (in order)."""
+    """
+    asks judge_model to pick between the two arguments as presented.
+
+    input: judge model, topic, both arguments in display order
+    output: (raw response text, seconds elapsed)
+    """
     prompt = build_judge_prompt(topic, first_argument, second_argument)
     messages = [{"role": "user", "content": prompt}]
     return call_groq(judge_model, messages, max_tokens=50)  # (raw_text, elapsed_sec)
@@ -118,10 +132,11 @@ def get_verdict(judge_model, topic, first_argument, second_argument):
 
 def build_jobs(by_topic, topics):
     """
-    Build (topic, model_a, model_b, judge, swapped) jobs. The swap
-    decision is made once per (topic, model_a, model_b) PAIR -- not per
-    judge -- so all three judges see the identical argument order for a
-    given pair, keeping inter-judge agreement comparisons valid.
+    builds the full list of judge comparisons. the swap decision is made once per pair,
+    not per judge, so every judge sees the same argument order for a given pair.
+
+    input: {topic: {model: argument}}, topic list
+    output: list of (topic, model_a, model_b, judge, swapped) jobs
     """
     pairs = []
     for topic in topics:
@@ -144,6 +159,12 @@ def build_jobs(by_topic, topics):
 
 
 def main():
+    """
+    runs every judge comparison and writes the results.
+
+    input: nothing
+    output: nothing, writes judge_verdicts.csv
+    """
     random.seed(RANDOM_SEED)
     by_topic = load_arguments(ARGUMENTS_FILE)
 

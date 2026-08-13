@@ -11,11 +11,22 @@ NON_DECISIVE = {"NEITHER", "UNCLEAR", "API_ERROR", "ECHOED_PROMPT"}
 
 
 def load_all(path=VERDICTS_FILE):
+    """
+    loads the verdicts csv.
+
+    input: csv path
+    output: dataframe of all judge verdicts
+    """
     return pd.read_csv(path)
 
 
 def load_argument_texts(path=ARGUMENTS_FILE):
-    """{(topic, model): argument_text} used for the content-tie check."""
+    """
+    loads argument text, used for the content-tie check.
+
+    input: csv path
+    output: {(topic, model): argument text}
+    """
     df = pd.read_csv(path)
     return {
         (row["topic"], row["model"]): str(row["argument"]).strip()
@@ -25,11 +36,10 @@ def load_argument_texts(path=ARGUMENTS_FILE):
 
 def find_content_tied_pairs(df, argument_texts):
     """
-    Returns the set of (topic, model_a, model_b) whose two arguments are
-    textually identical (exact match after stripping whitespace). These
-    carry zero information for any bias question -- there's nothing to
-    differentiate -- so they should be confirmed and excluded rather than
-    assumed not to exist.
+    finds pairs whose two arguments are identical text, so they can be excluded from bias metrics.
+
+    input: verdicts df, argument text lookup
+    output: set of (topic, model_a, model_b)
     """
     tied = set()
     pairs_seen = set(zip(df["topic"], df["model_a"], df["model_b"]))
@@ -42,6 +52,12 @@ def find_content_tied_pairs(df, argument_texts):
 
 
 def drop_content_tied(df, tied_pairs):
+    """
+    removes content-tied pairs from the verdicts.
+
+    input: verdicts df, set of tied pairs
+    output: df with those pairs removed
+    """
     if not tied_pairs:
         return df
     mask = ~df.apply(
@@ -51,13 +67,23 @@ def drop_content_tied(df, tied_pairs):
 
 
 def load_decisive(df):
-    """Rows with an actual winning model -- excludes NEITHER/UNCLEAR/API_ERROR/ECHOED_PROMPT."""
+    """
+    keeps only rows with an actual winning model.
+
+    input: verdicts df
+    output: rows with a winner (drops NEITHER/UNCLEAR/API_ERROR/ECHOED_PROMPT)
+    """
     return df[~df["winner_model"].isin(NON_DECISIVE)].copy()
 
 
 def outcome_rates(df):
-    """Rate AND count of each non-decisive outcome, so a 0.000 rate is
-    visibly a genuine zero rather than the outcome never being logged."""
+    """
+    rate and count of each non-decisive outcome, so a 0.000 rate reads as a genuine zero
+    rather than the outcome never being logged.
+
+    input: verdicts df
+    output: rate and count of each non-decisive outcome
+    """
     total = len(df)
     result = {}
     for outcome in NON_DECISIVE:
@@ -68,6 +94,12 @@ def outcome_rates(df):
 
 
 def _chi_square(wins_a, n_a, wins_b, n_b):
+    """
+    chi-square test between two win/loss counts.
+
+    input: win counts and totals for two groups
+    output: (chi2, p_value), nan if undefined
+    """
     if not n_a or not n_b:
         return float("nan"), float("nan")
     table = [[wins_a, n_a - wins_a], [wins_b, n_b - wins_b]]
@@ -82,17 +114,12 @@ def _chi_square(wins_a, n_a, wins_b, n_b):
 
 def self_enhancement_rate(df):
     """
-    Per model: self rate (wins when the model judges itself) vs. baseline
-    rate (wins when a neutral third-party model judges it), each ALSO
-    split by whether the model's own argument was shown first or second --
-    self and baseline are split the same way, so each position row is a
-    genuine self-vs-neutral comparison, not just the self rate on its own.
+    per model: self rate (wins when the model judges itself) vs. baseline rate (wins when a
+    neutral third-party model judges it), split by whether the model's own argument was
+    shown first or second, so a position-dependent effect doesn't get hidden by pooling.
 
-    The position split matters here specifically: if a model only shows
-    self-preference when its argument happens to sit in position one (or
-    two), pooling across positions could make a real, position-dependent
-    effect look weaker than it is, or make two opposite-signed position
-    effects cancel into something that looks like no bias at all.
+    input: decisive verdicts
+    output: per-model self vs. baseline win rates, by position
     """
     is_self_case = (df["judge_model"] == df["model_a"]) | (df["judge_model"] == df["model_b"])
     self_cases = df[is_self_case]
@@ -186,9 +213,10 @@ def self_enhancement_rate(df):
 
 def first_position_preference_rate(df):
     """
-    Proportion of verdicts where the first-presented argument wins,
-    tested against the null that an unbiased judge picks position one
-    about half the time (binomial test, p=0.5).
+    proportion of verdicts where the first-presented argument wins, tested against a 0.5 null.
+
+    input: decisive verdicts
+    output: rate the first-shown argument wins, overall and per judge
     """
     total = len(df)
     first_wins = int((df["winner_model"] == df["first_model"]).sum())
@@ -214,6 +242,12 @@ def first_position_preference_rate(df):
 
 
 def _binom_rate(wins, n):
+    """
+    win rate plus a binomial test against 0.5.
+
+    input: win count, total
+    output: (rate, p-value)
+    """
     rate = wins / n if n else float("nan")
     p_value = binomtest(wins, n, 0.5).pvalue if n else float("nan")
     return rate, p_value
@@ -221,9 +255,11 @@ def _binom_rate(wins, n):
 
 def _verbosity_stats_for_subset(subset_df):
     """
-    Core verbosity calculation for whatever subset of rows is passed in
-    (pooled, or one judge's rows). Ties (equal word count) are excluded
-    since there's no "longer" argument to evaluate for that comparison.
+    core verbosity calculation for whatever subset of rows is passed in. ties (equal
+    word count) are excluded since there's no "longer" argument to evaluate.
+
+    input: a slice of verdicts
+    output: longer-argument win rate, split by position
     """
     non_tied = subset_df[
         subset_df["first_arg_length_words"] != subset_df["second_arg_length_words"]
@@ -272,19 +308,11 @@ def _verbosity_stats_for_subset(subset_df):
 
 def verbosity_test(df):
     """
-    One observation per comparison (not two): did the longer of the two
-    arguments win? Tested against a null of 0.5 with a binomial test, and
-    ALSO split by whether the longer argument was shown first or second.
-    Computed pooled AND per judge, so a per-judge breakdown can show
-    whether one specific judge is driving the pooled effect or whether
-    it's consistent across all three.
+    did the longer of the two arguments win, tested against a 0.5 null and split by
+    position, computed pooled and per judge.
 
-    The position split is the actual finding here: if the longer argument
-    only wins when it happens to be shown first, that's position bias,
-    not a length preference -- the pooled rate can't distinguish the
-    two, since a judge that just always picks position one will show a
-    "verbosity effect" any time the longer argument happens to load
-    first, purely by chance of the swap assignment.
+    input: decisive verdicts
+    output: pooled and per-judge verbosity stats
     """
     pooled = _verbosity_stats_for_subset(df)
 
@@ -298,7 +326,12 @@ def verbosity_test(df):
 
 
 def confidence_stats(df_all):
-    """Mean judge-reported confidence (1-5 scale), overall and per judge."""
+    """
+    mean judge-reported confidence.
+
+    input: all verdicts
+    output: mean confidence (1-5 scale), overall and per judge
+    """
     valid = df_all.dropna(subset=["confidence"])
     overall_mean = valid["confidence"].mean() if len(valid) else float("nan")
     by_judge = {
@@ -309,7 +342,12 @@ def confidence_stats(df_all):
 
 
 def response_time_stats(df_all):
-    """Mean response time in seconds, overall and per judge (failed calls excluded, no timing)."""
+    """
+    mean response time, failed calls excluded since they have no timing.
+
+    input: all verdicts
+    output: mean response time in seconds, overall and per judge
+    """
     valid = df_all.dropna(subset=["response_time_sec"])
     overall_mean = valid["response_time_sec"].mean() if len(valid) else float("nan")
     by_judge = {
@@ -321,12 +359,11 @@ def response_time_stats(df_all):
 
 def inter_judge_agreement(df):
     """
-    Cohen's kappa between each pair of judges, restricted to items sharing
-    the same (topic, model_a, model_b). Not also keyed on `swapped`: the
-    judge script fixes the argument order per pair identically for all
-    three judges, so swap state is no longer judge-specific, and
-    `winner_model` is already the actual model name (not "Argument 1/2"),
-    so order doesn't affect whether two judges' labels agree.
+    cohen's kappa between each pair of judges, restricted to items sharing the same
+    (topic, model_a, model_b).
+
+    input: decisive verdicts
+    output: kappa for each judge pair
     """
     by_item = defaultdict(dict)
     for _, row in df.iterrows():
@@ -353,6 +390,12 @@ def inter_judge_agreement(df):
 
 
 def main():
+    """
+    runs every bias metric and prints the results.
+
+    input: nothing
+    output: nothing, prints to the console
+    """
     df_all = load_all()
 
     argument_texts = load_argument_texts()
@@ -408,6 +451,13 @@ def main():
           f"(n={vt['n_when_longer_second']}, p={vt['p_when_longer_second']:.4f})")
 
     def _report_flip_status(rf, rs, label, indent="  "):
+        """
+        reports whether an effect flips between positions, which would mean it's
+        position bias rather than a real preference.
+
+        input: first/second position rates, a label
+        output: nothing, prints
+        """
         if rf == rf and rs == rs:  # neither is NaN
             both_above_half = rf > 0.5 and rs > 0.5
             both_below_half = rf < 0.5 and rs < 0.5
