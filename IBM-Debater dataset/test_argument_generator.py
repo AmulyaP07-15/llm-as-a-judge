@@ -6,7 +6,7 @@ import pytest
 
 @pytest.fixture
 def gen(load_module):
-    return load_module("IBM-debater_dataset_argument_generator.py")
+    return load_module("IBM-Debater_dataset_argument_generator.py")
 
 
 class TestLoadTopics:

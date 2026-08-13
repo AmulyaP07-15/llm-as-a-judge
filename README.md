@@ -453,7 +453,7 @@ cd "IBM-Debater dataset"
 
 ```
 IBM-Debater_dataset_preparation.py        -> topics.csv
-IBM-debater_dataset_argument_generator.py -> argument_outputs.csv
+IBM-Debater_dataset_argument_generator.py -> argument_outputs.csv
 IBM-Debater_judge_arguments.py            -> judge_verdicts.csv
 analyze_bias.py                           -> results
 ```

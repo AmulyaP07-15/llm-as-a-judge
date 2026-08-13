@@ -3,7 +3,7 @@ import math
 import pandas as pd
 import pytest
 
-import analyze_bias as ab
+import IBM_Debater_analyze_bias as ab
 
 
 def _row(judge_model, model_a, model_b, winner_model, first_model=None, second_model=None,

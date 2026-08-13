@@ -53,7 +53,7 @@ SUBJECTIVE_DIR = "IBM-Debater dataset"
 #
 # Filenames match the repository exactly. Linux is case sensitive, so the
 # capitalisation here has to line up with the committed files, including the
-# lowercase d in IBM-debater_dataset_argument_generator.py.
+# lowercase d in IBM-Debater_dataset_argument_generator.py.
 # ---------------------------------------------------------------------------
 OBJECTIVE_PIPELINE = [
     ("TriviaQA_dataset_preparation.py", "Prepare TriviaQA sample"),
@@ -65,9 +65,9 @@ OBJECTIVE_PIPELINE = [
 
 SUBJECTIVE_PIPELINE = [
     ("IBM-Debater_dataset_preparation.py", "Prepare ArgKP topics"),
-    ("IBM-debater_dataset_argument_generator.py", "Generate arguments"),
+    ("IBM-Debater_dataset_argument_generator.py", "Generate arguments"),
     ("IBM-Debater_judge_arguments.py", "Judge every pair"),
-    ("analyze_bias.py", "Analyse bias and print tables"),
+    ("IBM_Debater_analyze_bias.py", "Analyse bias and print tables"),
 ]
 
 # CSVs each analysis stage reads in analysis-only mode. demo.py checks these up
