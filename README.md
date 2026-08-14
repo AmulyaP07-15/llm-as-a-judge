@@ -52,6 +52,49 @@ The project measures eight metrics:
 Each one is also reported split by presentation order where that changes the interpretation, which for this data is most of them.
 
 ---
+## Repository Structure
+
+```text
+llm-as-a-judge/
+├── IBM-Debater dataset/
+│   ├── IBM-Debater_dataset_preparation.py
+│   ├── IBM-Debater_dataset_argument_generator.py
+│   ├── IBM-Debater_judge_arguments.py
+│   ├── IBM_Debater_analyze_bias.py
+│   ├── groq_utils.py
+│   ├── conftest.py
+│   ├── test_dataset_preparation.py
+│   ├── test_argument_generator.py
+│   ├── test_judge_arguments.py
+│   ├── test_groq_utils.py
+│   ├── test_analyze_bias.py
+│   ├── topics.csv
+│   ├── argument_outputs.csv
+│   └── judge_verdicts.csv
+│
+├── TriviaQA dataset/
+│   ├── TriviaQA_dataset_preparation.py
+│   ├── TriviaQA_answer_generator.py
+│   ├── TriviaQA_pairwise_combinations.py
+│   ├── TriviaQA_judge_answers.py
+│   ├── TriviaQA_analyze_bias.py
+│   ├── TriviaQA_test_analyze_bias.py
+│   ├── conftest.py
+│   ├── TriviaQA_sampled.csv
+│   ├── TriviaQA_model_answers.csv
+│   ├── TriviaQA_pairs.csv
+│   └── TriviaQA_judge_verdicts.csv
+│
+├── dev/
+│   ├── generate_answers.py
+│   ├── judge.py
+│   ├── model_answers.csv
+│   ├── pairs.csv
+│   └── README.md
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
 
 # Objective Task
 
